@@ -1,0 +1,278 @@
+/* Question page styles */
+.q-page {
+  position: relative;
+  z-index: 1;
+  padding: 40px 0 80px;
+}
+
+.q-header {
+  margin-bottom: 36px;
+}
+
+.q-breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  margin-bottom: 12px;
+}
+
+.q-breadcrumb a {
+  color: var(--accent);
+}
+
+.q-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.q-header h1 {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.q-intro {
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin-bottom: 16px;
+}
+
+.q-stats {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.diff-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.diff-tag.easy {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.diff-tag.medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.diff-tag.hard {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+[data-theme="dark"] .diff-tag.easy {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+[data-theme="dark"] .diff-tag.medium {
+  background: #78350f;
+  color: #fcd34d;
+}
+
+[data-theme="dark"] .diff-tag.hard {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
+
+/* Question card */
+.question {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.q-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.q-num {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.q-marks {
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  margin-left: auto;
+}
+
+.q-body {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.q-body p {
+  margin-bottom: 8px;
+}
+
+.q-body p:last-child {
+  margin-bottom: 0;
+}
+
+.answer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.answer-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+[data-theme="dark"] .answer-btn:hover {
+  color: #0c0b0a;
+}
+
+.answer-btn.open {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.answer {
+  display: none;
+  margin-top: 16px;
+  padding: 16px 18px;
+  background: var(--bg-tint);
+  border-radius: 10px;
+  border-left: 3px solid var(--accent);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.answer.open {
+  display: block;
+  animation: rise 0.25s ease;
+}
+
+.answer p {
+  margin-bottom: 8px;
+}
+
+.answer p:last-child {
+  margin-bottom: 0;
+}
+
+.q-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Why strip on homepage */
+.why-strip {
+  padding: 40px 0 !important;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.why-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+  box-shadow: var(--shadow);
+}
+
+.why-icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.why-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.why-card p {
+  font-size: 0.875rem;
+  color: var(--text-soft);
+  line-height: 1.45;
+}
+
+/* Live badge on cards */
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.live-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+}
+
+[data-theme="dark"] .live-badge {
+  color: #0c0b0a;
+}
+
+.card-live {
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--line));
+}
+
+.card-live:hover {
+  border-color: var(--accent);
+}
+
+
+/* Topic page site footer */
+.topic-footer {
+  margin-top: 48px;
+  padding: 24px 0 32px;
+  border-top: 1px solid var(--line, #e5e5e5);
+}
+.topic-footer .footer-note {
+  font-size: 0.8rem;
+  color: var(--text-faint, #888);
+  margin: 0 0 10px;
+}
+.topic-footer .footer-disclaimer {
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--text-faint, #888);
+  max-width: 640px;
+  margin: 0;
+}

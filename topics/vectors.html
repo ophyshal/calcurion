@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vectors — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Core Pure 1</p>
+        <h1>Vectors</h1>
+        <p class="q-intro">14 exam-style questions on lines, planes, distances and scalar products. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">5 Medium</span>
+          <span class="diff-tag hard">5 Hard</span>
+        </div>
+      </div>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>The points \(A\) and \(B\) have position vectors \(\mathbf{a} = 2\mathbf{i} + \mathbf{j} - \mathbf{k}\) and \(\mathbf{b} = \mathbf{i} + 3\mathbf{j} + 2\mathbf{k}\).</p>
+          <p>Find the vector \(\overrightarrow{AB}\) and the distance \(AB\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (1-2)\mathbf{i} + (3-1)\mathbf{j} + (2-(-1))\mathbf{k} = -\mathbf{i} + 2\mathbf{j} + 3\mathbf{k}\)</p>
+          <p>\(AB = \sqrt{1+4+9} = \sqrt{14}\)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Find a vector equation of the line through the points with position vectors \(3\mathbf{i} - \mathbf{j} + 2\mathbf{k}\) and \(\mathbf{i} + 2\mathbf{j} - \mathbf{k}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Direction: \((\mathbf{i}+2\mathbf{j}-\mathbf{k}) - (3\mathbf{i}-\mathbf{j}+2\mathbf{k}) = -2\mathbf{i} + 3\mathbf{j} - 3\mathbf{k}\)</p>
+          <p>\(\mathbf{r} = 3\mathbf{i} - \mathbf{j} + 2\mathbf{k} + \lambda(-2\mathbf{i} + 3\mathbf{j} - 3\mathbf{k})\)</p>
+          <p>(or any equivalent form).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body">
+          <p>Find the scalar product of \(\mathbf{u} = 2\mathbf{i} - \mathbf{j} + 3\mathbf{k}\) and \(\mathbf{v} = \mathbf{i} + 4\mathbf{j} - 2\mathbf{k}\). Hence find the angle between \(\mathbf{u}\) and \(\mathbf{v}\) to the nearest degree.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\mathbf{u}\cdot\mathbf{v} = 2 - 4 - 6 = -8\)</p>
+          <p>\(|\mathbf{u}| = \sqrt{4+1+9} = \sqrt{14}\), \(|\mathbf{v}| = \sqrt{1+16+4} = \sqrt{21}\)</p>
+          <p>\(\cos\theta = \dfrac{-8}{\sqrt{14}\sqrt{21}} = \dfrac{-8}{\sqrt{294}}\). \(\theta \approx 119^\circ\)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>The line \(L\) has equation \(\mathbf{r} = \mathbf{i} + 2\mathbf{j} - \mathbf{k} + \lambda(2\mathbf{i} - \mathbf{j} + 3\mathbf{k})\).</p>
+          <p>Find the coordinates of the point on \(L\) closest to the origin, and the shortest distance from the origin to \(L\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Point on line: \(\mathbf{p} = (1+2\lambda,\, 2-\lambda,\, -1+3\lambda)\).</p>
+          <p>Closest when \(\mathbf{p}\) perpendicular to direction: \(\mathbf{p}\cdot(2,-1,3) = 0\)</p>
+          <p>\(2(1+2\lambda) - (2-\lambda) + 3(-1+3\lambda) = 0\)</p>
+          <p>\(2 + 4\lambda - 2 + \lambda - 3 + 9\lambda = 0 \Rightarrow 14\lambda - 3 = 0 \Rightarrow \lambda = \dfrac{3}{14}\)</p>
+          <p>Point: \(\left(1+\dfrac{6}{14},\, 2-\dfrac{3}{14},\, -1+\dfrac{9}{14}\right) = \left(\dfrac{10}{7},\, \dfrac{25}{14},\, -\dfrac{5}{14}\right)\)</p>
+          <p>Distance \(= |\mathbf{p}| = \sqrt{\left(\dfrac{10}{7}\right)^2 + \left(\dfrac{25}{14}\right)^2 + \left(\dfrac{5}{14}\right)^2} = \dfrac{\sqrt{14}}{2}\) (simplified).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>The plane \(\Pi\) has equation \(\mathbf{r}\cdot(2\mathbf{i} - \mathbf{j} + 2\mathbf{k}) = 6\).</p>
+          <p>Find the perpendicular distance from the point \(A(1, 2, -1)\) to \(\Pi\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Distance \(= \dfrac{|2(1) - 1(2) + 2(-1) - 6|}{\sqrt{4+1+4}} = \dfrac{|2-2-2-6|}{3} = \dfrac{8}{3}\)</p>
+          <p>(Formula \(\dfrac{|\mathbf{a}\cdot\mathbf{n} - d|}{|\mathbf{n}|}\) with \(d=6\).)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Find the equation of the plane containing the points \(A(1,0,2)\), \(B(2,1,0)\) and \(C(0,2,1)\) in the form \(\mathbf{r}\cdot\mathbf{n} = p\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\overrightarrow{AB} = \mathbf{i}+\mathbf{j}-2\mathbf{k}\), \(\overrightarrow{AC} = -\mathbf{i}+2\mathbf{j}-\mathbf{k}\).</p>
+          <p>Normal \(\mathbf{n} = \overrightarrow{AB}\times\overrightarrow{AC} = \begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k}\\1&1&-2\\-1&2&-1\end{vmatrix} = \mathbf{i}( -1+4) - \mathbf{j}(-1-2) + \mathbf{k}(2+1) = 3\mathbf{i} + 3\mathbf{j} + 3\mathbf{k}\)</p>
+          <p>Use \(\mathbf{n} = \mathbf{i}+\mathbf{j}+\mathbf{k}\). Through \(A\): \(1+0+2 = 3\).</p>
+          <p>\(\mathbf{r}\cdot(\mathbf{i}+\mathbf{j}+\mathbf{k}) = 3\).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Show that the lines \(\mathbf{r} = \mathbf{i} + \lambda(2\mathbf{i}+\mathbf{j}-\mathbf{k})\) and \(\mathbf{r} = 3\mathbf{j} + \mu(\mathbf{i}-2\mathbf{j}+\mathbf{k})\) are skew, and find the shortest distance between them.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Directions \(\mathbf{d}_1 = (2,1,-1)\), \(\mathbf{d}_2 = (1,-2,1)\). \(\mathbf{d}_1\times\mathbf{d}_2 = \begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k}\\2&1&-1\\1&-2&1\end{vmatrix} = -\mathbf{i} - 3\mathbf{j} - 5\mathbf{k}\).</p>
+          <p>Not parallel. Connecting vector from point on L1 to L2: \((0,3,0)-(1,0,0) = (-1,3,0)\).</p>
+          <p>Scalar triple product \((-1,3,0)\cdot(-1,-3,-5) = 1 - 9 + 0 = -8 \neq 0\) ⇒ skew.</p>
+          <p>Distance \(= \dfrac{|(\mathbf{a}_2-\mathbf{a}_1)\cdot(\mathbf{d}_1\times\mathbf{d}_2)|}{|\mathbf{d}_1\times\mathbf{d}_2|} = \dfrac{8}{\sqrt{1+9+25}} = \dfrac{8}{\sqrt{35}}\).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>The line \(L\) has equation \(\mathbf{r} = 2\mathbf{i} - \mathbf{j} + 3\mathbf{k} + \lambda(\mathbf{i} + 2\mathbf{j} - \mathbf{k})\).</p>
+          <p>The plane \(\Pi\) has equation \(x - y + 2z = 5\).</p>
+          <p>(a) Find the point of intersection of \(L\) and \(\Pi\).</p>
+          <p>(b) Find the acute angle between \(L\) and \(\Pi\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> Point on \(L\): \((2+\lambda,\, -1+2\lambda,\, 3-\lambda)\). In plane: \((2+\lambda) - (-1+2\lambda) + 2(3-\lambda) = 5\)</p>
+          <p>\(2+\lambda +1 - 2\lambda + 6 - 2\lambda = 5 \Rightarrow 9 - 3\lambda = 5 \Rightarrow \lambda = \dfrac{4}{3}\)</p>
+          <p>Point: \(\left(\dfrac{10}{3},\, \dfrac{5}{3},\, \dfrac{5}{3}\right)\).</p>
+          <p><strong>(b)</strong> \(\sin\phi = \dfrac{|\mathbf{d}\cdot\mathbf{n}|}{|\mathbf{d}|\,|\mathbf{n}|}\) where \(\phi\) is angle between line and normal, then angle between line and plane is \(90^\circ-\phi\).</p>
+          <p>\(\mathbf{d}=(1,2,-1)\), \(\mathbf{n}=(1,-1,2)\). \(\mathbf{d}\cdot\mathbf{n} = 1-2-2 = -3\).</p>
+          <p>\(|\mathbf{d}|=\sqrt{6}\), \(|\mathbf{n}|=\sqrt{6}\). \(\sin\phi = \dfrac{3}{6} = \dfrac{1}{2} \Rightarrow \phi = 30^\circ\).</p>
+          <p>Acute angle between line and plane \(= 60^\circ\).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Find the Cartesian equation of the plane that contains the line \(\mathbf{r} = \mathbf{i} + 2\mathbf{j} + \mu(3\mathbf{i} - \mathbf{j} + \mathbf{k})\) and the point \(P(2, 1, -1)\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Point on line \(A(1,2,0)\). Direction of line \(\mathbf{d} = (3,-1,1)\).</p>
+          <p>\(\overrightarrow{AP} = (1,-1,-1)\).</p>
+          <p>Normal \(\mathbf{n} = \mathbf{d}\times\overrightarrow{AP} = \begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k}\\3&-1&1\\1&-1&-1\end{vmatrix} = \mathbf{i}(1+1) - \mathbf{j}(-3-1) + \mathbf{k}(-3+1) = 2\mathbf{i} + 4\mathbf{j} - 2\mathbf{k}\)</p>
+          <p>Use \(\mathbf{n} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}\). Through \(A\): \(1 + 4 - 0 = 5\).</p>
+          <p>\(x + 2y - z = 5\).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>The planes \(\Pi_1: \mathbf{r}\cdot(\mathbf{i}+2\mathbf{j}-\mathbf{k}) = 3\) and \(\Pi_2: \mathbf{r}\cdot(2\mathbf{i}-\mathbf{j}+\mathbf{k}) = 1\) intersect in a line \(L\).</p>
+          <p>(a) Find a vector equation for \(L\).</p>
+          <p>(b) Find the angle between the two planes.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> Direction of \(L\): \(\mathbf{n}_1\times\mathbf{n}_2 = \begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k}\\1&2&-1\\2&-1&1\end{vmatrix} = \mathbf{i}(2-1) - \mathbf{j}(1+2) + \mathbf{k}(-1-4) = \mathbf{i} - 3\mathbf{j} - 5\mathbf{k}\).</p>
+          <p>Find one point: solve \(x+2y-z=3\), \(2x-y+z=1\). Add: \(3x+y=4\). Let \(y=1\), then \(3x=3\), \(x=1\), \(z = x+2y-3 = 1+2-3=0\).</p>
+          <p>\(\mathbf{r} = \mathbf{i} + \mathbf{j} + \lambda(\mathbf{i} - 3\mathbf{j} - 5\mathbf{k})\).</p>
+          <p><strong>(b)</strong> \(\cos\theta = \dfrac{|\mathbf{n}_1\cdot\mathbf{n}_2|}{|\mathbf{n}_1||\mathbf{n}_2|} = \dfrac{|2-2-1|}{\sqrt{6}\sqrt{6}} = \dfrac{1}{6}\).</p>
+          <p>\(\theta = \cos^{-1}(1/6)\) (acute angle between planes).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">3 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the scalar product of the vectors \( \mathbf{a} = 2\mathbf{i} - 3\mathbf{j} + \mathbf{k} \) and \( \mathbf{b} = \mathbf{i} + 4\mathbf{j} - 2\mathbf{k} \). Hence find the angle between them, to the nearest degree.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \mathbf{a}\cdot\mathbf{b} = 2\cdot1 + (-3)\cdot4 + 1\cdot(-2) = 2 - 12 - 2 = -12 \).</p>
+          <p>\( |\mathbf{a}| = \sqrt{4+9+1}=\sqrt{14} \), \( |\mathbf{b}| = \sqrt{1+16+4}=\sqrt{21} \).</p>
+          <p>\( \cos\theta = \dfrac{-12}{\sqrt{14}\sqrt{21}} = \dfrac{-12}{\sqrt{294}} \approx -0.700 \), so \( \theta \approx 134^\circ \).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The line \( L \) has equation \( \mathbf{r} = \begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix} + \lambda \begin{pmatrix} 2 \\ 1 \\ 3 \end{pmatrix} \). Find the shortest distance from the point \( P(3,2,1) \) to \( L \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Point on line: \( A(1,0,-1) \). Direction \( \mathbf{d} = (2,1,3) \). Vector \( \overrightarrow{AP} = (2,2,2) \).</p>
+          <p>Shortest distance \( = \dfrac{|\overrightarrow{AP} \times \mathbf{d}|}{|\mathbf{d}|} \).</p>
+          <p>\( \overrightarrow{AP} \times \mathbf{d} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & 2 & 2 \\ 2 & 1 & 3 \end{vmatrix} = \mathbf{i}(6-2) - \mathbf{j}(6-4) + \mathbf{k}(2-4) = 4\mathbf{i} - 2\mathbf{j} - 2\mathbf{k} \).</p>
+          <p>Magnitude \( \sqrt{16+4+4}=\sqrt{24}=2\sqrt{6} \). \( |\mathbf{d}|=\sqrt{4+1+9}=\sqrt{14} \).</p>
+          <p>Distance \( = \dfrac{2\sqrt{6}}{\sqrt{14}} = \dfrac{2\sqrt{21}}{7} \) (or equivalent).</p>
+        </div>
+      </article>
+
+      <!-- Q13 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q13</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the equation of the plane that passes through the points \( A(1,0,0) \), \( B(0,1,0) \) and \( C(0,0,1) \), in the form \( \mathbf{r}\cdot\mathbf{n} = d \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \overrightarrow{AB} = (-1,1,0) \), \( \overrightarrow{AC} = (-1,0,1) \).</p>
+          <p>Normal \( \mathbf{n} = \overrightarrow{AB} \times \overrightarrow{AC} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{vmatrix} = \mathbf{i}(1) - \mathbf{j}(-1) + \mathbf{k}(1) = \mathbf{i} + \mathbf{j} + \mathbf{k} \).</p>
+          <p>Using point A: \( 1\cdot1 + 0 + 0 = 1 \), so \( \mathbf{r}\cdot\begin{pmatrix}1\\1\\1\end{pmatrix} = 1 \).</p>
+        </div>
+      </article>
+
+      <!-- Q14 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q14</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The plane \( \Pi \) has equation \( \mathbf{r}\cdot\begin{pmatrix}1\\2\\-1\end{pmatrix} = 4 \). The line \( L \) has equation \( \mathbf{r} = \begin{pmatrix}0\\1\\2\end{pmatrix} + \mu\begin{pmatrix}2\\-1\\0\end{pmatrix} \).</p>
+          <p>(a) Show that \( L \) is parallel to \( \Pi \) but does not lie in \( \Pi \).</p>
+          <p>(b) Find the shortest distance between \( L \) and \( \Pi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> Direction of \( L \) is \( \mathbf{d}=(2,-1,0) \). \( \mathbf{d}\cdot\mathbf{n} = 2\cdot1 + (-1)\cdot2 + 0\cdot(-1) = 2-2=0 \), so parallel to the plane.</p>
+          <p>A point on the line, e.g. \( (0,1,2) \): \( 0\cdot1 + 1\cdot2 + 2\cdot(-1) = 0 \neq 4 \), so the line does not lie in the plane.</p>
+          <p><strong>(b)</strong> Shortest distance from a point on the line to the plane is \( \dfrac{|\mathbf{a}\cdot\mathbf{n} - 4|}{|\mathbf{n}|} = \dfrac{|0-4|}{\sqrt{1+4+1}} = \dfrac{4}{\sqrt{6}} = \dfrac{2\sqrt{6}}{3} \).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="roots-polynomials.html" class="btn btn-ghost">← Roots of Polynomials</a>
+        <a href="../index.html" class="btn btn-primary">All topics →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

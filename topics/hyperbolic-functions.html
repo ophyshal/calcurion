@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyperbolic Functions — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg></span><span class="logo-text">Calcurion</span></a>
+      <nav class="nav"><a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Core Pure 2</p>
+        <h1>Hyperbolic Functions</h1>
+        <p class="q-intro">12 exam-style questions on definitions, identities, inverse hyperbolics, differentiation and integration. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats"><span class="diff-tag easy">4 Easy</span><span class="diff-tag medium">4 Medium</span><span class="diff-tag hard">4 Hard</span></div>
+      </div>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body">
+          <p>Write down the definitions of \( \sinh x \) and \( \cosh x \) in terms of exponentials.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \sinh x = \dfrac{e^x - e^{-x}}{2} \), \( \cosh x = \dfrac{e^x + e^{-x}}{2} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Prove that \( \cosh^2 x - \sinh^2 x = 1 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \cosh^2 x - \sinh^2 x = \Big(\dfrac{e^x+e^{-x}}{2}\Big)^2 - \Big(\dfrac{e^x-e^{-x}}{2}\Big)^2 = \dfrac{1}{4}\big[(e^{2x}+2+e^{-2x}) - (e^{2x}-2+e^{-2x})\big] = \dfrac{1}{4}\cdot 4 = 1 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Differentiate \( \sinh x \) and \( \cosh x \) from first principles using the exponential definitions.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \dfrac{d}{dx}\sinh x = \dfrac{e^x + e^{-x}}{2} = \cosh x \).</p>
+          <p>\( \dfrac{d}{dx}\cosh x = \dfrac{e^x - e^{-x}}{2} = \sinh x \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Solve \( \sinh x = 0 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \dfrac{e^x - e^{-x}}{2} = 0 \) ⇒ \( e^x = e^{-x} \) ⇒ \( e^{2x} = 1 \) ⇒ \( x = 0 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Express \( \tanh x \) in terms of exponentials and find \( \lim_{x\to\infty} \tanh x \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \tanh x = \dfrac{\sinh x}{\cosh x} = \dfrac{e^x - e^{-x}}{e^x + e^{-x}} = \dfrac{e^{2x} - 1}{e^{2x} + 1} \).</p>
+          <p>As \( x\to\infty \), \( \tanh x \to 1 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Prove the identity \( \sinh 2x = 2\sinh x\cosh x \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>RHS: \( 2\cdot\dfrac{e^x-e^{-x}}{2}\cdot\dfrac{e^x+e^{-x}}{2} = \dfrac{(e^x-e^{-x})(e^x+e^{-x})}{2} = \dfrac{e^{2x} - e^{-2x}}{2} = \sinh 2x \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Find \( \dfrac{d}{dx}(\sinh^{-1}x) \) and hence evaluate \( \displaystyle\int \dfrac{1}{\sqrt{x^2+1}}\, dx \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \( y = \sinh^{-1}x \), so \( \sinh y = x \), \( \cosh y\cdot y' = 1 \). Since \( \cosh y = \sqrt{1+\sinh^2 y} = \sqrt{1+x^2} \), \( y' = \dfrac{1}{\sqrt{1+x^2}} \).</p>
+          <p>Thus \( \displaystyle\int \dfrac{1}{\sqrt{x^2+1}}\,dx = \sinh^{-1}x + C \) (or \( \ln(x + \sqrt{x^2+1}) + C \)).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Solve \( 2\cosh x + \sinh x = 2 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Write in exponentials: \( 2\cdot\dfrac{e^x+e^{-x}}{2} + \dfrac{e^x-e^{-x}}{2} = 2 \) ⇒ \( e^x + e^{-x} + \dfrac12 e^x - \dfrac12 e^{-x} = 2 \).</p>
+          <p>\( \dfrac32 e^x + \dfrac12 e^{-x} = 2 \). Multiply by \( 2e^x \): \( 3e^{2x} + 1 = 4e^x \) ⇒ \( 3e^{2x} - 4e^x + 1 = 0 \).</p>
+          <p>\( (3e^x - 1)(e^x - 1) = 0 \) ⇒ \( e^x = 1 \) or \( e^x = 1/3 \) ⇒ \( x = 0 \) or \( x = -\ln 3 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Find the exact value of \( \cosh^{-1} 2 \) in logarithmic form.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \cosh y = 2 \) ⇒ \( \dfrac{e^y + e^{-y}}{2} = 2 \) ⇒ \( e^y + e^{-y} = 4 \). Multiply by \( e^y \): \( e^{2y} - 4e^y + 1 = 0 \).</p>
+          <p>\( e^y = 2 \pm \sqrt{3} \). Since \( y > 0 \) for principal value, \( e^y = 2 + \sqrt{3} \).</p>
+          <p>\( \cosh^{-1} 2 = \ln(2 + \sqrt{3}) \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>Differentiate \( y = \tanh^{-1}x \) and show that \( \dfrac{dy}{dx} = \dfrac{1}{1-x^2} \) for \( |x| < 1 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \tanh y = x \), \( \operatorname{sech}^2 y \cdot y' = 1 \). But \( \operatorname{sech}^2 y = 1 - \tanh^2 y = 1 - x^2 \).</p>
+          <p>Hence \( y' = \dfrac{1}{1-x^2} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q11</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Evaluate \( \displaystyle\int_0^{\ln 2} \sinh^2 x\, dx \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \sinh^2 x = \dfrac{\cosh 2x - 1}{2} \).</p>
+          <p>\( \displaystyle\int_0^{\ln 2} \dfrac{\cosh 2x - 1}{2}\,dx = \dfrac12\Big[\dfrac12\sinh 2x - x\Big]_0^{\ln 2} = \dfrac14\sinh(2\ln 2) - \dfrac12\ln 2 \).</p>
+          <p>\( \sinh(2\ln 2) = \dfrac{e^{2\ln 2} - e^{-2\ln 2}}{2} = \dfrac{4 - 1/4}{2} = \dfrac{15}{8} \).</p>
+          <p>Result: \( \dfrac{15}{32} - \dfrac12\ln 2 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q12</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>Solve the equation \( 3\sinh x - 4\cosh x = -4 \) for real \( x \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Write \( 3\dfrac{e^x-e^{-x}}{2} - 4\dfrac{e^x+e^{-x}}{2} = -4 \) ⇒ \( \dfrac{3}{2}e^x - \dfrac{3}{2}e^{-x} - 2e^x - 2e^{-x} = -4 \).</p>
+          <p>\( (-\dfrac12)e^x - \dfrac72 e^{-x} = -4 \). Multiply by \( -2e^x \): \( e^{2x} + 7 = 8e^x \) ⇒ \( e^{2x} - 8e^x + 7 = 0 \).</p>
+          <p>\( (e^x - 1)(e^x - 7) = 0 \) ⇒ \( x = 0 \) or \( x = \ln 7 \).</p>
+          <p>Check both satisfy the original (both do).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="polar-coordinates.html" class="btn btn-ghost">← Polar Coordinates</a>
+        <a href="differential-equations.html" class="btn btn-primary">Differential Equations next →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

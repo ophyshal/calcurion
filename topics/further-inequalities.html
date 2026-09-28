@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Further Inequalities — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Further Pure 1</p>
+        <h1>Further Inequalities</h1>
+        <p class="q-intro">10 exam-style questions on rational inequalities, modulus inequalities and algebraic inequalities. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">3 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">3 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the inequality \(\dfrac{x-1}{x+2}&gt;0\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Critical points \(x=1\), \(x=-2\). Sign chart: positive on \((-2,1)\)? Test: for \(x&gt;1\), positive; for \(-2&lt;x&lt;1\), numerator negative, denominator positive → negative; for \(x&lt;-2\), both negative → positive. Solution: \(x&lt;-2\) or \(x&gt;1\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(|2x-3|&lt;5\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(-5&lt;2x-3&lt;5\Rightarrow -2&lt;2x&lt;8\Rightarrow -1&lt;x&lt;4\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(\dfrac{2x+1}{x-3}\le0\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Critical points \(x=-\dfrac{1}{2}\), \(x=3\). The fraction is negative or zero between the roots (numerator zero at \(-\frac12\), denominator changes at \(3\)). Solution: \(-\dfrac{1}{2}\le x&lt;3\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the inequality \(\dfrac{x^2-1}{x+2}&gt;x-1\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Bring to one side: \(\dfrac{x^2-1-(x-1)(x+2)}{x+2}&gt;0\). Numerator: \(x^2-1-(x^2+x-2)=x^2-1-x^2-x+2=1-x\).</p>
+          <p>\(\dfrac{1-x}{x+2}&gt;0\). Critical points \(x=1\), \(x=-2\). Positive when both positive or both negative: \(x&lt;-2\) or \(-2&lt;x&lt;1\)? Sign: for \(x&gt;1\) negative; \(-2&lt;x&lt;1\) positive; \(x&lt;-2\) negative. Solution: \(-2&lt;x&lt;1\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(|x^2-5x+6|&lt;x\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(x^2-5x+6=(x-2)(x-3)\). Consider cases based on the roots \(2,3\) and the sign of \(x\). Equivalent to \(-x&lt;(x-2)(x-3)&lt;x\).</p>
+          <p>Solving the two quadratic inequalities and intersecting with regions yields the solution set (numerical or exact intervals after testing critical points).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(\dfrac{x+1}{x-1}+\dfrac{x-1}{x+1}&gt;2\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Common denominator \((x-1)(x+1)=x^2-1\): \(\dfrac{(x+1)^2+(x-1)^2}{x^2-1}&gt;2\). Numerator \(2x^2+2\). \(\dfrac{2x^2+2}{x^2-1}-2&gt;0\Rightarrow\dfrac{2x^2+2-2x^2+2}{x^2-1}&gt;0\Rightarrow\dfrac{4}{x^2-1}&gt;0\).</p>
+          <p>True when \(x^2-1&gt;0\), i.e. \(x&lt;-1\) or \(x&gt;1\) (excluding points where original undefined).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the inequality \(x^2+|x|-2&lt;0\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Case \(x\ge0\): \(x^2+x-2&lt;0\Rightarrow(x+2)(x-1)&lt;0\Rightarrow -2&lt;x&lt;1\). Intersect \(x\ge0\): \(0\le x&lt;1\).</p>
+          <p>Case \(x&lt;0\): \(x^2-x-2&lt;0\Rightarrow(x-2)(x+1)&lt;0\Rightarrow -1&lt;x&lt;2\). Intersect \(x&lt;0\): \(-1&lt;x&lt;0\).</p>
+          <p>Solution: \(-1&lt;x&lt;1\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(\dfrac{x^2-3x+2}{x^2-4}&lt;0\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Factor: \(\dfrac{(x-1)(x-2)}{(x-2)(x+2)}&lt;0\). For \(x\neq2\), simplify to \(\dfrac{x-1}{x+2}&lt;0\) (with \(x\neq2\)).</p>
+          <p>Critical points \(x=1\), \(x=-2\). Negative between them: \(-2&lt;x&lt;1\), excluding \(x=2\) (already outside). Solution: \(-2&lt;x&lt;1\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the set of values of \(k\) for which the equation \(x^2+(k+1)x+k=0\) has two distinct real roots both greater than \(1\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Discriminant \(D=(k+1)^2-4k=k^2+2k+1-4k=k^2-2k+1=(k-1)^2&gt;0\) for \(k\neq1\).</p>
+          <p>Sum of roots \(=-(k+1)&gt;2\) (both \(&gt;1\)); product \(=k&gt;1\). Also \(f(1)&gt;0\) where \(f(x)=x^2+(k+1)x+k\), i.e. \(1+(k+1)+k=2+2k&gt;0\Rightarrow k&gt;-1\) (already from product).</p>
+          <p>From product \(k&gt;1\); from sum \(-(k+1)&gt;2\Rightarrow -k-1&gt;2\Rightarrow -k&gt;3\Rightarrow k&lt;-3\). Contradiction. No such \(k\) (or re-check conditions carefully: for both roots \(&gt;1\), need \(f(1)&gt;0\), sum \(&gt;2\), product \(&gt;1\)). With \(D=(k-1)^2\), roots are \(1\) (double when \(k=1\)) or solve; actually roots are \(1\) and \(k\)? \(x^2+(k+1)x+k=(x+1)(x+k)\). Roots \(-1\), \(-k\). Both \(&gt;1\) impossible since one is \(-1\). No solution.</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the inequality \(\left|\dfrac{x-2}{x+1}\right|\ge2\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\dfrac{x-2}{x+1}\ge2\) or \(\dfrac{x-2}{x+1}\le-2\), with \(x\neq-1\).</p>
+          <p>First: \(\dfrac{x-2-2(x+1)}{x+1}\ge0\Rightarrow\dfrac{-x-4}{x+1}\ge0\Rightarrow\dfrac{x+4}{x+1}\le0\Rightarrow -4\le x&lt;-1\).</p>
+          <p>Second: \(\dfrac{x-2+2(x+1)}{x+1}\le0\Rightarrow\dfrac{3x}{x+1}\le0\Rightarrow x\le0\) and \(x&gt;-1\), or careful sign: critical \(0,-1\); solution \(-1&lt;x\le0\).</p>
+          <p>Combined: \([-4,-1)\cup(-1,0]\).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="taylor-series.html" class="btn btn-ghost">← Taylor Series</a>
+        <a href="reducible-des.html" class="btn btn-primary">Reducible DEs →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

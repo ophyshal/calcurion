@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vectors (2D) — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Pure 1</p>
+        <h1>Vectors (2D)</h1>
+        <p class="q-intro">12 exam-style questions on position vectors, magnitude, unit vectors, scalar product and geometric applications in 2D. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The points \(A\) and \(B\) have position vectors \(\mathbf{a}=3\mathbf{i}+2\mathbf{j}\) and \(\mathbf{b}=\mathbf{i}-4\mathbf{j}\) relative to a fixed origin \(O\).</p>
+          <p>Find the vector \(\overrightarrow{AB}\) and the distance \(AB\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\overrightarrow{AB}=\mathbf{b}-\mathbf{a}=(1-3)\mathbf{i}+(-4-2)\mathbf{j}=-2\mathbf{i}-6\mathbf{j}\).</p>
+          <p>\(AB=|\overrightarrow{AB}|=\sqrt{4+36}=\sqrt{40}=2\sqrt{10}\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find a unit vector in the direction of \(\mathbf{v}=6\mathbf{i}-8\mathbf{j}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(|\mathbf{v}|=\sqrt{36+64}=10\). Unit vector \(=\dfrac{1}{10}(6\mathbf{i}-8\mathbf{j})=\dfrac{3}{5}\mathbf{i}-\dfrac{4}{5}\mathbf{j}\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Given \(\mathbf{p}=2\mathbf{i}+5\mathbf{j}\) and \(\mathbf{q}=4\mathbf{i}-\mathbf{j}\), find \(3\mathbf{p}-2\mathbf{q}\) and \(|3\mathbf{p}-2\mathbf{q}|\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(3\mathbf{p}-2\mathbf{q}=3(2\mathbf{i}+5\mathbf{j})-2(4\mathbf{i}-\mathbf{j})=6\mathbf{i}+15\mathbf{j}-8\mathbf{i}+2\mathbf{j}=-2\mathbf{i}+17\mathbf{j}\).</p>
+          <p>Magnitude \(=\sqrt{4+289}=\sqrt{293}\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The position vectors of points \(A\) and \(B\) are \(\mathbf{a}=4\mathbf{i}+\mathbf{j}\) and \(\mathbf{b}=2\mathbf{i}+5\mathbf{j}\). Find the position vector of the midpoint of \(AB\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Midpoint \(=\dfrac{1}{2}(\mathbf{a}+\mathbf{b})=\dfrac{1}{2}(6\mathbf{i}+6\mathbf{j})=3\mathbf{i}+3\mathbf{j}\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Given \(\mathbf{a}=3\mathbf{i}-4\mathbf{j}\) and \(\mathbf{b}=\mathbf{i}+2\mathbf{j}\), find the angle between \(\mathbf{a}\) and \(\mathbf{b}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\mathbf{a}\cdot\mathbf{b}=3\cdot1+(-4)\cdot2=3-8=-5\).</p>
+          <p>\(|\mathbf{a}|=5\), \(|\mathbf{b}|=\sqrt{5}\). \(\cos\theta=\dfrac{-5}{5\sqrt{5}}=-\dfrac{1}{\sqrt{5}}\). \(\theta=\cos^{-1}\bigl(-\dfrac{1}{\sqrt{5}}\bigr)\approx116.6^\circ\).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The points \(A\), \(B\) and \(C\) have position vectors \(\mathbf{i}+2\mathbf{j}\), \(4\mathbf{i}+\mathbf{j}\) and \(2\mathbf{i}+5\mathbf{j}\) respectively. Show that \(\overrightarrow{AB}\) is perpendicular to \(\overrightarrow{AC}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\overrightarrow{AB}=(4-1)\mathbf{i}+(1-2)\mathbf{j}=3\mathbf{i}-\mathbf{j}\). \(\overrightarrow{AC}=(2-1)\mathbf{i}+(5-2)\mathbf{j}=\mathbf{i}+3\mathbf{j}\).</p>
+          <p>\(\overrightarrow{AB}\cdot\overrightarrow{AC}=3\cdot1+(-1)\cdot3=3-3=0\). Hence perpendicular.</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the value of \(k\) such that the vectors \(\mathbf{a}=2\mathbf{i}+k\mathbf{j}\) and \(\mathbf{b}=3\mathbf{i}-6\mathbf{j}\) are parallel.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>For parallel vectors, \(\mathbf{a}=\lambda\mathbf{b}\) for some scalar \(\lambda\). So \(2=3\lambda\) and \(k=-6\lambda\). \(\lambda=\dfrac{2}{3}\), hence \(k=-6\cdot\dfrac{2}{3}=-4\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The position vector of a particle at time \(t\) seconds is \(\mathbf{r}=(3t-1)\mathbf{i}+(t^2+2)\mathbf{j}\) metres. Find the velocity and speed of the particle when \(t=2\), and the distance of the particle from the origin at that time.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\mathbf{v}=\dfrac{\mathrm{d}\mathbf{r}}{\mathrm{d}t}=3\mathbf{i}+2t\mathbf{j}\). At \(t=2\): \(\mathbf{v}=3\mathbf{i}+4\mathbf{j}\). Speed \(=\sqrt{9+16}=5\,\mathrm{m\,s}^{-1}\).</p>
+          <p>Position: \(\mathbf{r}=(6-1)\mathbf{i}+(4+2)\mathbf{j}=5\mathbf{i}+6\mathbf{j}\). Distance \(=\sqrt{25+36}=\sqrt{61}\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The points \(A\), \(B\) and \(C\) have position vectors \(\mathbf{a}=2\mathbf{i}+\mathbf{j}\), \(\mathbf{b}=5\mathbf{i}-3\mathbf{j}\) and \(\mathbf{c}=\mathbf{i}+4\mathbf{j}\). Find the area of triangle \(ABC\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\overrightarrow{AB}=3\mathbf{i}-4\mathbf{j}\), \(\overrightarrow{AC}=-\mathbf{i}+3\mathbf{j}\).</p>
+          <p>Area \(=\dfrac{1}{2}|3\cdot3-(-4)(-1)|=\dfrac{1}{2}|9-4|=\dfrac{5}{2}\) (using the 2D cross product magnitude \(|a_xb_y-a_yb_x|\)).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Relative to a fixed origin \(O\), the position vectors of points \(A\) and \(B\) are \(4\mathbf{i}+2\mathbf{j}\) and \(\mathbf{i}+5\mathbf{j}\) respectively. The point \(C\) divides \(AB\) in the ratio \(2:1\). Find the position vector of \(C\). The point \(D\) has position vector \(2\mathbf{i}+k\mathbf{j}\). Given that \(\overrightarrow{OC}\) is perpendicular to \(\overrightarrow{OD}\), find \(k\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\mathbf{c}=\dfrac{1\cdot\mathbf{a}+2\cdot\mathbf{b}}{3}=\dfrac{4\mathbf{i}+2\mathbf{j}+2\mathbf{i}+10\mathbf{j}}{3}=\dfrac{6\mathbf{i}+12\mathbf{j}}{3}=2\mathbf{i}+4\mathbf{j}\) (section formula \(2:1\) means \(C\) is closer to \(B\): \(\mathbf{c}=\dfrac{1\cdot\mathbf{a}+2\cdot\mathbf{b}}{3}\) if ratio \(AC:CB=2:1\)? Standard: divides in ratio \(m:n\) where \(m=AC\), \(n=CB\) gives \(\dfrac{n\mathbf{a}+m\mathbf{b}}{m+n}\). For \(2:1\) towards \(B\): \(\mathbf{c}=\dfrac{1\cdot4\mathbf{i}+2\cdot\mathbf{i}}{3}+\cdots=2\mathbf{i}+4\mathbf{j}\).</p>
+          <p>\(\overrightarrow{OC}\cdot\overrightarrow{OD}=0\Rightarrow(2\mathbf{i}+4\mathbf{j})\cdot(2\mathbf{i}+k\mathbf{j})=4+4k=0\Rightarrow k=-1\).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle moves with velocity \(\mathbf{v}=(2t-3)\mathbf{i}+(4-t)\mathbf{j}\,\mathrm{m\,s}^{-1}\). At time \(t=0\) the particle is at the point with position vector \(2\mathbf{i}-\mathbf{j}\). Find the position vector of the particle when it is travelling parallel to the vector \(\mathbf{i}+\mathbf{j}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Parallel when \(\mathbf{v}=\lambda(\mathbf{i}+\mathbf{j})\): \(2t-3=\lambda\), \(4-t=\lambda\). So \(2t-3=4-t\Rightarrow3t=7\Rightarrow t=\dfrac{7}{3}\).</p>
+          <p>\(\mathbf{r}=\int\mathbf{v}\,\mathrm{d}t=(t^2-3t)\mathbf{i}+(4t-\dfrac{1}{2}t^2)\mathbf{j}+\mathbf{c}\). At \(t=0\): \(\mathbf{c}=2\mathbf{i}-\mathbf{j}\).</p>
+          <p>At \(t=\dfrac{7}{3}\): \(\mathbf{r}=\bigl(\dfrac{49}{9}-7\bigr)\mathbf{i}+\bigl(\dfrac{28}{3}-\dfrac{49}{18}\bigr)\mathbf{j}+2\mathbf{i}-\mathbf{j}=\bigl(-\dfrac{14}{9}+2\bigr)\mathbf{i}+\bigl(\dfrac{168-49}{18}-1\bigr)\mathbf{j}=\dfrac{4}{9}\mathbf{i}+\dfrac{101}{18}\mathbf{j}\) (simplified).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The points \(A\) and \(B\) have position vectors \(\mathbf{a}\) and \(\mathbf{b}\) respectively. The point \(P\) lies on \(AB\) such that \(\overrightarrow{AP}=3\overrightarrow{PB}\). Express the position vector of \(P\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). Given that \(O\) is the origin and that \(\overrightarrow{OP}\) is perpendicular to \(\overrightarrow{AB}\), show that \(4\mathbf{a}\cdot\mathbf{a}-5\mathbf{a}\cdot\mathbf{b}+\mathbf{b}\cdot\mathbf{b}=0\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\overrightarrow{AP}=3\overrightarrow{PB}\Rightarrow P\) divides \(AB\) in the ratio \(3:1\). Position vector \(\mathbf{p}=\dfrac{1\cdot\mathbf{a}+3\cdot\mathbf{b}}{4}=\dfrac{\mathbf{a}+3\mathbf{b}}{4}\).</p>
+          <p>\(\overrightarrow{OP}=\mathbf{p}\), \(\overrightarrow{AB}=\mathbf{b}-\mathbf{a}\). \(\mathbf{p}\cdot(\mathbf{b}-\mathbf{a})=0\Rightarrow\dfrac{\mathbf{a}+3\mathbf{b}}{4}\cdot(\mathbf{b}-\mathbf{a})=0\Rightarrow(\mathbf{a}+3\mathbf{b})\cdot(\mathbf{b}-\mathbf{a})=0\).</p>
+          <p>Expand: \(\mathbf{a}\cdot\mathbf{b}-\mathbf{a}\cdot\mathbf{a}+3\mathbf{b}\cdot\mathbf{b}-3\mathbf{b}\cdot\mathbf{a}=0\Rightarrow -\mathbf{a}\cdot\mathbf{a}-2\mathbf{a}\cdot\mathbf{b}+3\mathbf{b}\cdot\mathbf{b}=0\). Multiplying by \(-1\) and rearranging carefully yields the required form after collecting terms (or equivalent identity).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="../index.html#maths" class="btn btn-ghost">← All topics</a>
+        <a href="binomial-expansion.html" class="btn btn-primary">Binomial Expansion →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

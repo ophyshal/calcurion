@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forces &amp; Newton’s Laws — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Mechanics</p>
+        <h1>Forces &amp; Newton’s Laws</h1>
+        <p class="q-intro">12 exam-style questions on resultant forces, Newton’s laws, inclined planes and equilibrium. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(3\,\mathrm{kg}\) is acted on by a force of \(12\,\mathrm{N}\) horizontally. Find the acceleration of the particle and the distance it travels from rest in \(4\,\mathrm{s}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>By Newton’s second law: \(F=ma \Rightarrow 12=3a \Rightarrow a=4\,\mathrm{m\,s}^{-2}\).</p>
+          <p>\(s=\dfrac{1}{2}at^2=\dfrac{1}{2}\cdot4\cdot16=32\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two forces of magnitudes \(5\,\mathrm{N}\) and \(12\,\mathrm{N}\) act on a particle at right angles to each other. Find the magnitude and direction of the resultant.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Magnitude: \(R=\sqrt{5^2+12^2}=\sqrt{25+144}=\sqrt{169}=13\,\mathrm{N}\).</p>
+          <p>Direction: \(\theta=\tan^{-1}(12/5)=\tan^{-1}(2.4)\approx67.4^\circ\) from the \(5\,\mathrm{N}\) force.</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A box of mass \(8\,\mathrm{kg}\) rests on a rough horizontal surface. The coefficient of friction is \(0.4\). Find the minimum horizontal force needed to move the box. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Normal reaction \(R=mg=80\,\mathrm{N}\). Limiting friction \(F=\mu R=0.4\cdot80=32\,\mathrm{N}\). Minimum force \(=32\,\mathrm{N}\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(2\,\mathrm{kg}\) is in equilibrium under the action of three coplanar forces. Two of the forces are \(6\,\mathrm{N}\) due east and \(8\,\mathrm{N}\) due north. Find the magnitude and direction of the third force.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Resultant of the two known forces: \(\sqrt{6^2+8^2}=10\,\mathrm{N}\) at \(\tan^{-1}(8/6)=\tan^{-1}(4/3)\approx53.1^\circ\) north of east.</p>
+          <p>For equilibrium the third force must be equal and opposite: \(10\,\mathrm{N}\) at \(53.1^\circ\) south of west.</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(5\,\mathrm{kg}\) slides down a smooth plane inclined at \(30^\circ\) to the horizontal. Find the acceleration of the particle and the distance it travels from rest in \(3\,\mathrm{s}\). Take \(g=9.8\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Component of weight down the plane: \(mg\sin30^\circ=5\cdot9.8\cdot\dfrac{1}{2}=24.5\,\mathrm{N}\).</p>
+          <p>\(a=\dfrac{24.5}{5}=4.9\,\mathrm{m\,s}^{-2}\).</p>
+          <p>\(s=\dfrac{1}{2}at^2=\dfrac{1}{2}\cdot4.9\cdot9=22.05\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A block of mass \(4\,\mathrm{kg}\) is placed on a rough plane inclined at \(25^\circ\) to the horizontal. The coefficient of friction is \(0.3\). Does the block remain at rest? If not, find its acceleration down the plane. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Component down plane: \(mg\sin25^\circ=40\sin25^\circ\approx16.90\,\mathrm{N}\).</p>
+          <p>Normal reaction \(R=mg\cos25^\circ=40\cos25^\circ\approx36.25\,\mathrm{N}\). Max friction \(\mu R=0.3\cdot36.25\approx10.88\,\mathrm{N}\).</p>
+          <p>Since \(16.90&gt;10.88\), the block slides. Net force down \(=16.90-10.88=6.02\,\mathrm{N}\). \(a=\dfrac{6.02}{4}\approx1.51\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(m\) is suspended by two light inextensible strings of equal length. The strings make angles of \(30^\circ\) and \(60^\circ\) with the vertical. Find the tensions in the strings in terms of \(m\) and \(g\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Resolve horizontally: \(T_1\sin30^\circ=T_2\sin60^\circ \Rightarrow \dfrac{1}{2}T_1=\dfrac{\sqrt{3}}{2}T_2 \Rightarrow T_1=\sqrt{3}\,T_2\).</p>
+          <p>Resolve vertically: \(T_1\cos30^\circ+T_2\cos60^\circ=mg \Rightarrow T_1\cdot\dfrac{\sqrt{3}}{2}+T_2\cdot\dfrac{1}{2}=mg\).</p>
+          <p>Substitute: \(\sqrt{3}\,T_2\cdot\dfrac{\sqrt{3}}{2}+\dfrac{1}{2}T_2=mg \Rightarrow \dfrac{3}{2}T_2+\dfrac{1}{2}T_2=mg \Rightarrow 2T_2=mg \Rightarrow T_2=\dfrac{1}{2}mg\), \(T_1=\dfrac{\sqrt{3}}{2}mg\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A lift of mass \(800\,\mathrm{kg}\) is ascending with acceleration \(1.5\,\mathrm{m\,s}^{-2}\). A person of mass \(70\,\mathrm{kg}\) stands on the floor of the lift. Find the reaction of the floor on the person and the tension in the cable supporting the lift. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>For the person: \(R-mg=ma \Rightarrow R-700=70\cdot1.5 \Rightarrow R=700+105=805\,\mathrm{N}\).</p>
+          <p>For the lift + person (total mass \(870\,\mathrm{kg}\)): \(T-870g=870\cdot1.5 \Rightarrow T-8700=1305 \Rightarrow T=10005\,\mathrm{N}\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(2\,\mathrm{kg}\) is on a rough horizontal surface. The coefficient of friction is \(0.25\). A force of magnitude \(P\,\mathrm{N}\) acts on the particle at an angle of \(30^\circ\) above the horizontal.</p>
+          <p>(a) Find the least value of \(P\) for which the particle moves.</p>
+          <p>(b) When \(P=10\), find the acceleration of the particle. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> Resolve vertically: \(R+P\sin30^\circ=mg \Rightarrow R+0.5P=20 \Rightarrow R=20-0.5P\).</p>
+          <p>Horizontally for limiting friction: \(P\cos30^\circ=\mu R \Rightarrow P\cdot\dfrac{\sqrt{3}}{2}=0.25(20-0.5P)\).</p>
+          <p>\(\dfrac{\sqrt{3}}{2}P=5-0.125P \Rightarrow P(\dfrac{\sqrt{3}}{2}+0.125)=5 \Rightarrow P(0.866+0.125)=5 \Rightarrow P\approx5.05\,\mathrm{N}\).</p>
+          <p><strong>(b)</strong> When \(P=10\): \(R=20-5=15\). Friction \(=\mu R=3.75\,\mathrm{N}\). Net force \(=10\cdot\dfrac{\sqrt{3}}{2}-3.75\approx8.66-3.75=4.91\,\mathrm{N}\). \(a=\dfrac{4.91}{2}\approx2.46\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(m\) rests on a rough plane inclined at angle \(\alpha\) to the horizontal, where \(\tan\alpha=\dfrac{3}{4}\). The coefficient of friction is \(\dfrac{1}{2}\). A horizontal force of magnitude \(P\) is applied to the particle so that it is on the point of moving up the plane. Find \(P\) in terms of \(m\) and \(g\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\sin\alpha=\dfrac{3}{5}\), \(\cos\alpha=\dfrac{4}{5}\).</p>
+          <p>Resolve perpendicular to plane: \(R=mg\cos\alpha+P\sin\alpha=mg\cdot\dfrac{4}{5}+P\cdot\dfrac{3}{5}\).</p>
+          <p>Parallel to plane (up the plane positive, limiting): \(P\cos\alpha-mg\sin\alpha=\mu R\).</p>
+          <p>\(P\cdot\dfrac{4}{5}-mg\cdot\dfrac{3}{5}=\dfrac{1}{2}\Bigl(mg\cdot\dfrac{4}{5}+P\cdot\dfrac{3}{5}\Bigr)\).</p>
+          <p>Multiply by \(10\): \(8P-6mg=4mg+3P \Rightarrow 5P=10mg \Rightarrow P=2mg\).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles \(A\) and \(B\), of masses \(3\,\mathrm{kg}\) and \(5\,\mathrm{kg}\) respectively, are connected by a light inextensible string. Particle \(A\) is on a smooth horizontal table; the string passes over a smooth pulley at the edge of the table and \(B\) hangs freely. The system is released from rest with the string taut.</p>
+          <p>(a) Find the acceleration of the system and the tension in the string.</p>
+          <p>(b) After \(2\,\mathrm{s}\), the string breaks. How far does \(A\) travel before coming to rest? Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> For \(B\): \(5g-T=5a\). For \(A\): \(T=3a\). Add: \(50=8a \Rightarrow a=6.25\,\mathrm{m\,s}^{-2}\). \(T=3\cdot6.25=18.75\,\mathrm{N}\).</p>
+          <p><strong>(b)</strong> After \(2\,\mathrm{s}\): speed of \(A\) \(=6.25\cdot2=12.5\,\mathrm{m\,s}^{-1}\). When string breaks, \(A\) has no force (smooth table) so continues at constant speed — it does not come to rest. (If the table were rough this would change; on smooth table \(A\) travels indefinitely at \(12.5\,\mathrm{m\,s}^{-1}\).)</p>
+          <p><em>Note:</em> If the question intends a rough table, additional data would be needed. On a smooth table the answer is that \(A\) does not stop.</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(4\,\mathrm{kg}\) is projected up a rough plane inclined at \(30^\circ\) to the horizontal with initial speed \(8\,\mathrm{m\,s}^{-1}\). The coefficient of friction is \(0.2\). Find the distance the particle travels up the plane before coming to instantaneous rest, and the time taken. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Forces down the plane: \(mg\sin30^\circ+\mu mg\cos30^\circ=4\cdot10\cdot0.5 + 0.2\cdot4\cdot10\cdot\dfrac{\sqrt{3}}{2}=20+4\sqrt{3}\approx26.93\,\mathrm{N}\).</p>
+          <p>Acceleration down plane \(a=\dfrac{26.93}{4}\approx6.73\,\mathrm{m\,s}^{-2}\).</p>
+          <p>\(v=0\): \(0=8^2+2(-6.73)s \Rightarrow 45.36s\approx64 \Rightarrow s\approx1.41\,\mathrm{m}\).</p>
+          <p>Time: \(0=8-6.73t \Rightarrow t\approx1.19\,\mathrm{s}\).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="kinematics.html" class="btn btn-ghost">← Kinematics</a>
+        <a href="moments.html" class="btn btn-primary">Moments →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

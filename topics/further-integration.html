@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Further Integration — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg></span><span class="logo-text">Calcurion</span></a>
+      <nav class="nav"><a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Pure 2</p>
+        <h1>Further Integration</h1>
+        <p class="q-intro">10 exam-style questions on integration by parts, substitution, partial fractions and differential equations. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats"><span class="diff-tag easy">3 Easy</span><span class="diff-tag medium">4 Medium</span><span class="diff-tag hard">3 Hard</span></div>
+      </div>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body"><p>Find \( \displaystyle\int e^{2x}\, dx \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \dfrac{1}{2}e^{2x}+C \).</p></div></article>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>Find \( \displaystyle\int \sin 3x\, dx \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( -\dfrac{1}{3}\cos 3x + C \).</p></div></article>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>Evaluate \( \displaystyle\int_0^1 \dfrac{1}{1+x}\, dx \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( [\ln|1+x|]_0^1=\ln 2 \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>Use integration by parts to find \( \displaystyle\int x e^x\, dx \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( xe^x - \int e^x\, dx = xe^x - e^x + C = e^x(x-1)+C \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>Use the substitution \( u=1+x^2 \) to find \( \displaystyle\int \dfrac{2x}{1+x^2}\, dx \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \int \dfrac{1}{u}\, du = \ln|1+x^2| + C \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>Express \( \dfrac{3}{(x-1)(x+2)} \) in partial fractions and hence integrate.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \dfrac{1}{x-1}-\dfrac{1}{x+2} \). Integral \( \ln\left|\dfrac{x-1}{x+2}\right|+C \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>Solve the differential equation \( \dfrac{dy}{dx}=3y \) given that \( y=2 \) when \( x=0 \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \dfrac{1}{y}dy=3\,dx \) ⇒ \( \ln|y|=3x+C \). \( y=Ae^{3x} \). \( A=2 \). \( y=2e^{3x} \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag hard">Hard</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>Find \( \displaystyle\int x\cos x\, dx \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Parts: \( x\sin x - \int\sin x\, dx = x\sin x + \cos x + C \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>Evaluate \( \displaystyle\int_0^{\pi/2} x\sin x\, dx \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( [-x\cos x]_0^{\pi/2} + \int_0^{\pi/2}\cos x\, dx = 0 + [ \sin x ]_0^{\pi/2}=1 \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body"><p>Solve \( \dfrac{dy}{dx}=\dfrac{y}{x+1} \) given \( y=4 \) when \( x=0 \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \dfrac{1}{y}dy=\dfrac{1}{x+1}dx \) ⇒ \( \ln|y|=\ln|x+1|+C \) ⇒ \( y=A(x+1) \). \( A=4 \). \( y=4(x+1) \).</p></div></article>
+
+      <div class="q-footer-nav">
+        <a href="further-differentiation.html" class="btn btn-ghost">← Further Differentiation</a>
+        <a href="numerical-methods.html" class="btn btn-primary">Numerical Methods →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

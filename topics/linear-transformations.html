@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linear Transformations — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Core Pure 1</p>
+        <h1>Linear Transformations</h1>
+        <p class="q-intro">12 exam-style questions on 2D/3D transformations, invariant lines/points and successive maps. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body">
+          <p>Write down the \( 2\times 2 \) matrix that represents a reflection in the line \( y = x \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body">
+          <p>Find the matrix that represents an anticlockwise rotation through \( 90^\circ \) about the origin.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>The matrix \( \mathbf{A} = \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix} \) represents a transformation. Describe the geometric effect of the transformation fully.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Stretch scale factor 2 parallel to the \( x \)-axis and stretch scale factor 3 parallel to the \( y \)-axis (or enlargement with different scale factors along the axes).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Find the image of the point \( (3, -1) \) under the transformation represented by \( \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix} \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 3 \\ -1 \end{pmatrix} = \begin{pmatrix} 1 \\ -1 \end{pmatrix} \). Image is \( (1, -1) \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>The transformation \( T \) is represented by \( \mathbf{M} = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \). Describe \( T \) geometrically and find the image of the unit square with vertices \( (0,0) \), \( (1,0) \), \( (1,1) \), \( (0,1) \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( T \) is a clockwise rotation through \( 90^\circ \) about the origin (or anticlockwise \( 270^\circ \)).</p>
+          <p>Images: \( (0,0)\to(0,0) \), \( (1,0)\to(0,-1) \), \( (1,1)\to(1,-1) \), \( (0,1)\to(1,0) \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Find the \( 2\times 2 \) matrix that represents a reflection in the line \( y = -x \), followed by an enlargement scale factor 2 centred at the origin.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Reflection in \( y=-x \): \( \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix} \). Enlargement SF 2: \( \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} \).</p>
+          <p>Combined (reflection first): \( \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix} = \begin{pmatrix} 0 & -2 \\ -2 & 0 \end{pmatrix} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>The matrix \( \mathbf{A} = \begin{pmatrix} 3 & 1 \\ 1 & 3 \end{pmatrix} \) represents a linear transformation. Find the invariant lines through the origin.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Invariant lines satisfy \( \mathbf{A}\begin{pmatrix}x\\y\end{pmatrix} = \lambda \begin{pmatrix}x\\y\end{pmatrix} \). Eigenvalues: \( \det(A-\lambda I)=(3-\lambda)^2-1=0 \) ⇒ \( \lambda=4 \) or \( \lambda=2 \).</p>
+          <p>For \( \lambda=4 \): \( (A-4I)\mathbf{v}=\begin{pmatrix}-1&1\\1&-1\end{pmatrix}\mathbf{v}=0 \) ⇒ \( y=x \). Line \( y=x \).</p>
+          <p>For \( \lambda=2 \): \( (A-2I)=\begin{pmatrix}1&1\\1&1\end{pmatrix} \) ⇒ \( y=-x \). Line \( y=-x \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Show that the transformation represented by \( \mathbf{B} = \begin{pmatrix} 1 & 2 \\ 2 & 4 \end{pmatrix} \) maps the whole plane onto a single line, and find the equation of that line.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \det B = 4-4=0 \), singular. Image of \( (x,y) \) is \( (x+2y, 2x+4y) = (x+2y)(1,2) \). All image points lie on the line \( Y=2X \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>The transformation \( T \) is represented by \( \mathbf{M} = \begin{pmatrix} 2 & 1 \\ 0 & 2 \end{pmatrix} \). Find all invariant points and all invariant lines of \( T \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Invariant points: \( \mathbf{M}\mathbf{r}=\mathbf{r} \) ⇒ \( (M-I)\mathbf{r}=0 \) ⇒ \( \begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=0 \) ⇒ \( y=0 \) and \( x+y=0 \) ⇒ only the origin.</p>
+          <p>Invariant lines through origin: eigenvalues of \( M \) are both 2 (repeated). Eigenspace: \( (M-2I)=\begin{pmatrix}0&1\\0&0\end{pmatrix} \) ⇒ \( y=0 \). Only the \( x \)-axis is an invariant line through the origin.</p>
+          <p>(Non-origin lines of the form \( y=c \) are mapped to \( y=2c \), so only \( c=0 \).)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Find the matrix that represents a rotation through \( \theta \) anticlockwise about the origin, followed by a reflection in the \( x \)-axis. Hence find the single matrix for \( \theta = \pi/3 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Rotation: \( R = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \). Reflection in \( x \)-axis: \( F = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \).</p>
+          <p>Combined (rotation first): \( F R = \begin{pmatrix} \cos\theta & -\sin\theta \\ -\sin\theta & -\cos\theta \end{pmatrix} \).</p>
+          <p>For \( \theta=\pi/3 \): \( \begin{pmatrix} 1/2 & -\sqrt{3}/2 \\ -\sqrt{3}/2 & -1/2 \end{pmatrix} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q11</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>The linear transformation \( T \) in the plane is given by \( \mathbf{r}' = \mathbf{A}\mathbf{r} \) where \( \mathbf{A} = \begin{pmatrix} 1 & 2 \\ 3 & 6 \end{pmatrix} \). Find the equation of the image of the line \( x + 2y = 1 \) under \( T \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \det A=0 \), so image of the plane is the line through the origin in direction \( (1,3) \) (column space). Points on \( x+2y=1 \) map to \( \begin{pmatrix}x+2y\\3x+6y\end{pmatrix} = (x+2y)\begin{pmatrix}1\\3\end{pmatrix} = 1\cdot\begin{pmatrix}1\\3\end{pmatrix} \). Every point on the original line maps to the single point \( (1,3) \). The image is the single point \( (1,3) \) (degenerate).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q12</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>In 3D, the matrix \( \mathbf{P} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix} \) represents a transformation. Describe the geometric effect of \( P \) and find the image of the plane \( z=0 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( P \) fixes the \( x \)-axis and rotates the \( yz \)-plane by \( 90^\circ \) ( \( (y,z)\mapsto(-z,y) \) ), i.e. a rotation of \( 90^\circ \) about the \( x \)-axis (from \( y \) toward \( z \) or check orientation).</p>
+          <p>Plane \( z=0 \): points \( (x,y,0) \) map to \( (x, 0, y) \). Image is the plane \( y=0 \) (the \( xz \)-plane).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="proof-induction.html" class="btn btn-ghost">← Proof by Induction</a>
+        <a href="../index.html" class="btn btn-primary">All topics →</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

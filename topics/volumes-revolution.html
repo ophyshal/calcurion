@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volumes of Revolution — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Core Pure 2</p>
+        <h1>Volumes of Revolution</h1>
+        <p class="q-intro">12 exam-style questions on volumes about the \(x\)- and \(y\)-axes, parametric curves and modelling. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>The region bounded by the curve \( y = x^2 \), the \(x\)-axis and the lines \( x = 1 \) and \( x = 2 \) is rotated through \( 2\pi \) radians about the \(x\)-axis. Find the exact volume of the solid generated.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( V = \pi \int_1^2 (x^2)^2 \, dx = \pi \int_1^2 x^4 \, dx = \pi \left[ \dfrac{x^5}{5} \right]_1^2 = \pi \left( \dfrac{32}{5} - \dfrac{1}{5} \right) = \dfrac{31\pi}{5} \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>The region bounded by \( y = \sqrt{x} \), the \(x\)-axis and \( x = 4 \) is rotated about the \(x\)-axis. Find the volume of the solid of revolution.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( V = \pi \int_0^4 (\sqrt{x})^2 \, dx = \pi \int_0^4 x \, dx = \pi \left[ \dfrac{x^2}{2} \right]_0^4 = 8\pi \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Find the volume generated when the region bounded by \( y = e^x \), the \(x\)-axis, \( x = 0 \) and \( x = 1 \) is rotated through \( 2\pi \) about the \(x\)-axis.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( V = \pi \int_0^1 e^{2x} \, dx = \pi \left[ \dfrac{1}{2} e^{2x} \right]_0^1 = \dfrac{\pi}{2}(e^2 - 1) \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>The region bounded by \( y = 2x \), the \(y\)-axis and \( y = 4 \) is rotated about the \(y\)-axis. Find the volume of the solid generated.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( x = y/2 \). \( V = \pi \int_0^4 (y/2)^2 \, dy = \dfrac{\pi}{4} \left[ y^3/3 \right]_0^4 = \dfrac{16\pi}{3} \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>The region \( R \) is bounded by \( y = \sin x \), the \(x\)-axis and the lines \( x = 0 \) and \( x = \pi \). Find the volume of the solid formed when \( R \) is rotated through \( 2\pi \) about the \(x\)-axis.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( V = \pi \int_0^\pi \sin^2 x \, dx \). Use \( \sin^2 x = (1-\cos 2x)/2 \):</p>
+          <p>\( V = \dfrac{\pi}{2} \left[ x - \frac12\sin 2x \right]_0^\pi = \dfrac{\pi^2}{2} \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>The region bounded by \( y = 1/x \), the lines \( x = 1 \), \( x = 2 \) and the \(x\)-axis is rotated about the \(y\)-axis. Find the volume using cylindrical shells.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( V = 2\pi \int_1^2 x \cdot (1/x) \, dx = 2\pi \int_1^2 1 \, dx = 2\pi \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>The curve \( y = 4 - x^2 \) meets the \(x\)-axis at \( A \) and \( B \). The region bounded by the curve and the \(x\)-axis is rotated about the \(x\)-axis. Find the volume of the solid generated.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Roots \( x = \pm 2 \). \( V = \pi \int_{-2}^{2} (4-x^2)^2 \, dx = 2\pi \int_0^2 (16 - 8x^2 + x^4)\, dx = 2\pi \big[16x - 8x^3/3 + x^5/5\big]_0^2 = 2\pi(32 - 64/3 + 32/5) = 512\pi/15 \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Find the volume generated when the region bounded by \( y = \ln x \), the \(x\)-axis and \( x = e \) is rotated about the \(y\)-axis.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( x = e^y \), limits \( y=0 \) to \( y=1 \). \( V = \pi \int_0^1 e^{2y}\, dy = \dfrac{\pi}{2}(e^2 - 1) \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>The region \( R \) is bounded by the curves \( y = x^2 \) and \( y = 2x \). Find the volume of the solid formed when \( R \) is rotated through \( 2\pi \) about the \(x\)-axis.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Intersect at \( x=0,2 \). Washer: \( V = \pi \int_0^2 \big((2x)^2 - (x^2)^2\big)\, dx = \pi \int_0^2 (4x^2 - x^4)\, dx = \pi\big[4x^3/3 - x^5/5\big]_0^2 = 64\pi/15 \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>The finite region bounded by \( y = \sqrt{x} \), \( y = 0 \) and \( x = 4 \) is rotated about the line \( x = 4 \). Find the volume of the solid generated.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Shells: \( V = 2\pi \int_0^4 (4-x)\sqrt{x}\, dx = 2\pi \int_0^4 (4x^{1/2} - x^{3/2})\, dx = 2\pi \big[ \frac83 x^{3/2} - \frac25 x^{5/2} \big]_0^4 = 256\pi/15 \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q11</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>The region bounded by \( y = x \) and \( y = x^2 \) is rotated about the \(y\)-axis. Find the exact volume of the solid of revolution.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Intersect \( x=0,1 \). About \( y \)-axis: \( V = \pi \int_0^1 \big((\sqrt{y})^2 - y^2\big)\, dy = \pi \int_0^1 (y - y^2)\, dy = \pi/6 \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q12</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>A solid is formed by rotating the region bounded by \( y = \cos x \), \( 0 \leq x \leq \pi/2 \), about the \(y\)-axis. Show that the volume is \( \pi(\pi - 2) \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Shells: \( V = 2\pi \int_0^{\pi/2} x\cos x\, dx \). Parts \( u=x \), \( dv=\cos x\,dx \): \( 2\pi\big[x\sin x\big]_0^{\pi/2} - 2\pi\int_0^{\pi/2}\sin x\, dx = \pi^2 - 2\pi\big[-\cos x\big]_0^{\pi/2} = \pi^2 - 2\pi = \pi(\pi-2) \).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="roots-polynomials.html" class="btn btn-ghost">← Roots of Polynomials</a>
+        <a href="proof-induction.html" class="btn btn-primary">Proof by Induction →</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

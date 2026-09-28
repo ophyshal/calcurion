@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methods in Calculus — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg></span><span class="logo-text">Calcurion</span></a>
+      <nav class="nav"><a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Core Pure 2</p>
+        <h1>Methods in Calculus</h1>
+        <p class="q-intro">12 exam-style questions on improper integrals, mean value of a function and inverse trigonometric integrals. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats"><span class="diff-tag easy">4 Easy</span><span class="diff-tag medium">4 Medium</span><span class="diff-tag hard">4 Hard</span></div>
+      </div>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Evaluate the improper integral \( \displaystyle\int_1^{\infty} \dfrac{1}{x^2}\, dx \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \displaystyle\lim_{b\to\infty}\int_1^b x^{-2}\,dx = \lim_{b\to\infty}\Big[-\dfrac{1}{x}\Big]_1^b = \lim_{b\to\infty}\Big(-\dfrac{1}{b} + 1\Big) = 1 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Find the mean value of \( f(x) = x^2 \) on the interval \( [0, 2] \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Mean value \( = \dfrac{1}{2-0}\displaystyle\int_0^2 x^2\,dx = \dfrac{1}{2}\Big[\dfrac{x^3}{3}\Big]_0^2 = \dfrac{1}{2}\cdot\dfrac{8}{3} = \dfrac{4}{3} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Write down \( \dfrac{d}{dx}(\sin^{-1}x) \) and hence find \( \displaystyle\int \dfrac{1}{\sqrt{1-x^2}}\, dx \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \dfrac{d}{dx}(\sin^{-1}x) = \dfrac{1}{\sqrt{1-x^2}} \). Therefore \( \displaystyle\int \dfrac{1}{\sqrt{1-x^2}}\, dx = \sin^{-1}x + C \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Evaluate \( \displaystyle\int_0^1 \dfrac{1}{1+x^2}\, dx \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \Big[\tan^{-1}x\Big]_0^1 = \tan^{-1}1 - \tan^{-1}0 = \dfrac{\pi}{4} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Determine whether \( \displaystyle\int_0^1 \dfrac{1}{\sqrt{x}}\, dx \) converges, and if so evaluate it.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \displaystyle\lim_{a\to 0^+} \int_a^1 x^{-1/2}\,dx = \lim_{a\to 0^+}\Big[2x^{1/2}\Big]_a^1 = \lim_{a\to 0^+}(2 - 2\sqrt{a}) = 2 \). Converges to 2.</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Find the mean value of \( f(x) = \sin x \) on \( [0, \pi] \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Mean \( = \dfrac{1}{\pi}\displaystyle\int_0^{\pi}\sin x\,dx = \dfrac{1}{\pi}\Big[-\cos x\Big]_0^{\pi} = \dfrac{1}{\pi}(1+1) = \dfrac{2}{\pi} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Evaluate \( \displaystyle\int \dfrac{1}{\sqrt{4-x^2}}\, dx \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Write \( \dfrac{1}{\sqrt{4-x^2}} = \dfrac{1}{2\sqrt{1-(x/2)^2}} \). Let \( u = x/2 \), \( du = dx/2 \).</p>
+          <p>\( \displaystyle\int \dfrac{1}{\sqrt{4-x^2}}\,dx = \sin^{-1}\Big(\dfrac{x}{2}\Big) + C \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Show that \( \displaystyle\int_2^{\infty} \dfrac{1}{x(\ln x)^2}\, dx \) converges and find its value.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \( u = \ln x \), \( du = dx/x \). When \( x=2 \), \( u=\ln 2 \); as \( x\to\infty \), \( u\to\infty \).</p>
+          <p>\( \displaystyle\int_{\ln 2}^{\infty} u^{-2}\,du = \lim_{b\to\infty}\Big[-\dfrac{1}{u}\Big]_{\ln 2}^{b} = \dfrac{1}{\ln 2} \). Converges.</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Find the mean value of \( f(x) = e^{-x} \) on \( [0, a] \) and determine the limit of this mean value as \( a\to\infty \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Mean \( = \dfrac{1}{a}\displaystyle\int_0^a e^{-x}\,dx = \dfrac{1}{a}\Big[-e^{-x}\Big]_0^a = \dfrac{1 - e^{-a}}{a} \).</p>
+          <p>As \( a\to\infty \), \( \dfrac{1-e^{-a}}{a}\to 0 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>Evaluate \( \displaystyle\int_0^{1/2} \dfrac{1}{\sqrt{1-4x^2}}\, dx \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \( u = 2x \), \( du = 2\,dx \). Limits: \( x=0\Rightarrow u=0 \); \( x=1/2\Rightarrow u=1 \).</p>
+          <p>\( \displaystyle\int_0^{1/2} \dfrac{1}{\sqrt{1-4x^2}}\,dx = \dfrac12\int_0^1 \dfrac{1}{\sqrt{1-u^2}}\,du = \dfrac12\Big[\sin^{-1}u\Big]_0^1 = \dfrac12\cdot\dfrac{\pi}{2} = \dfrac{\pi}{4} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q11</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Determine the values of \( p \) for which \( \displaystyle\int_1^{\infty} x^{-p}\, dx \) converges.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>For \( p\neq 1 \): \( \displaystyle\lim_{b\to\infty}\Big[\dfrac{x^{1-p}}{1-p}\Big]_1^b = \lim_{b\to\infty}\Big(\dfrac{b^{1-p}}{1-p} - \dfrac{1}{1-p}\Big) \).</p>
+          <p>This limit is finite iff \( 1-p < 0 \) i.e. \( p > 1 \).</p>
+          <p>For \( p=1 \): \( \ln b\to\infty \), diverges. Hence converges for \( p > 1 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q12</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>Find \( \displaystyle\int \dfrac{1}{x\sqrt{x^2-1}}\, dx \) for \( x > 1 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \( x = \sec\theta \), \( dx = \sec\theta\tan\theta\,d\theta \), \( \sqrt{x^2-1} = \tan\theta \).</p>
+          <p>Integral becomes \( \displaystyle\int \dfrac{\sec\theta\tan\theta}{\sec\theta\cdot\tan\theta}\,d\theta = \int d\theta = \theta + C = \sec^{-1}x + C \).</p>
+          <p>(Alternatively \( \cos^{-1}(1/x) + C \).)</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="maclaurin-series.html" class="btn btn-ghost">← Maclaurin Series</a>
+        <a href="polar-coordinates.html" class="btn btn-primary">Polar Coordinates next →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

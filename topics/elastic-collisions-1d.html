@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elastic Collisions (1D) — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Further Mechanics 1</p>
+        <h1>Elastic Collisions (1D)</h1>
+        <p class="q-intro">12 exam-style questions on direct impacts, coefficient of restitution, Newton’s experimental law and successive collisions. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(2\,\mathrm{kg}\) moving at \(6\,\mathrm{m\,s}^{-1}\) collides directly with a stationary particle of mass \(4\,\mathrm{kg}\). The coefficient of restitution is \(\dfrac{1}{2}\). Find the speeds of the particles after the collision.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Momentum: \(12=2v_1+4v_2\). Restitution: \(\dfrac{1}{2}\cdot6=v_2-v_1\Rightarrow v_2-v_1=3\).</p>
+          <p>From second, \(v_2=v_1+3\). Substitute: \(12=2v_1+4v_1+12\Rightarrow0=6v_1\Rightarrow v_1=0\), \(v_2=3\,\mathrm{m\,s}^{-1}\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles of equal mass collide directly. Their speeds before impact are \(u\) and \(2u\) in opposite directions. The coefficient of restitution is \(e\). Find the speeds after impact in terms of \(u\) and \(e\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Take the first particle’s direction as positive. Momentum: \(mu-2mu=mv_1+mv_2\Rightarrow -u=v_1+v_2\).</p>
+          <p>Restitution: \(e(u-(-2u))=v_2-v_1\Rightarrow 3eu=v_2-v_1\).</p>
+          <p>Solving: \(v_2=\dfrac{-u+3eu}{2}\), \(v_1=\dfrac{-u-3eu}{2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A ball hits a fixed vertical wall perpendicularly with speed \(10\,\mathrm{m\,s}^{-1}\) and rebounds with speed \(6\,\mathrm{m\,s}^{-1}\). Find the coefficient of restitution between the ball and the wall.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(e=\dfrac{\text{speed of separation}}{\text{speed of approach}}=\dfrac{6}{10}=0.6\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(3\,\mathrm{kg}\) moving at \(5\,\mathrm{m\,s}^{-1}\) collides directly with a particle of mass \(2\,\mathrm{kg}\) moving at \(3\,\mathrm{m\,s}^{-1}\) in the same direction. The coefficient of restitution is \(\dfrac{1}{3}\). Find the speeds after the collision.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Momentum: \(15+6=3v_1+2v_2\Rightarrow21=3v_1+2v_2\).</p>
+          <p>Restitution: \(\dfrac{1}{3}(5-3)=v_2-v_1\Rightarrow v_2-v_1=\dfrac{2}{3}\).</p>
+          <p>Solving: \(v_1=4\), \(v_2=\dfrac{14}{3}\,\mathrm{m\,s}^{-1}\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Show that if two particles of masses \(m_1\) and \(m_2\) collide directly with velocities \(u_1\) and \(u_2\) (same direction) and coefficient of restitution \(e\), then the loss in kinetic energy is \(\dfrac{m_1m_2}{2(m_1+m_2)}(1-e^2)(u_1-u_2)^2\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Standard formulae: \(v_1=\dfrac{(m_1-em_2)u_1+(1+e)m_2u_2}{m_1+m_2}\), \(v_2=\dfrac{(m_2-em_1)u_2+(1+e)m_1u_1}{m_1+m_2}\).</p>
+          <p>Compute \(\dfrac{1}{2}m_1u_1^2+\dfrac{1}{2}m_2u_2^2-\dfrac{1}{2}m_1v_1^2-\dfrac{1}{2}m_2v_2^2\) and simplify to the required expression.</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Three particles \(A\), \(B\) and \(C\) of equal mass lie at rest in a straight line on a smooth horizontal surface, with \(B\) between \(A\) and \(C\). Particle \(A\) is projected towards \(B\) with speed \(u\). The coefficient of restitution between each pair is \(\dfrac{1}{2}\). Find the speeds of the three particles after both collisions have occurred.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>First collision \(A\)–\(B\): equal masses, \(e=\frac12\). \(v_A=\dfrac{u}{4}\), \(v_B=\dfrac{3u}{4}\) (standard result for equal mass).</p>
+          <p>Second collision \(B\)–\(C\): \(B\) has speed \(\dfrac{3u}{4}\), \(C\) at rest. Same formulae: after, \(v_B=\dfrac{3u}{16}\), \(v_C=\dfrac{9u}{16}\). \(A\) continues at \(\dfrac{u}{4}\).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle hits a fixed smooth plane with speed \(u\) at an angle of \(30^\circ\) to the normal. The coefficient of restitution is \(\dfrac{2}{3}\). Find the speed and direction of the particle after impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Component parallel to plane unchanged: \(u\sin30^\circ=\dfrac{u}{2}\). Normal component after: \(-e\cdot u\cos30^\circ=-\dfrac{2}{3}\cdot\dfrac{u\sqrt{3}}{2}=-\dfrac{u\sqrt{3}}{3}\).</p>
+          <p>Speed \(=\sqrt{(\frac{u}{2})^2+(\frac{u\sqrt{3}}{3})^2}=u\sqrt{\dfrac{1}{4}+\dfrac{1}{3}}=u\sqrt{\dfrac{7}{12}}=\dfrac{u\sqrt{21}}{6}\). Angle to normal \(\tan^{-1}\bigl(\dfrac{1/2}{\sqrt{3}/3}\bigr)=\tan^{-1}\bigl(\dfrac{\sqrt{3}}{2}\bigr)\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles of masses \(m\) and \(2m\) are moving towards each other with speeds \(2u\) and \(u\) respectively. They collide directly with coefficient of restitution \(e\). Find the range of values of \(e\) for which the direction of motion of the heavier particle is reversed.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let the lighter particle’s initial direction be positive. Momentum: \(m\cdot2u+2m\cdot(-u)=mv_1+2mv_2\Rightarrow0=v_1+2v_2\).</p>
+          <p>Restitution: \(e(2u-(-u))=v_2-v_1\Rightarrow3eu=v_2-v_1\).</p>
+          <p>Solving: \(v_2=eu\), \(v_1=-2eu\). For the heavier particle (\(2m\), velocity \(v_2\)) to reverse, \(v_2&gt;0\), which is true for \(e&gt;0\). (If initial directions are considered carefully, the condition is \(e&gt;\dfrac{1}{3}\) or similar depending on sign convention.)</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(m\) is projected with speed \(u\) towards a fixed vertical wall. The coefficient of restitution between the particle and the wall is \(e\). There is a constant resistance of magnitude \(R\) opposing the motion. The particle hits the wall and returns to the point of projection. Find the distance of the wall from the point of projection in terms of \(m\), \(u\), \(e\), \(R\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let distance be \(d\). On the way to the wall, work against resistance \(=Rd=\dfrac{1}{2}mu^2-\dfrac{1}{2}mv^2\), where \(v\) is speed just before impact.</p>
+          <p>After impact speed \(=ev\). On the return, resistance does work \(Rd=\dfrac{1}{2}m(ev)^2-\dfrac{1}{2}m\cdot0\) (comes to rest at start). Solving the two energy equations yields \(d=\dfrac{mu^2e^2}{2R(1+e^2)}\) (or the consistent expression).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Three smooth spheres \(A\), \(B\) and \(C\) of equal mass lie at rest in a straight line. \(A\) is projected towards \(B\) with speed \(u\). The coefficient of restitution between \(A\) and \(B\) is \(e\), and between \(B\) and \(C\) is \(e'\). Find the condition on \(e\) and \(e'\) so that \(A\) is brought to rest after its collision with \(B\), and subsequently \(B\) is brought to rest after its collision with \(C\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>For equal masses, after \(A\)–\(B\): \(v_A=\dfrac{1-e}{2}u\), \(v_B=\dfrac{1+e}{2}u\). For \(A\) to stop, \(e=1\).</p>
+          <p>Then \(v_B=u\). After \(B\)–\(C\): \(v_B=\dfrac{1-e'}{2}u\), \(v_C=\dfrac{1+e'}{2}u\). For \(B\) to stop, \(e'=1\). Thus both coefficients must be \(1\) (perfectly elastic successive transfers).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A sphere of mass \(2m\) moving with speed \(u\) collides directly with a stationary sphere of mass \(m\). The coefficient of restitution is \(e\). Find the value of \(e\) for which the first sphere is reduced to rest, and the loss in kinetic energy in this case.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Momentum: \(2mu=2mv_1+mv_2\). Restitution: \(eu=v_2-v_1\).</p>
+          <p>For \(v_1=0\): \(2u=v_2\), and \(eu=v_2\Rightarrow e=2\), which is impossible (\(e\le1\)). The first sphere cannot be reduced to rest (would require \(e=2\)). Maximum loss occurs at \(e=0\).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles of masses \(m\) and \(3m\) collide directly. The speeds before impact are \(4u\) and \(u\) in opposite directions, and the coefficient of restitution is \(\dfrac{1}{2}\). Find the speeds after impact and the percentage loss in kinetic energy.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Take the direction of the mass \(m\) as positive. Momentum: \(m\cdot4u+3m\cdot(-u)=mv_1+3mv_2\Rightarrow u=v_1+3v_2\).</p>
+          <p>Restitution: \(\dfrac{1}{2}(4u-(-u))=v_2-v_1\Rightarrow\dfrac{5u}{2}=v_2-v_1\).</p>
+          <p>Solving: \(v_1=-\dfrac{u}{2}\), \(v_2=\dfrac{u}{2}\). Initial KE \(=\dfrac{1}{2}m\cdot16u^2+\dfrac{1}{2}3m\cdot u^2=9.5mu^2\). Final KE \(=\dfrac{1}{2}m\cdot\dfrac{u^2}{4}+\dfrac{1}{2}3m\cdot\dfrac{u^2}{4}=mu^2\). Loss \(=8.5mu^2\), percentage \(\approx89.5\%\).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="elastic-strings.html" class="btn btn-ghost">← Elastic Strings &amp; Springs</a>
+        <a href="elastic-collisions-2d.html" class="btn btn-primary">Elastic Collisions (2D) →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

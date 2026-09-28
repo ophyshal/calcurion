@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinematics — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Mechanics</p>
+        <h1>Kinematics</h1>
+        <p class="q-intro">12 exam-style questions on constant acceleration, SUVAT, velocity–time graphs and variable acceleration. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle moves in a straight line with constant acceleration \(2\,\mathrm{m\,s}^{-2}\). It starts from rest. Find its velocity and the distance travelled after \(5\,\mathrm{s}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Using \(v = u + at\): \(v = 0 + 2\cdot5 = 10\,\mathrm{m\,s}^{-1}\).</p>
+          <p>Using \(s = ut + \dfrac{1}{2}at^2\): \(s = 0 + \dfrac{1}{2}\cdot2\cdot25 = 25\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A car accelerates from \(10\,\mathrm{m\,s}^{-1}\) to \(30\,\mathrm{m\,s}^{-1}\) over a distance of \(200\,\mathrm{m}\) with constant acceleration. Find the acceleration and the time taken.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(v^2 = u^2 + 2as \Rightarrow 30^2 = 10^2 + 2a\cdot200 \Rightarrow 900 = 100 + 400a \Rightarrow a = 2\,\mathrm{m\,s}^{-2}\).</p>
+          <p>\(v = u + at \Rightarrow 30 = 10 + 2t \Rightarrow t = 10\,\mathrm{s}\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The velocity–time graph of a particle consists of a straight line from \((0,0)\) to \((4,12)\), then a straight line to \((10,0)\). Find the total distance travelled and the average speed over the \(10\,\mathrm{s}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Area under graph: triangle \(0\)–\(4\): \(\dfrac{1}{2}\cdot4\cdot12 = 24\). Triangle \(4\)–\(10\): \(\dfrac{1}{2}\cdot6\cdot12 = 36\). Total distance \(= 60\,\mathrm{m}\).</p>
+          <p>Average speed \(= \dfrac{60}{10} = 6\,\mathrm{m\,s}^{-1}\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A ball is thrown vertically upwards with speed \(14\,\mathrm{m\,s}^{-1}\). Taking \(g = 9.8\,\mathrm{m\,s}^{-2}\) and neglecting air resistance, find the maximum height reached and the time until it returns to the point of projection.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>At max height \(v=0\): \(0 = 14^2 + 2(-9.8)s \Rightarrow 0 = 196 - 19.6s \Rightarrow s = 10\,\mathrm{m}\).</p>
+          <p>Time to return: \(s=0\): \(0 = 14t - 4.9t^2 \Rightarrow t(14-4.9t)=0 \Rightarrow t=0\) or \(t=\dfrac{14}{4.9}\approx 2.86\,\mathrm{s}\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle travels in a straight line. Its velocity \(v\,\mathrm{m\,s}^{-1}\) at time \(t\,\mathrm{s}\) is given by \(v = 3t^2 - 12t + 9\) for \(0\le t\le 5\).</p>
+          <p>(a) Find the times when the particle is instantaneously at rest.</p>
+          <p>(b) Find the total distance travelled in the first \(5\) seconds.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> \(v=0\): \(3t^2-12t+9=0 \Rightarrow t^2-4t+3=0 \Rightarrow (t-1)(t-3)=0\). Rest at \(t=1\) and \(t=3\).</p>
+          <p><strong>(b)</strong> Displacement \(s = \int v\,\mathrm{d}t = t^3 - 6t^2 + 9t + C\). At \(t=0\), \(s=0\), so \(C=0\).</p>
+          <p>From \(0\) to \(1\): \(s(1)=1-6+9=4\). From \(1\) to \(3\): \(s(3)=27-54+27=0\), so displacement \(-4\). From \(3\) to \(5\): \(s(5)=125-150+45=20\), displacement \(20\).</p>
+          <p>Total distance \(= 4 + 4 + 20 = 28\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A train accelerates uniformly from rest to \(25\,\mathrm{m\,s}^{-1}\) in \(50\,\mathrm{s}\), travels at constant speed for \(2\) minutes, then decelerates uniformly to rest in \(40\,\mathrm{s}\). Find the total distance travelled and the average speed for the whole journey.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Acceleration phase: \(s_1 = \dfrac{1}{2}\cdot25\cdot50 = 625\,\mathrm{m}\).</p>
+          <p>Constant speed: \(s_2 = 25\cdot120 = 3000\,\mathrm{m}\).</p>
+          <p>Deceleration: \(s_3 = \dfrac{1}{2}\cdot25\cdot40 = 500\,\mathrm{m}\).</p>
+          <p>Total distance \(= 625+3000+500 = 4125\,\mathrm{m}\).</p>
+          <p>Total time \(= 50+120+40 = 210\,\mathrm{s}\). Average speed \(= \dfrac{4125}{210} = 19.64\,\mathrm{m\,s}^{-1}\) (3 s.f.).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle moves along a straight line. Its acceleration at time \(t\) seconds is \(a = 6t - 4\,\mathrm{m\,s}^{-2}\). When \(t=0\), the particle is at the origin with velocity \(2\,\mathrm{m\,s}^{-1}\).</p>
+          <p>(a) Find expressions for the velocity and displacement in terms of \(t\).</p>
+          <p>(b) Find the maximum displacement from the origin in the interval \(0\le t\le 3\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> \(v = \int(6t-4)\,\mathrm{d}t = 3t^2 - 4t + C\). \(t=0\), \(v=2 \Rightarrow C=2\). So \(v = 3t^2 - 4t + 2\).</p>
+          <p>\(s = \int v\,\mathrm{d}t = t^3 - 2t^2 + 2t + D\). \(t=0\), \(s=0 \Rightarrow D=0\). So \(s = t^3 - 2t^2 + 2t\).</p>
+          <p><strong>(b)</strong> Stationary points: \(v=0\): \(3t^2-4t+2=0\). Discriminant \(16-24=-8&lt;0\), so \(v&gt;0\) always. Max displacement in interval is at \(t=3\): \(s(3)=27-18+6=15\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles \(A\) and \(B\) start from the same point at the same time and move along the same straight line. \(A\) moves with constant velocity \(8\,\mathrm{m\,s}^{-1}\). \(B\) starts from rest and accelerates at \(2\,\mathrm{m\,s}^{-2}\). Find the time when \(B\) overtakes \(A\) and the distance from the start at that instant.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Displacement of \(A\): \(s_A = 8t\). Displacement of \(B\): \(s_B = \dfrac{1}{2}\cdot2\cdot t^2 = t^2\).</p>
+          <p>Overtake when \(s_B = s_A\): \(t^2 = 8t \Rightarrow t(t-8)=0\). \(t=8\,\mathrm{s}\) (ignoring \(t=0\)).</p>
+          <p>Distance \(= 8\cdot8 = 64\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle moves in a straight line with velocity \(v = t^3 - 6t^2 + 9t\) for \(t\ge 0\).</p>
+          <p>(a) Find the times at which the acceleration is zero and determine the nature of each stationary point of the velocity.</p>
+          <p>(b) Sketch the velocity–time graph for \(0\le t\le 5\), marking the intercepts and stationary points.</p>
+          <p>(c) Find the total distance travelled between \(t=0\) and \(t=5\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> \(a = \dfrac{\mathrm{d}v}{\mathrm{d}t} = 3t^2 - 12t + 9 = 3(t^2-4t+3)=3(t-1)(t-3)\). Zero at \(t=1,3\).</p>
+          <p>Second derivative \(6t-12\): at \(t=1\), \(-6&lt;0\) (local max of \(v\)); at \(t=3\), \(6&gt;0\) (local min of \(v\)).</p>
+          <p><strong>(b)</strong> \(v=t(t-3)^2\). Zeros at \(t=0,3\). Local max at \(t=1\): \(v=1\cdot4=4\). Local min at \(t=3\): \(v=0\). At \(t=5\), \(v=5\cdot4=20\).</p>
+          <p><strong>(c)</strong> \(s=\int_0^5 v\,\mathrm{d}t\). \(v=t(t^2-6t+9)=t^3-6t^2+9t\). Antiderivative \(\dfrac{1}{4}t^4-2t^3+\dfrac{9}{2}t^2\).</p>
+          <p>From \(0\) to \(3\): \(\dfrac{1}{4}\cdot81 - 2\cdot27 + \dfrac{9}{2}\cdot9 = 20.25 - 54 + 40.5 = 6.75\). From \(3\) to \(5\): value at \(5\) minus value at \(3\): \((\dfrac{1}{4}\cdot625 - 2\cdot125 + \dfrac{9}{2}\cdot25) - 6.75 = (156.25-250+112.5)-6.75=18.75-6.75=12\). Total distance \(=6.75+12=18.75\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A car is travelling at \(20\,\mathrm{m\,s}^{-1}\) when the driver sees a hazard \(60\,\mathrm{m}\) ahead. The reaction time of the driver is \(0.6\,\mathrm{s}\), after which the brakes produce a constant deceleration of \(5\,\mathrm{m\,s}^{-2}\). Does the car stop before hitting the hazard? Find the distance by which it stops short or the speed at impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>During reaction: distance \(=20\cdot0.6=12\,\mathrm{m}\). Remaining distance to hazard \(=48\,\mathrm{m}\).</p>
+          <p>Braking: \(v^2=u^2+2as \Rightarrow 0=400+2(-5)s \Rightarrow 10s=400 \Rightarrow s=40\,\mathrm{m}\).</p>
+          <p>Stops after \(40\,\mathrm{m}\) of braking, total distance from seeing hazard \(=12+40=52\,\mathrm{m}&lt;60\,\mathrm{m}\). Stops \(8\,\mathrm{m}\) short.</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle starts from rest at the origin and moves along the \(x\)-axis with acceleration \(a = 2 + 3t\,\mathrm{m\,s}^{-2}\) for the first \(4\) seconds. For \(t&gt;4\) the acceleration is constant and equal to the value it has at \(t=4\).</p>
+          <p>(a) Find the velocity and position at \(t=4\).</p>
+          <p>(b) Find the position when \(t=10\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> For \(0\le t\le4\): \(v=\int(2+3t)\,\mathrm{d}t=2t+\dfrac{3}{2}t^2\) (since \(v(0)=0\)). At \(t=4\): \(v=8+24=32\,\mathrm{m\,s}^{-1}\).</p>
+          <p>\(s=\int v\,\mathrm{d}t=t^2+\dfrac{1}{2}t^3\) ( \(s(0)=0\)). At \(t=4\): \(s=16+32=48\,\mathrm{m}\).</p>
+          <p><strong>(b)</strong> For \(t&gt;4\), \(a=2+3\cdot4=14\,\mathrm{m\,s}^{-2}\) constant. From \(t=4\) to \(t=10\) (\(\Delta t=6\)): \(\Delta v=14\cdot6=84\), so \(v(10)=32+84=116\).</p>
+          <p>\(\Delta s = 32\cdot6 + \dfrac{1}{2}\cdot14\cdot36 = 192 + 252 = 444\). Position \(=48+444=492\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The velocity of a particle at time \(t\) seconds is \(v = 4\cos 2t - 3\sin 2t\,\mathrm{m\,s}^{-1}\), \(t\ge0\). The particle starts at the origin.</p>
+          <p>(a) Show that the acceleration is \(a = -8\sin 2t - 6\cos 2t\).</p>
+          <p>(b) Find the maximum speed of the particle.</p>
+          <p>(c) Find the displacement from the origin when the particle first comes to instantaneous rest.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> \(a=\dfrac{\mathrm{d}v}{\mathrm{d}t}=-8\sin 2t - 6\cos 2t\).</p>
+          <p><strong>(b)</strong> \(v^2 = (4\cos 2t-3\sin 2t)^2 = 16\cos^2 + 9\sin^2 -24\sin\cos\). Max of \(R\cos(2t+\alpha)\) form: write \(v=R\cos(2t+\alpha)\) where \(R\cos\alpha=4\), \(R\sin\alpha=3\), so \(R=5\). Max speed \(=5\,\mathrm{m\,s}^{-1}\).</p>
+          <p><strong>(c)</strong> Rest when \(v=0\): \(4\cos 2t = 3\sin 2t \Rightarrow \tan 2t = \dfrac{4}{3}\). First positive: \(2t=\tan^{-1}(4/3)\approx0.927\), \(t\approx0.464\,\mathrm{s}\).</p>
+          <p>\(s=\int v\,\mathrm{d}t = 2\sin 2t + \dfrac{3}{2}\cos 2t + C\). \(t=0\), \(s=0\): \(0=0+\dfrac{3}{2}+C\Rightarrow C=-\dfrac{3}{2}\). So \(s=2\sin 2t + \dfrac{3}{2}\cos 2t - \dfrac{3}{2}\).</p>
+          <p>At rest: \(\sin 2t=\dfrac{4}{5}\), \(\cos 2t=\dfrac{3}{5}\) (first quadrant). \(s=2\cdot\dfrac{4}{5} + \dfrac{3}{2}\cdot\dfrac{3}{5} - \dfrac{3}{2} = \dfrac{8}{5} + \dfrac{9}{10} - \dfrac{3}{2} = 1.6+0.9-1.5=1\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="../index.html#maths" class="btn btn-ghost">← All topics</a>
+        <a href="forces-newton.html" class="btn btn-primary">Forces &amp; Newton →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

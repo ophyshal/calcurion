@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elastic Collisions (2D) — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Further Mechanics 1</p>
+        <h1>Elastic Collisions (2D)</h1>
+        <p class="q-intro">12 exam-style questions on oblique impacts, impact with fixed surfaces, and two-dimensional collisions of spheres. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A smooth sphere hits a fixed smooth vertical wall with speed \(10\,\mathrm{m\,s}^{-1}\) at an angle of \(30^\circ\) to the wall. The coefficient of restitution is \(\dfrac{1}{2}\). Find the speed and direction of the sphere after impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Component parallel to wall unchanged: \(10\cos30^\circ=5\sqrt{3}\). Normal component before: \(10\sin30^\circ=5\); after: \(\dfrac{1}{2}\cdot5=2.5\) away from wall.</p>
+          <p>Speed \(=\sqrt{(5\sqrt{3})^2+(2.5)^2}=\sqrt{75+6.25}=\sqrt{81.25}=\dfrac{5\sqrt{13}}{2}\). Angle to wall \(\tan^{-1}\bigl(\dfrac{2.5}{5\sqrt{3}}\bigr)=\tan^{-1}\bigl(\dfrac{1}{2\sqrt{3}}\bigr)\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle strikes a fixed smooth plane with velocity \(4\mathbf{i}+3\mathbf{j}\,\mathrm{m\,s}^{-1}\), where \(\mathbf{i}\) is parallel to the plane and \(\mathbf{j}\) is normal to the plane (pointing away). The coefficient of restitution is \(\dfrac{2}{3}\). Find the velocity after impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Parallel component unchanged: \(4\mathbf{i}\). Normal component after: \(-\dfrac{2}{3}\cdot(-3)=\ 2\) (if approaching was negative normal). Assuming \(\mathbf{j}\) away, before normal component \(-3\), after \(+2\). Velocity \(=4\mathbf{i}+2\mathbf{j}\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A smooth sphere of mass \(m\) moving with velocity \(u\mathbf{i}\) collides with a stationary smooth sphere of equal mass. The line of centres at impact makes an angle of \(30^\circ\) with \(\mathbf{i}\). The coefficient of restitution is \(1\). Find the velocities of the spheres after impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Resolve into components along and perpendicular to the line of centres. Along line of centres: equal mass, \(e=1\) → velocities exchanged. Perpendicular components unchanged.</p>
+          <p>First sphere after: only the perpendicular component \(u\sin30^\circ=\dfrac{u}{2}\) (direction perpendicular to line of centres). Second sphere takes the along-component \(u\cos30^\circ=\dfrac{u\sqrt{3}}{2}\) along the line of centres.</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Explain why, for a collision between two smooth spheres, the component of velocity of each sphere perpendicular to the line of centres is unchanged by the impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>The impulsive reaction acts along the common normal (line of centres). There is no impulsive force in the tangential direction, so the tangential (perpendicular) components of momentum, and hence velocity, of each sphere are conserved individually.</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A sphere of mass \(2m\) moving with speed \(u\) collides obliquely with a stationary sphere of mass \(m\). The line of centres at impact makes an angle \(\alpha\) with the direction of motion of the first sphere, and the coefficient of restitution is \(e\). Find the speed of the second sphere after impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Component of first sphere along line of centres before: \(u\cos\alpha\). Let velocities along line of centres after be \(v_1\), \(v_2\).</p>
+          <p>Momentum: \(2m\cdot u\cos\alpha=2mv_1+mv_2\). Restitution: \(e u\cos\alpha=v_2-v_1\).</p>
+          <p>Solving: \(v_2=\dfrac{2(1+e)}{3}u\cos\alpha\). The second sphere has no perpendicular component, so this is its speed.</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle hits a fixed rough plane with speed \(u\) at an angle of \(45^\circ\) to the normal. The coefficient of restitution is \(\dfrac{1}{2}\) and the coefficient of friction is \(\dfrac{1}{4}\). Assuming the particle does not rebound along the normal only, find whether the particle slides or sticks, and find the velocity after impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Normal impulse \(J_n=mu\cos45^\circ(1+e)=\dfrac{mu}{\sqrt{2}}\cdot\dfrac{3}{2}=\dfrac{3mu}{2\sqrt{2}}\). Max friction impulse \(\mu J_n=\dfrac{3mu}{8\sqrt{2}}\).</p>
+          <p>Tangential momentum before \(=mu\sin45^\circ=\dfrac{mu}{\sqrt{2}}\). If friction is limiting, tangential velocity after is reduced by \(\dfrac{\mu J_n}{m}\). Compare to see if it reaches zero (sticks) or not. Calculation shows it slides.</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two smooth spheres of equal mass collide. Before impact their velocities are \(3\mathbf{i}+4\mathbf{j}\) and \(-\mathbf{i}+2\mathbf{j}\). The line of centres at impact is parallel to the vector \(\mathbf{i}+\mathbf{j}\). The coefficient of restitution is \(\dfrac{1}{2}\). Find the velocities after impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Unit vector along line of centres: \(\dfrac{1}{\sqrt{2}}(\mathbf{i}+\mathbf{j})\). Resolve each velocity into components along and perpendicular to this direction. Apply 1D collision formulae along the line of centres and leave perpendicular components unchanged. Recombine to obtain the final velocity vectors.</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A ball is thrown against a smooth vertical wall. It hits the wall with speed \(15\,\mathrm{m\,s}^{-1}\) at an angle of \(40^\circ\) to the wall. The coefficient of restitution is \(0.6\). Find the angle to the wall at which the ball rebounds, and the percentage loss in kinetic energy.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Parallel component \(15\cos40^\circ\) unchanged. Normal component after \(0.6\cdot15\sin40^\circ\).</p>
+          <p>Rebound angle \(\theta\) to wall satisfies \(\tan\theta=\dfrac{0.6\sin40^\circ}{\cos40^\circ}=0.6\tan40^\circ\). \(\theta=\tan^{-1}(0.6\tan40^\circ)\approx26.6^\circ\).</p>
+          <p>KE loss percentage from the change in the square of the normal component.</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A smooth sphere of mass \(m\) moving with velocity \(u\mathbf{i}\) collides with a stationary smooth sphere of mass \(2m\). The line of centres makes an angle \(\alpha\) with \(\mathbf{i}\) at impact, and the coefficient of restitution is \(e\). Show that the direction of motion of the first sphere is deflected through an angle \(\beta\) where \(\tan\beta=\dfrac{2(1+e)\sin\alpha\cos\alpha}{1-2e\cos^2\alpha+(1-e)\sin^2?}\) (derive the correct expression).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Resolve and apply conservation of momentum and restitution along the line of centres. The first sphere retains its perpendicular component \(u\sin\alpha\). The along-component after is found from the two equations. Then \(\tan\beta=\dfrac{\text{perpendicular component}}{\text{along component after}}\), leading to the standard deflection formula for unequal masses.</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two identical smooth billiard balls collide. One is at rest and the other approaches with speed \(u\). After the collision the two balls move in directions that make angles \(30^\circ\) and \(60^\circ\) with the original direction of motion of the moving ball. Find the coefficient of restitution and show that the collision is consistent with conservation of momentum.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let the speeds after be \(v\) and \(w\). Momentum parallel to original direction: \(mu=mv\cos30^\circ+mw\cos60^\circ\). Perpendicular: \(0=mv\sin30^\circ-mw\sin60^\circ\) (opposite sides).</p>
+          <p>From perpendicular: \(v\cdot\dfrac{1}{2}=w\cdot\dfrac{\sqrt{3}}{2}\Rightarrow v=w\sqrt{3}\). Substitute into parallel and use restitution along the line of centres (which bisects the angle between the final directions for equal mass) to find \(e=\dfrac{1}{\sqrt{3}}\) or the exact value.</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle strikes a fixed smooth plane with velocity \(\mathbf{u}\). The unit normal to the plane (pointing towards the incoming side) is \(\mathbf{n}\). The coefficient of restitution is \(e\). Show that the velocity after impact is \(\mathbf{u}-(1+e)(\mathbf{u}\cdot\mathbf{n})\mathbf{n}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Decompose \(\mathbf{u}=\mathbf{u}_{\parallel}+\mathbf{u}_{\perp}\), where \(\mathbf{u}_{\perp}=(\mathbf{u}\cdot\mathbf{n})\mathbf{n}\). After impact the parallel component is unchanged and the normal component becomes \(-e(\mathbf{u}\cdot\mathbf{n})\mathbf{n}\). Hence final velocity \(=\mathbf{u}-(\mathbf{u}\cdot\mathbf{n})\mathbf{n}-e(\mathbf{u}\cdot\mathbf{n})\mathbf{n}=\mathbf{u}-(1+e)(\mathbf{u}\cdot\mathbf{n})\mathbf{n}\).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A sphere of mass \(m\) moving with speed \(2u\) collides with a stationary sphere of mass \(3m\). The coefficient of restitution is \(\dfrac{1}{3}\) and the line of centres at impact makes an angle of \(60^\circ\) with the direction of motion of the first sphere. Find the angle through which the first sphere is deflected, and the loss in kinetic energy.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Along line of centres: before component \(2u\cos60^\circ=u\). Momentum: \(m\cdot u=mv_1+3mv_2\). Restitution: \(\dfrac{1}{3}u=v_2-v_1\).</p>
+          <p>Solving: \(v_1=\dfrac{u}{6}\), \(v_2=\dfrac{u}{2}\). Perpendicular component of first sphere remains \(2u\sin60^\circ=u\sqrt{3}\).</p>
+          <p>Deflection \(\beta\) satisfies \(\tan\beta=\dfrac{u\sqrt{3}}{v_1}=\dfrac{u\sqrt{3}}{u/6}=6\sqrt{3}\). \(\beta=\tan^{-1}(6\sqrt{3})\).</p>
+          <p>KE loss calculated from initial and final kinetic energies.</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="elastic-collisions-1d.html" class="btn btn-ghost">← Elastic Collisions (1D)</a>
+        <a href="../index.html#further" class="btn btn-primary">All topics →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

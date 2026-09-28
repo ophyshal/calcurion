@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coordinate Geometry — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg></span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Pure 1</p>
+        <h1>Coordinate Geometry</h1>
+        <p class="q-intro">12 exam-style questions on straight lines, circles and midpoints. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats"><span class="diff-tag easy">4 Easy</span><span class="diff-tag medium">4 Medium</span><span class="diff-tag hard">4 Hard</span></div>
+      </div>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body"><p>Find the gradient of the line joining \( A(1,2) \) and \( B(5,10) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( m = \dfrac{10-2}{5-1} = \dfrac{8}{4} = 2 \).</p></div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>Find the equation of the line with gradient 3 that passes through \( (2,-1) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( y - (-1) = 3(x-2) \) ⇒ \( y + 1 = 3x - 6 \) ⇒ \( y = 3x - 7 \).</p></div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>Find the midpoint of the line segment joining \( (3,-4) \) and \( (-1,6) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \left( \dfrac{3+(-1)}{2}, \dfrac{-4+6}{2} \right) = (1, 1) \).</p></div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>Find the distance between the points \( (0,0) \) and \( (3,4) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \sqrt{3^2 + 4^2} = 5 \).</p></div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>Find the equation of the circle with centre \( (2,-1) \) and radius 5.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( (x-2)^2 + (y+1)^2 = 25 \).</p></div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>The line \( l \) has equation \( 2x + 3y - 6 = 0 \). Find the gradient of \( l \) and the coordinates of the points where \( l \) meets the axes.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( 3y = -2x + 6 \) ⇒ \( y = -\dfrac{2}{3}x + 2 \). Gradient \( -\dfrac{2}{3} \). \( x \)-intercept: \( (3,0) \); \( y \)-intercept: \( (0,2) \).</p></div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>Find the equation of the perpendicular bisector of the line joining \( A(1,3) \) and \( B(5,7) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Midpoint \( (3,5) \). Gradient of AB is \( 1 \), so perpendicular gradient is \( -1 \). Equation: \( y-5 = -1(x-3) \) ⇒ \( y = -x + 8 \).</p></div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>Find the centre and radius of the circle \( x^2 + y^2 - 2x - 4y - 11 = 0 \). Show that the point \( (1,6) \) lies on the circle.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Complete the square: \( (x-1)^2 + (y-2)^2 = 16 \). Centre \( (1,2) \), radius 4. Sub \( (1,6) \): \( 0 + 16 = 16 \), so on the circle.</p></div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>Find the points of intersection of the line \( y = x + 1 \) and the circle \( x^2 + y^2 = 25 \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Sub \( y=x+1 \): \( x^2+(x+1)^2=25 \) ⇒ \( 2x^2+2x+1-25=0 \) ⇒ \( 2x^2+2x-24=0 \) ⇒ \( x^2+x-12=0 \) ⇒ \( (x+4)(x-3)=0 \). \( x=-4 \) or \( 3 \). Points \( (-4,-3) \) and \( (3,4) \).</p></div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>Find the equation of the tangent to the circle \( (x-1)^2 + (y+2)^2 = 10 \) at the point \( (2,1) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Centre \( C(1,-2) \). Radius vector from C to point has gradient \( \dfrac{1-(-2)}{2-1}=3 \). Tangent perpendicular, gradient \( -1/3 \). Equation: \( y-1 = -\dfrac{1}{3}(x-2) \) ⇒ \( 3y-3 = -x+2 \) ⇒ \( x+3y-5=0 \).</p></div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q11</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>The circle \( x^2 + y^2 + Dx + Ey + F = 0 \) passes through \( (0,0) \), \( (4,0) \) and \( (0,2) \). Find \( D \), \( E \) and \( F \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( (0,0) \): \( F=0 \). \( (4,0) \): \( 16 + 4D = 0 \) ⇒ \( D=-4 \). \( (0,2) \): \( 4 + 2E = 0 \) ⇒ \( E=-2 \). Equation: \( x^2 + y^2 - 4x - 2y = 0 \).</p></div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q12</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body"><p>Find the shortest distance from the point \( (5,1) \) to the line \( 3x - 4y + 2 = 0 \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Distance \( = \dfrac{|3\cdot5 - 4\cdot1 + 2|}{\sqrt{9+16}} = \dfrac{|15-4+2|}{5} = \dfrac{13}{5} \).</p></div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="algebra-functions.html" class="btn btn-ghost">← Algebra &amp; Functions</a>
+        <a href="trigonometry.html" class="btn btn-primary">Trigonometry →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

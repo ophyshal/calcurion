@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momentum &amp; Impulse — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Further Mechanics 1</p>
+        <h1>Momentum &amp; Impulse</h1>
+        <p class="q-intro">12 exam-style questions on linear momentum, impulse, conservation of momentum and variable forces. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(2\,\mathrm{kg}\) is moving with velocity \(5\,\mathrm{m\,s}^{-1}\). Find its momentum. A constant force then acts for \(3\,\mathrm{s}\), changing the velocity to \(11\,\mathrm{m\,s}^{-1}\) in the same direction. Find the magnitude of the force.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Momentum \(=mv=10\,\mathrm{kg\,m\,s}^{-1}\).</p>
+          <p>Change in momentum \(=2(11-5)=12\). Impulse \(=Ft=12\Rightarrow F=\dfrac{12}{3}=4\,\mathrm{N}\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles of masses \(3\,\mathrm{kg}\) and \(5\,\mathrm{kg}\) move towards each other on a smooth horizontal surface with speeds \(4\,\mathrm{m\,s}^{-1}\) and \(2\,\mathrm{m\,s}^{-1}\) respectively. After collision they coalesce. Find their common speed after the collision.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Conservation of momentum (take right as positive for the \(3\,\mathrm{kg}\)): \(3\cdot4+5\cdot(-2)=8v\Rightarrow 12-10=8v\Rightarrow v=\dfrac{1}{4}\,\mathrm{m\,s}^{-1}\) in the original direction of the \(3\,\mathrm{kg}\) particle.</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A ball of mass \(0.5\,\mathrm{kg}\) hits a wall perpendicularly with speed \(8\,\mathrm{m\,s}^{-1}\) and rebounds with speed \(6\,\mathrm{m\,s}^{-1}\). Find the magnitude of the impulse exerted by the wall on the ball.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Change in momentum \(=0.5(-6)-0.5(8)=-3-4=-7\). Magnitude of impulse \(=7\,\mathrm{N\,s}\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A constant force of magnitude \(12\,\mathrm{N}\) acts on a particle of mass \(4\,\mathrm{kg}\) for \(5\,\mathrm{s}\). The particle is initially at rest. Find the final speed of the particle and the distance travelled during the \(5\,\mathrm{s}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Impulse \(=Ft=60=mv\Rightarrow v=\dfrac{60}{4}=15\,\mathrm{m\,s}^{-1}\).</p>
+          <p>Acceleration \(a=\dfrac{12}{4}=3\,\mathrm{m\,s}^{-2}\). Distance \(s=\dfrac{1}{2}at^2=\dfrac{1}{2}\cdot3\cdot25=37.5\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(m\) is moving with velocity \(u\mathbf{i}\) when it receives an impulse \(J\mathbf{j}\). Find the magnitude of the velocity immediately after the impulse and the angle the new direction makes with the original direction.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Change in momentum \(=J\mathbf{j}\), so final momentum \(=mu\mathbf{i}+J\mathbf{j}\). Final velocity \(=u\mathbf{i}+\dfrac{J}{m}\mathbf{j}\).</p>
+          <p>Speed \(=\sqrt{u^2+(J/m)^2}\). Angle \(\theta=\tan^{-1}\bigl(\dfrac{J}{mu}\bigr)\).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles \(A\) and \(B\) of masses \(2\,\mathrm{kg}\) and \(3\,\mathrm{kg}\) are connected by a light inextensible string. They rest on a smooth horizontal surface. Particle \(A\) is given a horizontal impulse of \(12\,\mathrm{N\,s}\) away from \(B\). Find the speed of each particle immediately after the impulse and the tension impulse in the string.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let the impulse in the string be \(J\). For \(A\): \(12-J=2v_A\). For \(B\): \(J=3v_B\). Since the string is inextensible, \(v_A=v_B=v\).</p>
+          <p>\(12-J=2v\), \(J=3v\). Add: \(12=5v\Rightarrow v=2.4\,\mathrm{m\,s}^{-1}\). \(J=7.2\,\mathrm{N\,s}\).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A force \(\mathbf{F}=(3t\mathbf{i}+2\mathbf{j})\,\mathrm{N}\) acts on a particle of mass \(2\,\mathrm{kg}\) for \(4\,\mathrm{s}\), starting from rest at the origin. Find the velocity and position of the particle at \(t=4\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Acceleration \(\mathbf{a}=\dfrac{1}{2}(3t\mathbf{i}+2\mathbf{j})=\dfrac{3}{2}t\mathbf{i}+\mathbf{j}\).</p>
+          <p>\(\mathbf{v}=\int\mathbf{a}\,\mathrm{d}t=\dfrac{3}{4}t^2\mathbf{i}+t\mathbf{j}\) (from rest). At \(t=4\): \(\mathbf{v}=12\mathbf{i}+4\mathbf{j}\).</p>
+          <p>\(\mathbf{r}=\int\mathbf{v}\,\mathrm{d}t=\dfrac{1}{4}t^3\mathbf{i}+\dfrac{1}{2}t^2\mathbf{j}\). At \(t=4\): \(\mathbf{r}=16\mathbf{i}+8\mathbf{j}\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A bullet of mass \(20\,\mathrm{g}\) is fired into a block of mass \(480\,\mathrm{g}\) which is at rest on a smooth horizontal surface. The bullet embeds itself in the block and the combined system moves with speed \(4\,\mathrm{m\,s}^{-1}\). Find the speed of the bullet just before impact.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Conservation of momentum: \(0.02u=(0.02+0.48)\cdot4=2\). \(u=\dfrac{2}{0.02}=100\,\mathrm{m\,s}^{-1}\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(m\) moves under a force \(\mathbf{F}=-k\mathbf{v}\), where \(k\) is a positive constant and \(\mathbf{v}\) is the velocity. Given that the particle starts from the origin with velocity \(u\mathbf{i}\), find the velocity and position as functions of time, and show that the particle approaches a limiting position.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(m\dfrac{\mathrm{d}\mathbf{v}}{\mathrm{d}t}=-k\mathbf{v}\Rightarrow\dfrac{\mathrm{d}\mathbf{v}}{\mathbf{v}}=-\dfrac{k}{m}\,\mathrm{d}t\Rightarrow\ln|\mathbf{v}|=-\dfrac{k}{m}t+C\). \(\mathbf{v}=u\mathrm{e}^{-kt/m}\mathbf{i}\).</p>
+          <p>\(\mathbf{r}=\int\mathbf{v}\,\mathrm{d}t=-\dfrac{mu}{k}\mathrm{e}^{-kt/m}\mathbf{i}+D\). At \(t=0\), \(\mathbf{r}=\mathbf{0}\Rightarrow D=\dfrac{mu}{k}\mathbf{i}\). \(\mathbf{r}=\dfrac{mu}{k}(1-\mathrm{e}^{-kt/m})\mathbf{i}\).</p>
+          <p>As \(t\to\infty\), \(\mathbf{r}\to\dfrac{mu}{k}\mathbf{i}\).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Three particles \(A\), \(B\) and \(C\) of masses \(m\), \(2m\) and \(3m\) lie at rest in a straight line on a smooth horizontal surface, with \(B\) between \(A\) and \(C\). Particle \(A\) is projected towards \(B\) with speed \(u\). The coefficient of restitution between \(A\) and \(B\) is \(\dfrac{1}{2}\), and between \(B\) and \(C\) is \(\dfrac{1}{3}\). Find the speeds of the particles after both collisions have taken place (assuming \(A\) does not meet \(B\) again).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>First collision \(A\)–\(B\): momentum \(mu=mv_A+2mv_B\). Restitution \(\dfrac{1}{2}u=v_B-v_A\). Solving: \(v_A=0\), \(v_B=\dfrac{u}{2}\).</p>
+          <p>Second collision \(B\)–\(C\): momentum \(2m\cdot\dfrac{u}{2}=2mv_B'+3mv_C\Rightarrow u=2v_B'+3v_C\). Restitution \(\dfrac{1}{3}\cdot\dfrac{u}{2}=v_C-v_B'\). Solving yields \(v_B'=\dfrac{u}{10}\), \(v_C=\dfrac{4u}{15}\) (or exact fractions from simultaneous equations).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(2\,\mathrm{kg}\) is acted on by a force \(\mathbf{F}=(4t\mathbf{i}+(6-2t)\mathbf{j})\,\mathrm{N}\). At time \(t=0\) the particle is at the origin with velocity \(3\mathbf{i}-\mathbf{j}\). Find the impulse of the force over the interval \(0\le t\le 3\) and the velocity at \(t=3\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Impulse \(=\int_0^3\mathbf{F}\,\mathrm{d}t=\bigl[2t^2\mathbf{i}+(6t-t^2)\mathbf{j}\bigr]_0^3=18\mathbf{i}+(18-9)\mathbf{j}=18\mathbf{i}+9\mathbf{j}\).</p>
+          <p>Change in momentum \(=\text{impulse}=18\mathbf{i}+9\mathbf{j}\). Initial momentum \(=2(3\mathbf{i}-\mathbf{j})=6\mathbf{i}-2\mathbf{j}\). Final momentum \(=24\mathbf{i}+7\mathbf{j}\). Velocity \(=12\mathbf{i}+\dfrac{7}{2}\mathbf{j}\).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A truck of mass \(800\,\mathrm{kg}\) is moving at \(5\,\mathrm{m\,s}^{-1}\) when it collides with a stationary truck of mass \(1200\,\mathrm{kg}\). After the collision the two trucks move together. Find the common speed and the loss in kinetic energy.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Momentum: \(800\cdot5=2000v\Rightarrow v=2\,\mathrm{m\,s}^{-1}\).</p>
+          <p>Initial KE \(=\dfrac{1}{2}\cdot800\cdot25=10000\,\mathrm{J}\). Final KE \(=\dfrac{1}{2}\cdot2000\cdot4=4000\,\mathrm{J}\). Loss \(=6000\,\mathrm{J}\).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="../index.html#further" class="btn btn-ghost">← All topics</a>
+        <a href="work-energy-power.html" class="btn btn-primary">Work, Energy &amp; Power →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

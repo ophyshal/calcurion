@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Series — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Core Pure 1</p>
+        <h1>Series</h1>
+        <p class="q-intro">14 exam-style questions on standard results, method of differences and proofs. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">5 Medium</span>
+          <span class="diff-tag hard">5 Hard</span>
+        </div>
+      </div>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body">
+          <p>Use the standard results for \(\sum r\) and \(\sum r^2\) to find \(\displaystyle\sum_{r=1}^{n} (3r^2 - 2r)\).</p>
+          <p>Simplify your answer fully.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\sum_{r=1}^{n}(3r^2-2r) = 3\cdot\dfrac{n(n+1)(2n+1)}{6} - 2\cdot\dfrac{n(n+1)}{2}\)</p>
+          <p>\(= \dfrac{n(n+1)(2n+1)}{2} - n(n+1) = n(n+1)\left(\dfrac{2n+1}{2} - 1\right)\)</p>
+          <p>\(= n(n+1)\left(\dfrac{2n+1-2}{2}\right) = \dfrac{n(n+1)(2n-1)}{2}\)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Show that \(\dfrac{1}{r(r+1)} = \dfrac{1}{r} - \dfrac{1}{r+1}\).</p>
+          <p>Hence find \(\displaystyle\sum_{r=1}^{n} \dfrac{1}{r(r+1)}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>RHS: \(\dfrac{1}{r} - \dfrac{1}{r+1} = \dfrac{r+1-r}{r(r+1)} = \dfrac{1}{r(r+1)}\). ✓</p>
+          <p>Sum: \(\sum_{r=1}^{n}\left(\dfrac{1}{r}-\dfrac{1}{r+1}\right) = \left(1-\dfrac{1}{2}\right)+\left(\dfrac{1}{2}-\dfrac{1}{3}\right)+\cdots+\left(\dfrac{1}{n}-\dfrac{1}{n+1}\right)\)</p>
+          <p>\(= 1 - \dfrac{1}{n+1} = \dfrac{n}{n+1}\)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body">
+          <p>Find \(\displaystyle\sum_{r=1}^{20} r(r+1)\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\sum r(r+1) = \sum(r^2+r) = \sum r^2 + \sum r\)</p>
+          <p>\(= \dfrac{n(n+1)(2n+1)}{6} + \dfrac{n(n+1)}{2}\) with \(n=20\)</p>
+          <p>\(= \dfrac{20\cdot21\cdot41}{6} + \dfrac{20\cdot21}{2} = 2870 + 210 = 3080\)</p>
+          <p>Alternatively: \(\sum r(r+1) = \sum(r^2+r) = \dfrac{n(n+1)(n+2)}{3} = \dfrac{20\cdot21\cdot22}{3} = 3080\).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Given that \(\dfrac{2r+1}{r(r+1)(r+2)} = \dfrac{a}{r} + \dfrac{b}{r+1} + \dfrac{c}{r+2}\), find the values of \(a\), \(b\) and \(c\).</p>
+          <p>Hence find \(\displaystyle\sum_{r=1}^{n} \dfrac{2r+1}{r(r+1)(r+2)}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(2r+1 = a(r+1)(r+2) + b r(r+2) + c r(r+1)\)</p>
+          <p>Put \(r=0\): \(1 = a\cdot1\cdot2 \Rightarrow a = \dfrac{1}{2}\)</p>
+          <p>Put \(r=-1\): \(-1 = b(-1)(1) \Rightarrow -1 = -b \Rightarrow b = 1\)</p>
+          <p>Put \(r=-2\): \(-3 = c(-2)(-1) \Rightarrow -3 = 2c \Rightarrow c = -\dfrac{3}{2}\)</p>
+          <p>Check coeff of \(r^2\): \(0 = a+b+c = \frac12+1-\frac32=0\). ✓</p>
+          <p>Sum: \(\sum\left(\dfrac{1/2}{r} + \dfrac{1}{r+1} - \dfrac{3/2}{r+2}\right)\). Method of differences gives</p>
+          <p>\(\dfrac{n(3n+1)}{2(n+1)(n+2)}\) (after simplifying the telescoping sum).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Use the standard formulae to find \(\displaystyle\sum_{r=1}^{n} r(3r-1)\).</p>
+          <p>Hence find \(\displaystyle\sum_{r=10}^{20} r(3r-1)\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\sum r(3r-1) = 3\sum r^2 - \sum r = 3\cdot\dfrac{n(n+1)(2n+1)}{6} - \dfrac{n(n+1)}{2}\)</p>
+          <p>\(= \dfrac{n(n+1)(2n+1)}{2} - \dfrac{n(n+1)}{2} = \dfrac{n(n+1)}{2}(2n+1-1) = n^2(n+1)\)</p>
+          <p>\(\sum_{r=10}^{20} = \sum_{1}^{20} - \sum_{1}^{9} = 20^2\cdot21 - 9^2\cdot10 = 8400 - 810 = 7590\)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Prove by induction that \(\displaystyle\sum_{r=1}^{n} r\cdot 2^{r-1} = (n-1)2^n + 1\) for all positive integers \(n\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>Base:</strong> \(n=1\): LHS \(= 1\cdot 2^0 = 1\). RHS \(= (0)2^1 + 1 = 1\). ✓</p>
+          <p><strong>Assume</strong> true for \(n=k\): \(\sum_{r=1}^{k} r\cdot 2^{r-1} = (k-1)2^k + 1\).</p>
+          <p><strong>Inductive step:</strong> \(\sum_{r=1}^{k+1} r\cdot 2^{r-1} = (k-1)2^k + 1 + (k+1)2^k\)</p>
+          <p>\(= (k-1+k+1)2^k + 1 = (2k)2^k + 1 = k\cdot 2^{k+1} + 1\)</p>
+          <p>\(= ((k+1)-1)2^{k+1} + 1\). ✓</p>
+          <p>By induction true for all positive integers \(n\).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Find \(\displaystyle\sum_{r=1}^{n} \dfrac{1}{(2r-1)(2r+1)}\) using partial fractions.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\dfrac{1}{(2r-1)(2r+1)} = \dfrac{1/2}{2r-1} - \dfrac{1/2}{2r+1} = \dfrac{1}{2}\left(\dfrac{1}{2r-1}-\dfrac{1}{2r+1}\right)\)</p>
+          <p>Sum telescopes: \(\dfrac{1}{2}\Big[\left(1-\dfrac{1}{3}\right)+\left(\dfrac{1}{3}-\dfrac{1}{5}\right)+\cdots+\left(\dfrac{1}{2n-1}-\dfrac{1}{2n+1}\right)\Big]\)</p>
+          <p>\(= \dfrac{1}{2}\left(1 - \dfrac{1}{2n+1}\right) = \dfrac{n}{2n+1}\)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Show that \(\dfrac{r}{(r+1)(r+2)(r+3)} = \dfrac{a}{r+1} + \dfrac{b}{r+2} + \dfrac{c}{r+3}\) and find \(a\), \(b\), \(c\).</p>
+          <p>Hence find \(\displaystyle\sum_{r=1}^{n} \dfrac{r}{(r+1)(r+2)(r+3)}\) and deduce the sum to infinity.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(r = a(r+2)(r+3) + b(r+1)(r+3) + c(r+1)(r+2)\)</p>
+          <p>\(r=-1\): \(-1 = a(1)(2) \Rightarrow a = -\dfrac{1}{2}\)</p>
+          <p>\(r=-2\): \(-2 = b(-1)(1) \Rightarrow -2 = -b \Rightarrow b = 2\)</p>
+          <p>\(r=-3\): \(-3 = c(-2)(-1) \Rightarrow -3 = 2c \Rightarrow c = -\dfrac{3}{2}\)</p>
+          <p>Sum: \(\sum\left(-\dfrac{1/2}{r+1} + \dfrac{2}{r+2} - \dfrac{3/2}{r+3}\right)\). Telescoping yields</p>
+          <p>\(\dfrac{n(n+1)}{4(n+2)(n+3)}\). As \(n\to\infty\), sum \(\to \dfrac{1}{4}\).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Using the formula for \(\sum r^3\), show that \(\displaystyle\sum_{r=1}^{n} r^2(r+1) = \dfrac{n(n+1)(n+2)(3n+1)}{12}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\sum r^2(r+1) = \sum(r^3+r^2) = \sum r^3 + \sum r^2\)</p>
+          <p>\(= \left(\dfrac{n(n+1)}{2}\right)^2 + \dfrac{n(n+1)(2n+1)}{6}\)</p>
+          <p>\(= \dfrac{n^2(n+1)^2}{4} + \dfrac{n(n+1)(2n+1)}{6}\)</p>
+          <p>\(= \dfrac{n(n+1)}{12}\big[3n(n+1) + 2(2n+1)\big] = \dfrac{n(n+1)}{12}(3n^2+3n+4n+2)\)</p>
+          <p>\(= \dfrac{n(n+1)}{12}(3n^2+7n+2) = \dfrac{n(n+1)(3n+1)(n+2)}{12}\). ✓</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Prove by induction that \(\displaystyle\sum_{r=1}^{n} \dfrac{1}{r(r+1)} = \dfrac{n}{n+1}\) for all positive integers \(n\).</p>
+          <p>Hence find \(\displaystyle\sum_{r=n+1}^{2n} \dfrac{1}{r(r+1)}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>Base \(n=1\):</strong> LHS \(= \dfrac{1}{1\cdot2} = \dfrac{1}{2}\). RHS \(= \dfrac{1}{2}\). ✓</p>
+          <p><strong>Assume</strong> for \(n=k\): \(\sum_{r=1}^{k}\dfrac{1}{r(r+1)} = \dfrac{k}{k+1}\).</p>
+          <p><strong>Step:</strong> \(\sum_{1}^{k+1} = \dfrac{k}{k+1} + \dfrac{1}{(k+1)(k+2)} = \dfrac{k(k+2)+1}{(k+1)(k+2)} = \dfrac{k^2+2k+1}{(k+1)(k+2)} = \dfrac{(k+1)^2}{(k+1)(k+2)} = \dfrac{k+1}{k+2}\). ✓</p>
+          <p>\(\sum_{r=n+1}^{2n} = \sum_{1}^{2n} - \sum_{1}^{n} = \dfrac{2n}{2n+1} - \dfrac{n}{n+1} = \dfrac{2n(n+1) - n(2n+1)}{(2n+1)(n+1)} = \dfrac{n}{(2n+1)(n+1)}\).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">3 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find \( \displaystyle\sum_{r=1}^{n} (2r + 1) \) using the standard formulae, and simplify.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \sum (2r + 1) = 2\sum r + \sum 1 = 2\cdot\dfrac{n(n+1)}{2} + n = n(n+1) + n = n^2 + 2n \).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Use the method of differences to show that \( \displaystyle\sum_{r=1}^{n} \dfrac{1}{r(r+1)} = 1 - \dfrac{1}{n+1} \).</p>
+          <p>Hence find \( \displaystyle\sum_{r=1}^{\infty} \dfrac{1}{r(r+1)} \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \dfrac{1}{r(r+1)} = \dfrac{1}{r} - \dfrac{1}{r+1} \) (partial fractions).</p>
+          <p>Sum telescopes: \( \left(1 - \dfrac{1}{2}\right) + \left(\dfrac{1}{2} - \dfrac{1}{3}\right) + \cdots + \left(\dfrac{1}{n} - \dfrac{1}{n+1}\right) = 1 - \dfrac{1}{n+1} \).</p>
+          <p>As \( n\to\infty \), the infinite sum is 1.</p>
+        </div>
+      </article>
+
+      <!-- Q13 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q13</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find a closed form for \( \displaystyle\sum_{r=1}^{n} r\cdot 2^r \).</p>
+          <p>(You may use the formula for the sum of a geometric series.)</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \( S = \sum_{r=1}^{n} r x^r \) with \( x=2 \). Then \( S = x + 2x^2 + \cdots + n x^n \).</p>
+          <p>\( xS = x^2 + 2x^3 + \cdots + (n-1)x^n + n x^{n+1} \).</p>
+          <p>\( S - xS = x + x^2 + \cdots + x^n - n x^{n+1} = x\dfrac{1-x^n}{1-x} - n x^{n+1} \).</p>
+          <p>\( S(1-x) = x\dfrac{1-x^n}{1-x} - n x^{n+1} \), so \( S = \dfrac{x(1-x^n)}{(1-x)^2} - \dfrac{n x^{n+1}}{1-x} \).</p>
+          <p>For \( x=2 \): \( S = \dfrac{2(1-2^n)}{(1-2)^2} - \dfrac{n\cdot 2^{n+1}}{1-2} = 2(1-2^n) + n\cdot 2^{n+1} = 2 - 2^{n+1} + n\cdot 2^{n+1} = 2 + (n-1)2^{n+1} \).</p>
+        </div>
+      </article>
+
+      <!-- Q14 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q14</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Prove by induction that \( \displaystyle\sum_{r=1}^{n} r^3 = \left( \dfrac{n(n+1)}{2} \right)^2 \) for all positive integers \( n \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>Base case</strong> \( n=1 \): LHS \( =1 \), RHS \( =(1\cdot2/2)^2=1 \). True.</p>
+          <p><strong>Inductive hypothesis</strong>: assume true for \( n=k \): \( \sum_{r=1}^{k} r^3 = \left( \dfrac{k(k+1)}{2} \right)^2 \).</p>
+          <p><strong>Inductive step</strong>: for \( n=k+1 \),</p>
+          <p>\( \sum_{r=1}^{k+1} r^3 = \left( \dfrac{k(k+1)}{2} \right)^2 + (k+1)^3 = (k+1)^2 \left[ \dfrac{k^2}{4} + (k+1) \right] = (k+1)^2 \left( \dfrac{k^2 + 4k + 4}{4} \right) = (k+1)^2 \cdot \dfrac{(k+2)^2}{4} = \left( \dfrac{(k+1)(k+2)}{2} \right)^2 \).</p>
+          <p>Hence true for all \( n \) by induction.</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="matrices.html" class="btn btn-ghost">← Matrices</a>
+        <a href="roots-polynomials.html" class="btn btn-primary">Roots of Polynomials →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connected Particles — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Mechanics</p>
+        <h1>Connected Particles</h1>
+        <p class="q-intro">10 exam-style questions on particles connected by strings, pulleys, Atwood machines and systems with friction. Tap <strong>Show answer</strong> for full working. Take \(g=10\,\mathrm{m\,s}^{-2}\) unless stated.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">3 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">3 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles of masses \(3\,\mathrm{kg}\) and \(5\,\mathrm{kg}\) are connected by a light inextensible string which passes over a smooth fixed pulley. The system is released from rest. Find the acceleration of the system and the tension in the string.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>For \(5\,\mathrm{kg}\): \(50-T=5a\). For \(3\,\mathrm{kg}\): \(T-30=3a\). Add: \(20=8a \Rightarrow a=2.5\,\mathrm{m\,s}^{-2}\). \(T=30+3\cdot2.5=37.5\,\mathrm{N}\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(4\,\mathrm{kg}\) on a smooth horizontal table is connected by a light inextensible string to a particle of mass \(2\,\mathrm{kg}\) which hangs freely. The string passes over a smooth pulley at the edge of the table. Find the acceleration of the system when released from rest with the string taut.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>For hanging mass: \(20-T=2a\). For table mass: \(T=4a\). Add: \(20=6a \Rightarrow a=\dfrac{10}{3}\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>In an Atwood machine the two masses are \(m\) and \(3m\). Find the acceleration of the system and the tension in the string in terms of \(m\) and \(g\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>For \(3m\): \(3mg-T=3ma\). For \(m\): \(T-mg=ma\). Add: \(2mg=4ma \Rightarrow a=\dfrac{g}{2}\). \(T=mg+m\cdot\dfrac{g}{2}=\dfrac{3}{2}mg\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles \(A\) and \(B\) of masses \(2\,\mathrm{kg}\) and \(3\,\mathrm{kg}\) are connected by a light inextensible string. \(A\) is on a rough horizontal table with coefficient of friction \(0.2\); the string passes over a smooth pulley and \(B\) hangs freely. The system is released from rest. Find the acceleration and the tension. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Friction on \(A\): \(\mu R=0.2\cdot20=4\,\mathrm{N}\).</p>
+          <p>For \(B\): \(30-T=3a\). For \(A\): \(T-4=2a\). Add: \(26=5a \Rightarrow a=5.2\,\mathrm{m\,s}^{-2}\). \(T=4+2\cdot5.2=14.4\,\mathrm{N}\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Particles \(A\) and \(B\) of masses \(4\,\mathrm{kg}\) and \(6\,\mathrm{kg}\) are connected by a light inextensible string which passes over a smooth fixed pulley. The system is released from rest with the string taut. After \(2\,\mathrm{s}\) the string breaks. Find how much further \(B\) falls before coming to instantaneous rest. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Acceleration while connected: \(a=\dfrac{(6-4)g}{10}=2\,\mathrm{m\,s}^{-2}\). After \(2\,\mathrm{s}\), speed of \(B\) \(=4\,\mathrm{m\,s}^{-1}\) downward.</p>
+          <p>After string breaks, \(B\) is a free particle projected upward? No: \(B\) was descending, so continues downward under gravity with initial speed \(4\,\mathrm{m\,s}^{-1}\). It does not come to rest; it accelerates downward. (If the question means the lighter mass, or if \(B\) was the ascending mass, adjust. Assuming \(B\) is the heavier descending mass, it never stops. If we take the ascending mass \(A\): speed \(4\,\mathrm{m\,s}^{-1}\) upward, then \(0=16-20s \Rightarrow s=0.8\,\mathrm{m}\) further.)</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(m\) on a smooth plane inclined at \(30^\circ\) to the horizontal is connected by a light inextensible string which passes over a smooth pulley at the top of the plane to a particle of mass \(2m\) hanging freely. Find the acceleration of the system when released.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Assume \(2m\) descends. For \(2m\): \(2mg-T=2ma\). For \(m\): \(T-mg\sin30^\circ=ma \Rightarrow T-\dfrac{1}{2}mg=ma\).</p>
+          <p>Add: \(2mg-\dfrac{1}{2}mg=3ma \Rightarrow \dfrac{3}{2}mg=3ma \Rightarrow a=\dfrac{g}{2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles of masses \(m\) and \(2m\) are connected by a light inextensible string of length \(4a\). The particle of mass \(2m\) is held on a smooth horizontal table at a distance \(a\) from the edge; the string is taut and the particle of mass \(m\) hangs freely. The system is released from rest. Find the speed of each particle when the heavier particle reaches the edge of the table.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Acceleration \(a=\dfrac{mg}{3m}=\dfrac{g}{3}\). Distance travelled by each \(=a\) (until \(2m\) reaches edge). \(v^2=u^2+2as=0+2\cdot\dfrac{g}{3}\cdot a=\dfrac{2ga}{3}\). \(v=\sqrt{\dfrac{2ga}{3}}\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Particles \(A\), \(B\) and \(C\) of masses \(2\,\mathrm{kg}\), \(3\,\mathrm{kg}\) and \(5\,\mathrm{kg}\) respectively are connected by light inextensible strings as follows: \(A\) and \(B\) are connected and rest on a smooth horizontal table; the string from \(B\) passes over a smooth pulley and is attached to \(C\) which hangs freely. The system is released from rest. Find the acceleration of the system and the tensions in the two strings.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let tension between \(A\) and \(B\) be \(T_1\), between \(B\) and \(C\) be \(T_2\). Acceleration \(a\).</p>
+          <p>For \(C\): \(50-T_2=5a\). For \(B\): \(T_2-T_1=3a\). For \(A\): \(T_1=2a\).</p>
+          <p>From \(A\) and \(B\): \(T_2=5a\). Then \(50-5a=5a \Rightarrow 50=10a \Rightarrow a=5\,\mathrm{m\,s}^{-2}\). \(T_1=10\,\mathrm{N}\), \(T_2=25\,\mathrm{N}\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle of mass \(3\,\mathrm{kg}\) on a rough horizontal table (\(\mu=0.25\)) is connected by a light inextensible string which passes over a smooth pulley to a particle of mass \(5\,\mathrm{kg}\) hanging freely. The system is released from rest. After the \(5\,\mathrm{kg}\) mass has descended \(2\,\mathrm{m}\) the string breaks. Find the total distance travelled by the \(3\,\mathrm{kg}\) mass from the start until it comes to rest. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>While connected: friction \(=0.25\cdot30=7.5\,\mathrm{N}\). \(50-T=5a\), \(T-7.5=3a\). Add: \(42.5=8a \Rightarrow a=5.3125\,\mathrm{m\,s}^{-2}\).</p>
+          <p>After \(2\,\mathrm{m}\): \(v^2=2\cdot5.3125\cdot2=21.25 \Rightarrow v\approx4.61\,\mathrm{m\,s}^{-1}\).</p>
+          <p>After string breaks, only friction acts on the \(3\,\mathrm{kg}\) mass: deceleration \(=\dfrac{7.5}{3}=2.5\,\mathrm{m\,s}^{-2}\). Distance to stop: \(0=21.25-2\cdot2.5\cdot s \Rightarrow s=4.25\,\mathrm{m}\).</p>
+          <p>Total distance \(=2+4.25=6.25\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Two particles of equal mass \(m\) are connected by a light inextensible string of length \(2l\). One particle is held at rest on a smooth horizontal table at a distance \(l\) from a smooth hole in the table; the string passes through the hole and the other particle hangs at rest. The particle on the table is projected horizontally with speed \(u\) perpendicular to the string. Show that the hanging particle will not move if \(u^2\le gl\), and find the tension in the string in this case.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>If the hanging particle remains at rest, the particle on the table moves in a circle of radius \(l\). Centripetal force \(=\dfrac{mu^2}{l}\) provided by the tension \(T\).</p>
+          <p>For the hanging particle to remain at rest, \(T\le mg\). Thus \(\dfrac{mu^2}{l}\le mg \Rightarrow u^2\le gl\).</p>
+          <p>When \(u^2\le gl\), \(T=\dfrac{mu^2}{l}\).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="friction.html" class="btn btn-ghost">← Friction</a>
+        <a href="../index.html#maths" class="btn btn-primary">All topics →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

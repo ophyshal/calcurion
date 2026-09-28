@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statistical Distributions — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg></span><span class="logo-text">Calcurion</span></a>
+      <nav class="nav"><a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Statistics</p>
+        <h1>Statistical Distributions</h1>
+        <p class="q-intro">10 exam-style questions on the binomial and normal distributions. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats"><span class="diff-tag easy">3 Easy</span><span class="diff-tag medium">4 Medium</span><span class="diff-tag hard">3 Hard</span></div>
+      </div>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body"><p>The random variable \( X\sim B(8,0.3) \). Find \( P(X=2) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( P(X=2)=\dbinom{8}{2}(0.3)^2(0.7)^6=28\times0.09\times0.117649\approx0.296 \).</p></div></article>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>If \( X\sim B(10,0.4) \), find the mean and variance of \( X \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \mathrm{E}(X)=np=4 \). \( \mathrm{Var}(X)=np(1-p)=10\times0.4\times0.6=2.4 \).</p></div></article>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>\( Y\sim N(50,16) \). Find \( P(Y&lt;46) \) using the standard normal table (or calculator), giving the answer to 3 d.p.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( Z=\dfrac{46-50}{4}=-1 \). \( P(Z&lt;-1)=1-\Phi(1)\approx1-0.8413=0.159 \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>\( X\sim B(12,0.25) \). Find \( P(X\le2) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( P(X=0)+P(X=1)+P(X=2) \). \( (0.75)^{12}+\dbinom{12}{1}(0.25)(0.75)^{11}+\dbinom{12}{2}(0.25)^2(0.75)^{10}\approx0.0317+0.1267+0.2323\approx0.391 \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>\( X\sim N(\mu,25) \) and \( P(X&lt;40)=0.1587 \). Find \( \mu \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \Phi\left(\dfrac{40-\mu}{5}\right)=0.1587 \) ⇒ \( \dfrac{40-\mu}{5}=-1 \) ⇒ \( 40-\mu=-5 \) ⇒ \( \mu=45 \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>A manufacturer claims that 90% of its light bulbs last more than 1000 hours. A random sample of 15 bulbs is tested. Using a binomial model, find the probability that fewer than 12 last more than 1000 hours.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( X\sim B(15,0.9) \). \( P(X\le11)=1-P(X\ge12) \). Alternatively compute \( \sum_{k=0}^{11}\dbinom{15}{k}(0.9)^k(0.1)^{15-k} \). Approx. 0.055 (exact calculation recommended with calculator).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>\( X\sim N(100,36) \). Find \( a \) such that \( P(X&gt;a)=0.05 \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \Phi\left(\dfrac{a-100}{6}\right)=0.95 \) ⇒ \( \dfrac{a-100}{6}\approx1.645 \) ⇒ \( a\approx100+9.87=109.87 \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>\( X\sim B(20,0.4) \). Use a normal approximation (with continuity correction) to estimate \( P(X\ge10) \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \mathrm{E}(X)=8 \), \( \mathrm{Var}=4.8 \), \( \sigma\approx2.19 \). \( P(X\ge10)\approx P(Y&gt;9.5) \) where \( Y\sim N(8,4.8) \). \( Z=\dfrac{9.5-8}{\sqrt{4.8}}\approx0.685 \). \( P(Z&gt;0.685)\approx0.247 \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>The lengths of metal rods are normally distributed with mean 50 cm and standard deviation 1.2 cm. Rods shorter than 48 cm or longer than 52 cm are rejected. Find the proportion rejected.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( P(X&lt;48)+P(X&gt;52)=2P\left(Z&lt;\dfrac{48-50}{1.2}\right)=2P(Z&lt;-1.667)\approx2\times0.0478=0.0956 \) (about 9.6%).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body"><p>\( X\sim N(\mu,\sigma^2) \) with \( P(X&lt;20)=0.05 \) and \( P(X&gt;30)=0.10 \). Find \( \mu \) and \( \sigma \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \dfrac{20-\mu}{\sigma}=-1.645 \), \( \dfrac{30-\mu}{\sigma}=1.282 \). Subtract: \( \dfrac{10}{\sigma}=2.927 \) ⇒ \( \sigma\approx3.416 \). Then \( 20-\mu=-1.645\times3.416 \) ⇒ \( \mu\approx25.62 \).</p></div></article>
+
+      <div class="q-footer-nav">
+        <a href="measures-location-spread.html" class="btn btn-ghost">← Measures of Location &amp; Spread</a>
+        <a href="hypothesis-testing.html" class="btn btn-primary">Hypothesis Testing →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

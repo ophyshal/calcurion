@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "updated": "2026-09-28",
+  "worksheets": [
+    {
+      "id": "p1-surds-indices",
+      "title": "Surds & Indices",
+      "module": "pure-1",
+      "moduleLabel": "Pure 1",
+      "file": "pdfs/pure-1/Calcurion_ALevel_Surds_Indices_Worksheet.pdf",
+      "description": "15 exam-style questions with space to work.",
+      "pages": 5,
+      "topic": "Surds & Indices"
+    }
+  ]
+}

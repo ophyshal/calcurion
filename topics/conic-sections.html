@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conic Sections — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Further Pure 1</p>
+        <h1>Conic Sections</h1>
+        <p class="q-intro">12 exam-style questions on parabolas, rectangular hyperbolas, ellipses, tangents, normals and loci. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The parabola \(C\) has equation \(y^2=8x\). Write down the coordinates of the focus and the equation of the directrix.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Standard form \(y^2=4ax\) with \(4a=8\Rightarrow a=2\). Focus \((2,0)\), directrix \(x=-2\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the equation of the tangent to the parabola \(y^2=12x\) at the point \((3,6)\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(4a=12\Rightarrow a=3\). Point \((at^2,2at)=(3,6)\Rightarrow t=1\). Tangent: \(ty=x+at^2\Rightarrow y=x+3\), or \(x-y+3=0\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The rectangular hyperbola \(H\) has equation \(xy=16\). Find the coordinates of the points where \(H\) meets the line \(y=2x\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(x\cdot2x=16\Rightarrow 2x^2=16\Rightarrow x^2=8\Rightarrow x=\pm2\sqrt{2}\). Points \((2\sqrt{2},4\sqrt{2})\) and \((-2\sqrt{2},-4\sqrt{2})\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A point \(P(at^2,2at)\) lies on the parabola \(y^2=4ax\). Show that the equation of the normal at \(P\) is \(y+tx=2at+at^3\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Differentiate: \(2y\dfrac{\mathrm{d}y}{\mathrm{d}x}=4a\Rightarrow\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{2a}{y}=\dfrac{1}{t}\) at \(P\). Gradient of normal \(=-t\).</p>
+          <p>Normal: \(y-2at=-t(x-at^2)\Rightarrow y-2at=-tx+at^3\Rightarrow y+tx=2at+at^3\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the equations of the tangents from the point \((1,4)\) to the parabola \(y^2=4x\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(a=1\). Tangent with parameter \(t\): \(ty=x+t^2\). Passes through \((1,4)\): \(4t=1+t^2\Rightarrow t^2-4t+1=0\Rightarrow t=2\pm\sqrt{3}\).</p>
+          <p>Tangents: \((2+\sqrt{3})y=x+(2+\sqrt{3})^2\) and \((2-\sqrt{3})y=x+(2-\sqrt{3})^2\).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The point \(P\bigl(ct,\dfrac{c}{t}\bigr)\) lies on the rectangular hyperbola \(xy=c^2\). Find the equation of the tangent at \(P\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Differentiate \(xy=c^2\): \(x\dfrac{\mathrm{d}y}{\mathrm{d}x}+y=0\Rightarrow\dfrac{\mathrm{d}y}{\mathrm{d}x}=-\dfrac{y}{x}=-\dfrac{1}{t^2}\) at \(P\).</p>
+          <p>Tangent: \(y-\dfrac{c}{t}=-\dfrac{1}{t^2}\bigl(x-ct\bigr)\). Multiply by \(t^2\): \(t^2y-ct=-x+ct\Rightarrow x+t^2y=2ct\).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Show that the chord joining the points with parameters \(t_1\) and \(t_2\) on the parabola \(y^2=4ax\) has equation \(y(t_1+t_2)=2x+2at_1t_2\). Deduce the condition for the chord to pass through the focus.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Points \((at_1^2,2at_1)\), \((at_2^2,2at_2)\). Gradient \(\dfrac{2a(t_2-t_1)}{a(t_2^2-t_1^2)}=\dfrac{2}{t_1+t_2}\).</p>
+          <p>Equation using first point: \(y-2at_1=\dfrac{2}{t_1+t_2}(x-at_1^2)\). Multiply by \(t_1+t_2\): \(y(t_1+t_2)-2at_1(t_1+t_2)=2x-2at_1^2\Rightarrow y(t_1+t_2)=2x+2at_1t_2\).</p>
+          <p>Passes through focus \((a,0)\): \(0=2a+2at_1t_2\Rightarrow t_1t_2=-1\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the equation of the normal to the rectangular hyperbola \(xy=9\) at the point \(\bigl(6,\dfrac{3}{2}\bigr)\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(c^2=9\), point corresponds to \(t=2\) (since \(ct=6\Rightarrow t=2\), \(c/t=3/2\)). Gradient of tangent \(=-\dfrac{1}{t^2}=-\dfrac{1}{4}\). Gradient of normal \(=4\).</p>
+          <p>Normal: \(y-\dfrac{3}{2}=4(x-6)\Rightarrow y-\dfrac{3}{2}=4x-24\Rightarrow y=4x-\dfrac{45}{2}\), or \(8x-2y-45=0\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The point \(P(at^2,2at)\) lies on the parabola \(y^2=4ax\). The normal at \(P\) meets the parabola again at \(Q\). Show that the coordinates of \(Q\) are \(\bigl(a\bigl(t+\dfrac{2}{t}\bigr)^2,-2a\bigl(t+\dfrac{2}{t}\bigr)\bigr)\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Normal: \(y+tx=2at+at^3\). Intersect with \(y^2=4ax\) again. Parametric: let second point have parameter \(m\). Then the normal at \(t\) is also the chord joining \(t\) and \(m\), so comparing with the chord formula (or solving) yields \(m=-t-\dfrac{2}{t}\).</p>
+          <p>Hence \(Q=\bigl(a m^2,2am\bigr)=\bigl(a\bigl(t+\dfrac{2}{t}\bigr)^2,-2a\bigl(t+\dfrac{2}{t}\bigr)\bigr)\).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the locus of the midpoint of a chord of the parabola \(y^2=4ax\) which subtends a right angle at the vertex.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let ends have parameters \(t_1,t_2\). Midpoint \(\bigl(a\dfrac{t_1^2+t_2^2}{2},a(t_1+t_2)\bigr)\). Chord subtends right angle at vertex: directions from origin to the points are perpendicular, so \(at_1^2\cdot at_2^2+2at_1\cdot2at_2=0\Rightarrow t_1t_2(t_1t_2+4)=0\Rightarrow t_1t_2=-4\).</p>
+          <p>Also \(t_1^2+t_2^2=(t_1+t_2)^2-2t_1t_2\). Let \(h=a(t_1^2+t_2^2)/2\), \(k=a(t_1+t_2)\). Then \(t_1+t_2=k/a\), \(t_1t_2=-4\), so \(2h/a=(k/a)^2+8\Rightarrow 2ah=k^2+8a^2\Rightarrow\) locus \(y^2=2ax-8a^2\) (or \(y^2=2a(x-4a)\)).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The ellipse \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\) has eccentricity \(e\). Show that the equation of the tangent at the point \((a\cos\theta,b\sin\theta)\) is \(\dfrac{x\cos\theta}{a}+\dfrac{y\sin\theta}{b}=1\). Find the locus of the point of intersection of perpendicular tangents.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Differentiate implicitly: \(\dfrac{2x}{a^2}+\dfrac{2y}{b^2}y'=0\Rightarrow y'=-\dfrac{b^2x}{a^2y}\). At the point, gradient \(=-\dfrac{b}{a}\cot\theta\). Equation of tangent follows by point-gradient form and simplification using the ellipse equation.</p>
+          <p>Perpendicular tangents: the director circle. For an ellipse the locus is \(x^2+y^2=a^2+b^2\).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A variable tangent to the parabola \(y^2=4ax\) meets the coordinate axes at \(A\) and \(B\). Find the locus of the midpoint of \(AB\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Tangent \(ty=x+at^2\). Meets \(x\)-axis (\(y=0\)): \(x=-at^2\), so \(A(-at^2,0)\). Meets \(y\)-axis (\(x=0\)): \(y=at\), so \(B(0,at)\).</p>
+          <p>Midpoint \(\bigl(-\dfrac{1}{2}at^2,\dfrac{1}{2}at\bigr)\). Let \(h=-\dfrac{1}{2}at^2\), \(k=\dfrac{1}{2}at\Rightarrow t=\dfrac{2k}{a}\). Then \(h=-\dfrac{1}{2}a\cdot\dfrac{4k^2}{a^2}=-\dfrac{2k^2}{a}\). Locus: \(x=-\dfrac{2y^2}{a}\), or \(y^2=-\dfrac{1}{2}ax\).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="t-formulae.html" class="btn btn-ghost">← t-formulae</a>
+        <a href="further-vectors.html" class="btn btn-primary">Further Vectors →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

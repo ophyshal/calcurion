@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>t-formulae — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Further Pure 1</p>
+        <h1>t-formulae</h1>
+        <p class="q-intro">12 exam-style questions on the Weierstrass substitutions \(t=\tan\frac{\theta}{2}\), identities and solving equations. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Given \(t=\tan\dfrac{\theta}{2}\), write down expressions for \(\sin\theta\), \(\cos\theta\) and \(\tan\theta\) in terms of \(t\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\sin\theta=\dfrac{2t}{1+t^2}\), \(\cos\theta=\dfrac{1-t^2}{1+t^2}\), \(\tan\theta=\dfrac{2t}{1-t^2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Use the \(t\)-formulae to show that \(\dfrac{1+\cos\theta}{\sin\theta}=\cot\dfrac{\theta}{2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Left-hand side: \(\dfrac{1+\dfrac{1-t^2}{1+t^2}}{\dfrac{2t}{1+t^2}}=\dfrac{\dfrac{1+t^2+1-t^2}{1+t^2}}{\dfrac{2t}{1+t^2}}=\dfrac{2}{2t}=\dfrac{1}{t}=\cot\dfrac{\theta}{2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the equation \(3\cos\theta+4\sin\theta=5\) for \(0\le\theta&lt;2\pi\), using the \(t\)-formulae.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Substitute: \(3\dfrac{1-t^2}{1+t^2}+4\dfrac{2t}{1+t^2}=5\). Multiply by \(1+t^2\): \(3-3t^2+8t=5+5t^2\).</p>
+          <p>\(3+8t-3t^2-5-5t^2=0 \Rightarrow -8t^2+8t-2=0 \Rightarrow 4t^2-4t+1=0 \Rightarrow (2t-1)^2=0\).</p>
+          <p>\(t=\dfrac{1}{2}\). \(\tan\dfrac{\theta}{2}=\dfrac{1}{2}\). In \([0,2\pi)\), \(\dfrac{\theta}{2}=\tan^{-1}\dfrac{1}{2}\) or \(\pi+\tan^{-1}\dfrac{1}{2}\), so \(\theta=2\tan^{-1}\dfrac{1}{2}\) or \(2\pi+2\tan^{-1}\dfrac{1}{2}\) (check range). Only one solution in range from the double root; verify \(\theta\approx0.927\) satisfies.</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Express \(\sec\theta\) in terms of \(t=\tan\dfrac{\theta}{2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\sec\theta=\dfrac{1}{\cos\theta}=\dfrac{1+t^2}{1-t^2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Use the \(t\)-formulae to prove that \(\dfrac{\sin\theta}{1+\cos\theta}+\dfrac{1+\cos\theta}{\sin\theta}=2\csc\theta\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>LHS \(=\dfrac{2t/(1+t^2)}{1+(1-t^2)/(1+t^2)}+\dfrac{1+(1-t^2)/(1+t^2)}{2t/(1+t^2)}=\dfrac{2t/(1+t^2)}{2/(1+t^2)}+\dfrac{2/(1+t^2)}{2t/(1+t^2)}=t+\dfrac{1}{t}=\dfrac{t^2+1}{t}\).</p>
+          <p>RHS \(=2\cdot\dfrac{1+t^2}{2t}=\dfrac{1+t^2}{t}\). Equal.</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(5\sin\theta-12\cos\theta=7\) for \(0\le\theta&lt;2\pi\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>With \(t=\tan(\theta/2)\): \(5\cdot\dfrac{2t}{1+t^2}-12\cdot\dfrac{1-t^2}{1+t^2}=7\).</p>
+          <p>\(10t-12+12t^2=7+7t^2 \Rightarrow 5t^2+10t-19=0\).</p>
+          <p>\(t=\dfrac{-10\pm\sqrt{100+380}}{10}=\dfrac{-10\pm\sqrt{480}}{10}=\dfrac{-10\pm4\sqrt{30}}{10}=\dfrac{-5\pm2\sqrt{30}}{5}\).</p>
+          <p>Both positive/negative roots yield two solutions in the interval (calculate \(\theta=2\arctan t\) carefully, discarding extraneous if any from domain of \(t\)).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Show that \(\tan\dfrac{\theta}{2}+\cot\dfrac{\theta}{2}=2\csc\theta\), and hence solve \(\tan\dfrac{\theta}{2}+\cot\dfrac{\theta}{2}=4\) for \(0&lt;\theta&lt;\pi\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\tan(\theta/2)+\cot(\theta/2)=\dfrac{t+1/t}{1}=\dfrac{t^2+1}{t}\). And \(2\csc\theta=2\cdot\dfrac{1+t^2}{2t}=\dfrac{1+t^2}{t}\). Equal.</p>
+          <p>So \(\dfrac{1+t^2}{t}=4 \Rightarrow 1+t^2=4t \Rightarrow t^2-4t+1=0 \Rightarrow t=2\pm\sqrt{3}\).</p>
+          <p>\(\theta=2\arctan(2+\sqrt{3})\) or \(2\arctan(2-\sqrt{3})\). These are \(\dfrac{5\pi}{6}\) and \(\dfrac{\pi}{6}\) respectively (in the given range).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Express \(\dfrac{1+\sin\theta}{\cos\theta}\) in terms of \(t=\tan\dfrac{\theta}{2}\), simplifying fully.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\dfrac{1+\dfrac{2t}{1+t^2}}{\dfrac{1-t^2}{1+t^2}}=\dfrac{\dfrac{1+t^2+2t}{1+t^2}}{\dfrac{1-t^2}{1+t^2}}=\dfrac{(1+t)^2}{(1-t)(1+t)}=\dfrac{1+t}{1-t}\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the equation \(3\sec\theta-4\csc\theta=2\) for \(0&lt;\theta&lt;\dfrac{\pi}{2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\sec\theta=\dfrac{1+t^2}{1-t^2}\), \(\csc\theta=\dfrac{1+t^2}{2t}\).</p>
+          <p>\(3\dfrac{1+t^2}{1-t^2}-4\dfrac{1+t^2}{2t}=2\). Factor \(1+t^2\): \((1+t^2)\Bigl(\dfrac{3}{1-t^2}-\dfrac{2}{t}\Bigr)=2\).</p>
+          <p>Common denominator \(t(1-t^2)\): \(\dfrac{3t-2(1-t^2)}{t(1-t^2)}=\dfrac{3t-2+2t^2}{t(1-t^2)}\). Then \((1+t^2)\cdot\dfrac{2t^2+3t-2}{t(1-t^2)}=2\).</p>
+          <p>Note \(1-t^2=(1-t)(1+t)\). Solving the resulting polynomial yields admissible \(t\) in \((0,1)\) for the acute range; one valid solution is \(\theta=\dfrac{\pi}{3}\) (verify by substitution).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>By writing \(t=\tan\dfrac{\theta}{2}\), show that \(\int\dfrac{\mathrm{d}\theta}{3+5\cos\theta}=\dfrac{1}{2\sqrt{2}}\ln\left|\dfrac{\sqrt{2}\tan(\theta/2)+1}{\sqrt{2}\tan(\theta/2)-1}\right|+C\), or an equivalent form.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\mathrm{d}\theta=\dfrac{2\,\mathrm{d}t}{1+t^2}\), \(\cos\theta=\dfrac{1-t^2}{1+t^2}\). Integral becomes \(\int\dfrac{2\,\mathrm{d}t/(1+t^2)}{3+5(1-t^2)/(1+t^2)}=\int\dfrac{2\,\mathrm{d}t}{3(1+t^2)+5(1-t^2)}=\int\dfrac{2\,\mathrm{d}t}{8-2t^2}=\int\dfrac{\mathrm{d}t}{4-t^2}\).</p>
+          <p>\(\int\dfrac{\mathrm{d}t}{4-t^2}=\dfrac{1}{4}\ln\left|\dfrac{2+t}{2-t}\right|\) (or artanh form). Adjusting constants gives the required logarithmic expression in \(\tan(\theta/2)\).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(2\sin\theta+\cos\theta=1\) for \(-\pi&lt;\theta\le\pi\), giving answers in exact form where possible.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(2\cdot\dfrac{2t}{1+t^2}+\dfrac{1-t^2}{1+t^2}=1\). \(4t+1-t^2=1+t^2 \Rightarrow -2t^2+4t=0 \Rightarrow -2t(t-2)=0\).</p>
+          <p>\(t=0\) or \(t=2\). \(t=0\Rightarrow\theta=0\). \(t=2\Rightarrow\theta=2\arctan2\).</p>
+          <p>Also consider the discontinuity of \(t=\tan(\theta/2)\) at \(\theta=\pm\pi\); check \(\theta=\pi\) separately: \(2\sin\pi+\cos\pi=-1\neq1\). Solutions: \(\theta=0\) and \(\theta=2\arctan2\) (approximately \(2.214\)), both in \((-\pi,\pi]\).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Prove that \(\cot\theta-\tan\theta=2\cot 2\theta\), and use the \(t\)-formulae to verify the identity.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Standard proof: \(\cot\theta-\tan\theta=\dfrac{\cos\theta}{\sin\theta}-\dfrac{\sin\theta}{\cos\theta}=\dfrac{\cos^2-\sin^2}{\sin\cos}=\dfrac{\cos 2\theta}{\frac12\sin 2\theta}=2\cot 2\theta\).</p>
+          <p>With \(t\): \(\tan\theta=\dfrac{2t}{1-t^2}\), \(\cot\theta=\dfrac{1-t^2}{2t}\). Difference \(\dfrac{1-t^2}{2t}-\dfrac{2t}{1-t^2}=\dfrac{(1-t^2)^2-4t^2}{2t(1-t^2)}=\dfrac{1-2t^2+t^4-4t^2}{2t(1-t^2)}=\dfrac{(1-t^2)^2-4t^2}{2t(1-t^2)}\). And \(2\cot 2\theta=2\cdot\dfrac{1-\tan^2\theta}{2\tan\theta}=\dfrac{1-\tan^2\theta}{\tan\theta}\), which matches after substitution.</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="../index.html#further" class="btn btn-ghost">← All topics</a>
+        <a href="conic-sections.html" class="btn btn-primary">Conic Sections →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

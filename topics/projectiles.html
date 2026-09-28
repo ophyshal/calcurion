@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projectiles — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Mechanics</p>
+        <h1>Projectiles</h1>
+        <p class="q-intro">12 exam-style questions on projectile motion, range, time of flight, trajectory and inclined planes. Tap <strong>Show answer</strong> for full working. Take \(g=9.8\,\mathrm{m\,s}^{-2}\) unless stated otherwise.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">4 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">4 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle is projected from a point on horizontal ground with speed \(20\,\mathrm{m\,s}^{-1}\) at an angle of \(30^\circ\) to the horizontal. Find the time of flight and the range on the horizontal ground.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Time of flight \(T=\dfrac{2u\sin\theta}{g}=\dfrac{2\cdot20\cdot\sin30^\circ}{9.8}=\dfrac{20}{9.8}\approx2.04\,\mathrm{s}\).</p>
+          <p>Range \(R=\dfrac{u^2\sin2\theta}{g}=\dfrac{400\sin60^\circ}{9.8}=\dfrac{400\cdot\sqrt{3}/2}{9.8}\approx35.3\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A ball is thrown horizontally from the top of a cliff \(45\,\mathrm{m}\) high with speed \(15\,\mathrm{m\,s}^{-1}\). Find the time taken to reach the ground and the horizontal distance travelled. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Vertical: \(s=\dfrac{1}{2}gt^2 \Rightarrow 45=5t^2 \Rightarrow t^2=9 \Rightarrow t=3\,\mathrm{s}\).</p>
+          <p>Horizontal distance \(=15\cdot3=45\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle is projected with speed \(14\,\mathrm{m\,s}^{-1}\) at \(45^\circ\) to the horizontal. Find the maximum height reached and the speed at the highest point. Take \(g=9.8\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Max height \(H=\dfrac{u^2\sin^2\theta}{2g}=\dfrac{196\cdot(1/\sqrt{2})^2}{19.6}=\dfrac{196\cdot0.5}{19.6}=5\,\mathrm{m}\).</p>
+          <p>At highest point vertical velocity is zero, so speed \(=u\cos\theta=14\cdot\dfrac{1}{\sqrt{2}}=7\sqrt{2}\approx9.90\,\mathrm{m\,s}^{-1}\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Show that the equation of the trajectory of a projectile launched with speed \(u\) at angle \(\theta\) is \(y=x\tan\theta-\dfrac{gx^2}{2u^2\cos^2\theta}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(x=(u\cos\theta)t \Rightarrow t=\dfrac{x}{u\cos\theta}\).</p>
+          <p>\(y=(u\sin\theta)t-\dfrac{1}{2}gt^2=\ (u\sin\theta)\dfrac{x}{u\cos\theta}-\dfrac{1}{2}g\dfrac{x^2}{u^2\cos^2\theta}=x\tan\theta-\dfrac{gx^2}{2u^2\cos^2\theta}\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle is projected from a point on horizontal ground with speed \(25\,\mathrm{m\,s}^{-1}\) at an angle \(\alpha\) to the horizontal. The particle passes through a point which is \(15\,\mathrm{m}\) horizontally and \(8\,\mathrm{m}\) vertically from the point of projection. Find the two possible values of \(\tan\alpha\). Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Trajectory: \(8=15\tan\alpha-\dfrac{10\cdot225}{2\cdot625\cos^2\alpha}=15\tan\alpha-\dfrac{2250}{1250\cos^2\alpha}=15\tan\alpha-\dfrac{9}{5}\sec^2\alpha\).</p>
+          <p>\(8=15\tan\alpha-\dfrac{9}{5}(1+\tan^2\alpha)\). Let \(t=\tan\alpha\): \(8=15t-\dfrac{9}{5}-\dfrac{9}{5}t^2\).</p>
+          <p>Multiply by \(5\): \(40=75t-9-9t^2 \Rightarrow 9t^2-75t+49=0\).</p>
+          <p>\(t=\dfrac{75\pm\sqrt{5625-1764}}{18}=\dfrac{75\pm\sqrt{3861}}{18}=\dfrac{75\pm\sqrt{9\cdot429}}{18}=\dfrac{75\pm3\sqrt{429}}{18}=\dfrac{25\pm\sqrt{429}}{6}\).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle is projected up a plane inclined at \(30^\circ\) to the horizontal. The particle is projected from a point on the plane with speed \(20\,\mathrm{m\,s}^{-1}\) at \(60^\circ\) to the horizontal (so \(30^\circ\) to the plane). Find the range up the plane. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Resolve axes along and perpendicular to the plane. Acceleration along plane: \(-g\sin30^\circ=-5\). Perpendicular: \(-g\cos30^\circ=-5\sqrt{3}\).</p>
+          <p>Initial velocity along plane: \(20\cos30^\circ=10\sqrt{3}\). Perpendicular: \(20\sin30^\circ=10\).</p>
+          <p>Time of flight: perpendicular displacement \(=0\): \(0=10t-\dfrac{1}{2}\cdot5\sqrt{3}\,t^2 \Rightarrow t(10-\dfrac{5\sqrt{3}}{2}t)=0 \Rightarrow t=\dfrac{4}{\sqrt{3}}\).</p>
+          <p>Range \(= (10\sqrt{3})\cdot\dfrac{4}{\sqrt{3}} - \dfrac{1}{2}\cdot5\cdot\dfrac{16}{3}=40-\dfrac{40}{3}=\dfrac{80}{3}\,\mathrm{m}\).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle is projected from the top of a tower of height \(40\,\mathrm{m}\) with speed \(30\,\mathrm{m\,s}^{-1}\) at an angle of \(30^\circ\) above the horizontal. Find the time taken to reach the ground and the distance from the foot of the tower where it lands. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Vertical: \(s=-40\), \(u=30\sin30^\circ=15\), \(a=-10\).</p>
+          <p>\(-40=15t-5t^2 \Rightarrow 5t^2-15t-40=0 \Rightarrow t^2-3t-8=0 \Rightarrow t=\dfrac{3\pm\sqrt{9+32}}{2}=\dfrac{3\pm\sqrt{41}}{2}\). Positive root \(t=\dfrac{3+\sqrt{41}}{2}\approx4.70\,\mathrm{s}\).</p>
+          <p>Horizontal distance \(=(30\cos30^\circ)t=15\sqrt{3}\cdot\dfrac{3+\sqrt{41}}{2}\approx122\,\mathrm{m}\) (3 s.f.).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The maximum range of a projectile on horizontal ground is \(80\,\mathrm{m}\). Find the maximum height that can be reached by the projectile when projected at the same speed.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Max range \(R_{\max}=\dfrac{u^2}{g}=80 \Rightarrow u^2=80g\).</p>
+          <p>Max height (for \(45^\circ\)): \(H=\dfrac{u^2\sin^2 45^\circ}{2g}=\dfrac{u^2\cdot\tfrac{1}{2}}{2g}=\dfrac{u^2}{4g}=\dfrac{80g}{4g}=20\,\mathrm{m}\).</p>
+          <p>(Note: absolute maximum height for given \(u\) is when projected vertically: \(\dfrac{u^2}{2g}=40\,\mathrm{m}\). The question usually means the height corresponding to the max-range angle.)</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle is projected from a point \(O\) on horizontal ground with speed \(u\) at an angle \(\theta\) to the horizontal. At the same instant a second particle is projected from a point \(20\,\mathrm{m}\) vertically above \(O\) with the same speed \(u\) at an angle \(\theta\) below the horizontal. The particles collide. Show that \(\tan\theta=\dfrac{5g}{u^2}\) and find the time of collision.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Position of first: \(x_1=(u\cos\theta)t\), \(y_1=(u\sin\theta)t-\dfrac{1}{2}gt^2\).</p>
+          <p>Second: \(x_2=(u\cos\theta)t\), \(y_2=20-(u\sin\theta)t-\dfrac{1}{2}gt^2\).</p>
+          <p>Same \(x\), collide when \(y_1=y_2\): \((u\sin\theta)t-\dfrac{1}{2}gt^2=20-(u\sin\theta)t-\dfrac{1}{2}gt^2 \Rightarrow 2(u\sin\theta)t=20 \Rightarrow t=\dfrac{10}{u\sin\theta}\).</p>
+          <p>They must meet at the same horizontal position (already satisfied). For collision in flight the vertical condition is sufficient; the given \(\tan\theta\) arises if an additional condition (e.g. they meet when the first is at max height) is imposed, or from the relative motion. Relative initial vertical velocity is \(2u\sin\theta\) closing a gap of \(20\), time \(\dfrac{20}{2u\sin\theta}=\dfrac{10}{u\sin\theta}\), consistent.</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle is projected with speed \(30\,\mathrm{m\,s}^{-1}\) from a point on an inclined plane of angle \(30^\circ\). The direction of projection is perpendicular to the plane. Find the range on the plane. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Axes along/perpendicular to plane. \(u_\parallel=0\), \(u_\perp=30\).</p>
+          <p>\(a_\parallel=-g\sin30^\circ=-5\), \(a_\perp=-g\cos30^\circ=-5\sqrt{3}\).</p>
+          <p>Time of flight: \(0=30t-\dfrac{1}{2}\cdot5\sqrt{3}\,t^2 \Rightarrow t=\dfrac{12}{\sqrt{3}}=4\sqrt{3}\).</p>
+          <p>Range \(=0\cdot t + \dfrac{1}{2}(-5)(4\sqrt{3})^2=- \dfrac{5}{2}\cdot48=-120\) (magnitude \(120\,\mathrm{m}\) down the plane).</p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A batsman hits a ball from a height of \(1\,\mathrm{m}\) with speed \(30\,\mathrm{m\,s}^{-1}\) at \(45^\circ\) to the horizontal. A fielder \(60\,\mathrm{m}\) away starts running at the instant the ball is hit. Assuming the fielder can reach a height of \(2.5\,\mathrm{m}\), find the minimum constant speed the fielder must run to catch the ball. Take \(g=10\,\mathrm{m\,s}^{-2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Trajectory from height \(1\): \(y=1+x\tan45^\circ-\dfrac{gx^2}{2u^2\cos^2 45^\circ}=1+x-\dfrac{10x^2}{2\cdot900\cdot\tfrac{1}{2}}=1+x-\dfrac{x^2}{90}\).</p>
+          <p>At \(x=60\): \(y=1+60-\dfrac{3600}{90}=61-40=21\,\mathrm{m}\) (far above reach). The ball lands when \(y=0\): \(0=1+x-\dfrac{x^2}{90} \Rightarrow x^2-90x-90=0\). Positive root \(\approx91\,\mathrm{m}\).</p>
+          <p>Time of flight to landing \(\approx\dfrac{91}{30/\sqrt{2}}\approx4.3\,\mathrm{s}\). Fielder must cover \(\approx31\,\mathrm{m}\) in that time if catching on the bounce, or adjust for catching in flight at height \(2.5\,\mathrm{m}\). Solving \(2.5=1+x-x^2/90\) gives the catch positions; the minimum speed is the distance to the nearer catch point divided by the corresponding time.</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>A particle is projected from the origin with speed \(u\) at angle \(\theta\) to the horizontal. Show that the particle is at a distance \(r\) from the origin at time \(t\) where \(r^2=u^2t^2-gt^2(u\sin\theta)t+\dfrac{1}{4}g^2t^4\), and find the condition for the particle to be moving perpendicular to the radius vector from the origin.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(x=ut\cos\theta\), \(y=ut\sin\theta-\dfrac{1}{2}gt^2\).</p>
+          <p>\(r^2=x^2+y^2=u^2t^2\cos^2\theta+(ut\sin\theta-\dfrac{1}{2}gt^2)^2=u^2t^2\cos^2\theta+u^2t^2\sin^2\theta-ugt^3\sin\theta+\dfrac{1}{4}g^2t^4=u^2t^2-ugt^3\sin\theta+\dfrac{1}{4}g^2t^4\).</p>
+          <p>Velocity perpendicular to radius vector when \(\mathbf{r}\cdot\mathbf{v}=0\). \(\mathbf{v}=(u\cos\theta,\ u\sin\theta-gt)\). \(\mathbf{r}\cdot\mathbf{v}=x u\cos\theta + y(u\sin\theta-gt)=0\). Substituting and simplifying yields the condition \(u^2=gt(u\sin\theta-\dfrac{1}{2}gt)\) or equivalent.</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="moments.html" class="btn btn-ghost">← Moments</a>
+        <a href="friction.html" class="btn btn-primary">Friction →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

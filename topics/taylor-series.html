@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taylor Series — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Further Pure 1</p>
+        <h1>Taylor Series</h1>
+        <p class="q-intro">10 exam-style questions on Taylor expansions about a point, limits, approximations and applications to differential equations. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">3 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">3 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the Taylor series expansion of \(f(x)=\mathrm{e}^{x}\) about \(x=1\), up to and including the term in \((x-1)^3\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(f(1)=\mathrm{e}\), \(f'=f''=f'''=\mathrm{e}^{x}\), so all derivatives at \(1\) are \(\mathrm{e}\).</p>
+          <p>\(f(x)=\mathrm{e}+\mathrm{e}(x-1)+\dfrac{\mathrm{e}}{2}(x-1)^2+\dfrac{\mathrm{e}}{6}(x-1)^3+\cdots\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Write down the Taylor series for \(\ln(1+x)\) about \(x=0\) up to the term in \(x^4\). Hence find an approximation for \(\ln 1.1\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\ln(1+x)=x-\dfrac{x^2}{2}+\dfrac{x^3}{3}-\dfrac{x^4}{4}+\cdots\) for \(|x|&lt;1\).</p>
+          <p>\(\ln 1.1\approx0.1-\dfrac{0.01}{2}+\dfrac{0.001}{3}-\dfrac{0.0001}{4}=0.1-0.005+0.000333-0.000025\approx0.0953\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the first three non-zero terms in the Taylor expansion of \(\sin x\) about \(x=\dfrac{\pi}{2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \(h=x-\pi/2\). \(\sin x=\sin(\pi/2+h)=\cos h=1-\dfrac{h^2}{2}+\dfrac{h^4}{24}-\cdots\).</p>
+          <p>So \(\sin x=1-\dfrac{1}{2}\bigl(x-\dfrac{\pi}{2}\bigr)^2+\dfrac{1}{24}\bigl(x-\dfrac{\pi}{2}\bigr)^4-\cdots\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the Taylor series of \(f(x)=\dfrac{1}{1+x}\) about \(x=2\), up to the term in \((x-2)^3\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(f(2)=\dfrac{1}{3}\). \(f'(x)=-\dfrac{1}{(1+x)^2}\), \(f'(2)=-\dfrac{1}{9}\).</p>
+          <p>\(f''(x)=\dfrac{2}{(1+x)^3}\), \(f''(2)=\dfrac{2}{27}\). \(f'''(x)=-\dfrac{6}{(1+x)^4}\), \(f'''(2)=-\dfrac{6}{81}=-\dfrac{2}{27}\).</p>
+          <p>\(f(x)=\dfrac{1}{3}-\dfrac{1}{9}(x-2)+\dfrac{1}{27}(x-2)^2-\dfrac{1}{81}(x-2)^3+\cdots\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Use the Taylor expansion of \(\mathrm{e}^{x}\) about \(x=0\) to find \(\displaystyle\lim_{x\to0}\dfrac{\mathrm{e}^{x}-1-x}{x^2}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\mathrm{e}^{x}=1+x+\dfrac{x^2}{2}+\dfrac{x^3}{6}+\cdots\). Numerator \(=\dfrac{x^2}{2}+\dfrac{x^3}{6}+\cdots\). Limit \(=\dfrac{1}{2}\).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the first four terms of the Taylor series for \(\sqrt{1+x}\) about \(x=0\). Use it to approximate \(\sqrt{1.05}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Binomial or Taylor: \(1+\dfrac{1}{2}x-\dfrac{1}{8}x^2+\dfrac{1}{16}x^3-\cdots\).</p>
+          <p>\(\sqrt{1.05}\approx1+\dfrac{1}{2}(0.05)-\dfrac{1}{8}(0.0025)+\dfrac{1}{16}(0.000125)=1+0.025-0.0003125+0.0000078125\approx1.024695\).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Given that \(y\) satisfies \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=x+y\) with \(y(0)=1\), find the Taylor series for \(y\) about \(x=0\) up to the term in \(x^3\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(y(0)=1\). \(y'=x+y\), so \(y'(0)=1\). Differentiate: \(y''=1+y'\), \(y''(0)=1+1=2\). \(y'''=y''\), \(y'''(0)=2\).</p>
+          <p>\(y=1+x+\dfrac{2}{2}x^2+\dfrac{2}{6}x^3+\cdots=1+x+x^2+\dfrac{1}{3}x^3+\cdots\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the Taylor expansion of \(\tan x\) about \(x=0\) up to the term in \(x^5\). Hence find \(\displaystyle\lim_{x\to0}\dfrac{\tan x-x}{x^3}\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(\tan x=x+\dfrac{1}{3}x^3+\dfrac{2}{15}x^5+\cdots\). Numerator \(=\dfrac{1}{3}x^3+\dfrac{2}{15}x^5+\cdots\). Limit \(=\dfrac{1}{3}\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Use Leibniz’s theorem to find the \(n\)th derivative of \(y=x^2\mathrm{e}^{x}\). Hence write down the Taylor series of \(y\) about \(x=0\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Leibniz: \((uv)^{(n)}=\sum_{r=0}^{n}\binom{n}{r}u^{(r)}v^{(n-r)}\). Let \(u=x^2\), \(v=\mathrm{e}^{x}\). \(u'=2x\), \(u''=2\), \(u^{(r)}=0\) for \(r\ge3\). \(v^{(k)}=\mathrm{e}^{x}\).</p>
+          <p>\(y^{(n)}=\binom{n}{0}x^2\mathrm{e}^{x}+\binom{n}{1}2x\mathrm{e}^{x}+\binom{n}{2}2\mathrm{e}^{x}=(x^2+2nx+n(n-1))\mathrm{e}^{x}\).</p>
+          <p>At \(0\): \(y^{(n)}(0)=n(n-1)\). Series: \(y=\sum\dfrac{n(n-1)}{n!}x^n=\sum\dfrac{x^n}{(n-2)!}\) for \(n\ge2\), i.e. \(x^2\mathrm{e}^{x}\) as expected.</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the first three non-zero terms in the expansion of \(\dfrac{1}{\sqrt{1+2x}}\) about \(x=0\). State the range of validity.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Binomial: \((1+2x)^{-1/2}=1+\bigl(-\dfrac{1}{2}\bigr)(2x)+\dfrac{(-\frac12)(-\frac32)}{2}(2x)^2+\dfrac{(-\frac12)(-\frac32)(-\frac52)}{6}(2x)^3+\cdots\)</p>
+          <p>\(=1-x+\dfrac{3}{2}x^2-\dfrac{5}{2}x^3+\cdots\). Valid for \(|2x|&lt;1\), i.e. \(|x|&lt;\dfrac{1}{2}\).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="further-vectors.html" class="btn btn-ghost">← Further Vectors</a>
+        <a href="further-inequalities.html" class="btn btn-primary">Further Inequalities →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

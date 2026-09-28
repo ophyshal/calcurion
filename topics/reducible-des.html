@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reducible Differential Equations — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Further Pure 1</p>
+        <h1>Reducible Differential Equations</h1>
+        <p class="q-intro">10 exam-style questions on equations reducible by substitution (homogeneous, exact, missing variable, etc.). Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">3 Easy</span>
+          <span class="diff-tag medium">4 Medium</span>
+          <span class="diff-tag hard">3 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{y}{x}\) by the substitution \(y=vx\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(y=vx\Rightarrow\dfrac{\mathrm{d}y}{\mathrm{d}x}=v+x\dfrac{\mathrm{d}v}{\mathrm{d}x}\). So \(v+x\dfrac{\mathrm{d}v}{\mathrm{d}x}=v\Rightarrow x\dfrac{\mathrm{d}v}{\mathrm{d}x}=0\Rightarrow v=C\). Thus \(y=Cx\).</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Use the substitution \(v=y'\) to solve \(y''=2y'\), given \(y(0)=1\), \(y'(0)=2\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(v'=2v\Rightarrow\dfrac{\mathrm{d}v}{\mathrm{d}x}=2v\Rightarrow\dfrac{\mathrm{d}v}{v}=2\,\mathrm{d}x\Rightarrow\ln|v|=2x+C\Rightarrow v=Ae^{2x}\).</p>
+          <p>\(y'=Ae^{2x}\). \(y'(0)=2\Rightarrow A=2\). \(y=\mathrm{e}^{2x}+B\). \(y(0)=1\Rightarrow B=0\). \(y=\mathrm{e}^{2x}\).</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Show that the substitution \(v=\dfrac{y}{x}\) reduces the equation \(x\dfrac{\mathrm{d}y}{\mathrm{d}x}=y+x\) to a separable equation, and solve it.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(y=vx\), \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=v+x\dfrac{\mathrm{d}v}{\mathrm{d}x}\). Left: \(x(v+x v')=vx+x\Rightarrow x^2v'=x\Rightarrow xv'=1\Rightarrow\dfrac{\mathrm{d}v}{\mathrm{d}x}=\dfrac{1}{x}\). \(v=\ln|x|+C\). \(y=x\ln|x|+Cx\).</p>
+        </div>
+      </article>
+
+      <!-- Q4 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{x+y}{x-y}\) using a homogeneous substitution.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \(y=vx\). Then \(v+x v'=\dfrac{1+v}{1-v}\). \(x v'=\dfrac{1+v}{1-v}-v=\dfrac{1+v-v+v^2}{1-v}=\dfrac{1+v^2}{1-v}\).</p>
+          <p>\(\dfrac{1-v}{1+v^2}\,\mathrm{d}v=\dfrac{\mathrm{d}x}{x}\). Integrate: \(\arctan v-\dfrac{1}{2}\ln(1+v^2)=\ln|x|+C\). Back-substitute \(v=y/x\).</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The differential equation \(x^2\dfrac{\mathrm{d}y}{\mathrm{d}x}=y^2+xy+x^2\) is homogeneous. Solve it by the substitution \(y=vx\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(v+x v'=\dfrac{v^2+v+1}{1}\). \(x v'=v^2+1\). \(\dfrac{\mathrm{d}v}{v^2+1}=\dfrac{\mathrm{d}x}{x}\). \(\arctan v=\ln|x|+C\). \(y=x\tan(\ln|x|+C)\).</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(y''+y'=0\) by reducing the order, given \(y(0)=0\), \(y'(0)=1\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \(v=y'\). \(v'+v=0\Rightarrow v=Ae^{-x}\). \(y' =Ae^{-x}\). \(y=-Ae^{-x}+B\). \(y'(0)=1\Rightarrow A=1\). \(y(0)=0\Rightarrow -1+B=0\Rightarrow B=1\). \(y=1-\mathrm{e}^{-x}\).</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Use the substitution \(v=x+y\) to solve \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=(x+y)^2\).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\(v=x+y\Rightarrow\dfrac{\mathrm{d}v}{\mathrm{d}x}=1+\dfrac{\mathrm{d}y}{\mathrm{d}x}=1+v^2\). \(\dfrac{\mathrm{d}v}{1+v^2}=\mathrm{d}x\). \(\arctan v=x+C\). \(v=\tan(x+C)\). \(y=\tan(x+C)-x\).</p>
+        </div>
+      </article>
+
+      <!-- Q8 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the equation \(x\dfrac{\mathrm{d}y}{\mathrm{d}x}+y=xy^2\) by a suitable substitution (Bernoulli or otherwise).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Divide by \(x\): \(\dfrac{\mathrm{d}y}{\mathrm{d}x}+\dfrac{1}{x}y=y^2\). Bernoulli: let \(z=y^{-1}\). Then \(\dfrac{\mathrm{d}z}{\mathrm{d}x}=-\dfrac{1}{y^2}\dfrac{\mathrm{d}y}{\mathrm{d}x}\). Multiply original by \(-y^{-2}\): \(-\dfrac{1}{y^2}y'-\dfrac{1}{x}y^{-1}=-1\). So \(\dfrac{\mathrm{d}z}{\mathrm{d}x}-\dfrac{1}{x}z=-1\).</p>
+          <p>Integrating factor \(\dfrac{1}{x}\). \(\dfrac{1}{x}z=\int-\dfrac{1}{x}\,\mathrm{d}x=-\ln|x|+C\). \(z=-x\ln|x|+Cx\). \(y=\dfrac{1}{x(C-\ln|x|)}\).</p>
+        </div>
+      </article>
+
+      <!-- Q9 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The equation \(\dfrac{\mathrm{d}^2y}{\mathrm{d}x^2}+\dfrac{1}{x}\dfrac{\mathrm{d}y}{\mathrm{d}x}=0\) has a solution independent of \(x\) in the first derivative. Reduce the order and solve fully.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \(v=y'\). Then \(v'+\dfrac{1}{x}v=0\Rightarrow\dfrac{\mathrm{d}v}{v}=-\dfrac{\mathrm{d}x}{x}\Rightarrow\ln|v|=-\ln|x|+C\Rightarrow v=\dfrac{A}{x}\).</p>
+          <p>\(y'=A/x\Rightarrow y=A\ln|x|+B\).</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve \(\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{2x+y+1}{x+2y-1}\) by a translation of axes to remove the constant terms.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Solve the simultaneous system \(2x+y+1=0\), \(x+2y-1=0\) to find the intersection point of the lines. Solving: \(x= -1\), \(y=1\). Shift: let \(X=x+1\), \(Y=y-1\).</p>
+          <p>Then \(\dfrac{\mathrm{d}Y}{\mathrm{d}X}=\dfrac{2X+Y}{X+2Y}\). This is homogeneous. Substitute \(Y=vX\) and solve as before, then translate back.</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="further-inequalities.html" class="btn btn-ghost">← Further Inequalities</a>
+        <a href="../index.html#further" class="btn btn-primary">All topics →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

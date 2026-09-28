@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calcurion — A-Level Maths & Further Maths Practice</title>
+  <meta name="description" content="Free A-Level Maths and Further Maths exam questions by topic. Practise, check answers, and level up." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="math-grid"></div>
+    <div class="math-symbols">
+      <span class="math-sym s1">∫</span>
+      <span class="math-sym s2">π</span>
+      <span class="math-sym s3">Σ</span>
+      <span class="math-sym s4">∂</span>
+      <span class="math-sym s5">∞</span>
+      <span class="math-sym s6">√</span>
+      <span class="math-sym s7">∇</span>
+      <span class="math-sym s8">θ</span>
+      <span class="math-sym s9">Δ</span>
+      <span class="math-sym s10">λ</span>
+      <span class="math-sym s11">∮</span>
+      <span class="math-sym s12">φ</span>
+      <span class="math-sym s13">≈</span>
+      <span class="math-sym s14">ℝ</span>
+      <span class="math-eq e1">e<sup>iπ</sup> + 1 = 0</span>
+      <span class="math-eq e2">∑ r² = n(n+1)(2n+1)/6</span>
+      <span class="math-eq e3">∇ × F = 0</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="#further" class="nav-link">Further</a>
+        <a href="#maths" class="nav-link">Maths</a>
+        <a href="lessons.html" class="nav-link">Lessons</a>
+        <a href="#papers" class="nav-link">Papers</a>
+        <a href="worksheets.html" class="nav-link">Worksheets</a>
+        <a href="#books" class="nav-link">Books</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-row">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="dot"></span> Free · No sign-up · Exam-style</p>
+          <h1>Practise smarter.<br />Score higher.</h1>
+          <p class="hero-sub">
+            Worked solutions on every question. Pick a topic, practise, check your method.
+          </p>
+          <div class="hero-actions">
+            <a href="#maths" class="btn btn-primary">
+              A-Level Maths
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#further" class="btn btn-ghost">Further Maths</a>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-metrics">
+            <div class="metric">
+              <span class="metric-value">540+</span>
+              <span class="metric-label">Questions</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">48</span>
+              <span class="metric-label">Topics</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">Free</span>
+              <span class="metric-label">Forever</span>
+            </div>
+          </div>
+          <ul class="hero-benefits">
+            <li><span aria-hidden="true">⇒</span> Instant worked solutions</li>
+            <li><span aria-hidden="true">∈</span> Organised by topic</li>
+            <li><span aria-hidden="true">∇</span> Easy → Hard difficulty</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="path-strip" aria-label="Jump to">
+        <span class="path-label">Jump to</span>
+        <a href="#maths">Pure 1</a>
+        <a href="#maths" data-jump="pure2">Pure 2</a>
+        <a href="#further">Core Pure 1</a>
+        <a href="#further" data-jump="core2">Core Pure 2</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="worksheets.html">Worksheets</a>
+        <a href="#books">Books</a>
+        <a href="https://www.physicsandmathstutor.com/a-level-maths-papers/" target="_blank" rel="noopener noreferrer">Past papers</a>
+      </nav>
+    </div>
+  </section>
+
+  <section id="further" class="section">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-tag">01</span>
+        <div>
+          <h2>Further Mathematics</h2>
+          <p>Core Pure and Further Pure topics with live questions. Tap a card to practise.</p>
+        </div>
+      </header>
+
+      <div class="pill-tabs" role="tablist">
+        <button class="pill active" data-module="core1">Core Pure 1</button>
+        <button class="pill" data-module="core2">Core Pure 2</button>
+        <button class="pill" data-module="fp1">Further Pure 1</button>
+        <button class="pill" data-module="fm1">Further Mech 1</button>
+      </div>
+
+      <div class="module-panel active" id="panel-core1">
+        <div class="card-grid">
+          <a href="topics/complex-numbers.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="11" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h22M20 9v22" stroke="currentColor" stroke-width="1.15" opacity="0.4"/><text x="20" y="25" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-style="italic" fill="currentColor">i</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Complex Numbers</h3>
+            <p>Argand plane, loci, polynomials &amp; conjugates</p>
+            <span class="card-count">16 questions →</span>
+          </a>
+          <a href="topics/matrices.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M11 7v26M29 7v26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 7h3.5M11 33h3.5M29 7h-3.5M29 33h-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><text x="20" y="23" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="currentColor">aᵢⱼ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Matrices</h3>
+            <p>2×2 &amp; 3×3, determinants, inverses &amp; systems</p>
+            <span class="card-count">14 questions →</span>
+          </a>
+          <a href="topics/linear-transformations.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">T(v)</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Linear Transformations</h3>
+            <p>Reflections, rotations, invariant lines &amp; points</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/series.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="28" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="currentColor">Σ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Series</h3>
+            <p>Standard results, method of differences, proofs</p>
+            <span class="card-count">14 questions →</span>
+          </a>
+          <a href="topics/roots-polynomials.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">α,β</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Roots of Polynomials</h3>
+            <p>Relations between roots, transformations</p>
+            <span class="card-count">14 questions →</span>
+          </a>
+          <a href="topics/volumes-revolution.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">π∫</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Volumes of Revolution</h3>
+            <p>Standard solids &amp; non-standard shapes</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/proof-induction.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="currentColor">∀n</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Proof by Induction</h3>
+            <p>Sums, divisibility, inequalities &amp; matrices</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/vectors.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-style="italic" fill="currentColor">a⃗</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Vectors</h3>
+            <p>Lines, planes, distances &amp; applications</p>
+            <span class="card-count">14 questions →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="module-panel" id="panel-core2">
+        <div class="card-grid">
+          <a href="topics/further-complex-numbers.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="11" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h22M20 9v22" stroke="currentColor" stroke-width="1.15" opacity="0.4"/><text x="20" y="25" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="currentColor">e<sup>iθ</sup></text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Further Complex Numbers</h3>
+            <p>Exponential form, De Moivre &amp; nth roots</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/maclaurin-series.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">Σxⁿ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Maclaurin Series</h3>
+            <p>Expansions, method of differences &amp; compounds</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/methods-in-calculus.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">∫∞</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Methods in Calculus</h3>
+            <p>Improper integrals, mean value &amp; inverse trig</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/volumes-revolution.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">πy²</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Volumes of Revolution</h3>
+            <p>About x- and y-axes, parametric &amp; modelling</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/polar-coordinates.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/><path d="M20 20l9-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><text x="20" y="34" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="currentColor">r,θ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Polar Coordinates</h3>
+            <p>Curves, area, tangents &amp; conversion</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/hyperbolic-functions.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="currentColor">sinh</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Hyperbolic Functions</h3>
+            <p>Identities, inverses, calculus &amp; equations</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/differential-equations.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">ẏ=</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Differential Equations</h3>
+            <p>1st &amp; 2nd order, particular integrals &amp; modelling</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+        </div>
+      </div>
+      <div class="module-panel" id="panel-fp1">
+        <div class="card-grid">
+          <a href="topics/t-formulae.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">t=</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>t-formulae</h3>
+            <p>Weierstrass substitutions, identities &amp; equations</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/conic-sections.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="currentColor">y²=4ax</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Conic Sections</h3>
+            <p>Parabolas, hyperbolas, tangents &amp; loci</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/further-vectors.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">a×b</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Further Vectors</h3>
+            <p>Vector product, triple product &amp; 3D geometry</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/taylor-series.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="currentColor">Σ(x−a)ⁿ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Taylor Series</h3>
+            <p>Expansions about a point, limits &amp; approximations</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/further-inequalities.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">≠</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Further Inequalities</h3>
+            <p>Rational, modulus &amp; algebraic inequalities</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/reducible-des.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="currentColor">y=vx</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Reducible DEs</h3>
+            <p>Homogeneous, Bernoulli &amp; order reduction</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="module-panel" id="panel-fm1">
+        <div class="card-grid">
+          <a href="topics/momentum-impulse.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="currentColor">mv</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Momentum &amp; Impulse</h3>
+            <p>Linear momentum, impulse &amp; conservation</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/work-energy-power.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="currentColor">½mv²</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Work, Energy &amp; Power</h3>
+            <p>Work done, KE, PE, conservation &amp; power</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/elastic-strings.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">λx/l</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Elastic Strings &amp; Springs</h3>
+            <p>Hooke’s law, EPE &amp; SHM</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/elastic-collisions-1d.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">e</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Elastic Collisions (1D)</h3>
+            <p>Direct impacts, restitution &amp; successive collisions</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/elastic-collisions-2d.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">↗</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Elastic Collisions (2D)</h3>
+            <p>Oblique impacts &amp; two-dimensional collisions</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="maths" class="section section-tint">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-tag">02</span>
+        <div>
+          <h2>Mathematics</h2>
+          <p>Pure, Statistics and Mechanics — Pure 1, Pure 2, Statistics and Mechanics live.</p>
+        </div>
+      </header>
+      <div class="pill-tabs" role="tablist">
+        <button class="pill active" data-module="pure1">Pure 1</button>
+        <button class="pill" data-module="pure2">Pure 2</button>
+        <button class="pill" data-module="stats">Statistics</button>
+        <button class="pill" data-module="mech">Mechanics</button>
+      </div>
+      <div class="module-panel active" id="panel-pure1">
+        <div class="card-grid">
+          <a href="topics/algebra-functions.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-style="italic" fill="currentColor">f(x)</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Algebra &amp; Functions</h3>
+            <p>Quadratics, inequalities, graphs &amp; modelling</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/coordinate-geometry.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="currentColor">x²+y²</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Coordinate Geometry</h3>
+            <p>Lines, circles, midpoints &amp; distances</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/trigonometry.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">sin θ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Trigonometry</h3>
+            <p>Identities, equations &amp; graphs</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/exponentials-logs.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">eˣ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Exponentials &amp; Logs</h3>
+            <p>Laws, equations &amp; real-world models</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/differentiation.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">dy/dx</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Differentiation</h3>
+            <p>From first principles to applications</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/integration.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="28" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="currentColor">∫</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Integration</h3>
+            <p>Techniques &amp; areas under curves</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/binomial-expansion.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">(a+b)ⁿ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Binomial Expansion</h3>
+            <p>Positive integer &amp; rational powers</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/vectors-2d.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-style="italic" fill="currentColor">a⃗</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Vectors (2D)</h3>
+            <p>Position vectors, magnitude, scalar product &amp; geometry</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+        </div>
+      </div>
+      <div class="module-panel" id="panel-pure2">
+
+        <div class="card-grid">
+          <a href="topics/algebraic-methods.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">P/Q</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Algebraic Methods</h3>
+            <p>Division, remainder theorem &amp; partial fractions</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/functions-graphs.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">f⁻¹</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Functions &amp; Graphs</h3>
+            <p>Domain, range, inverse, composite &amp; modulus</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/sequences-series.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">aₙ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Sequences &amp; Series</h3>
+            <p>Arithmetic, geometric &amp; sum to infinity</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/binomial-expansion.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">(a+b)ⁿ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Binomial Expansion</h3>
+            <p>Positive integer &amp; rational powers</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/radians-trig.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">θ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Radians &amp; Further Trig</h3>
+            <p>Arc length, sectors, identities &amp; equations</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/parametric.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="24" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="currentColor">x(t)</text><text x="20" y="34" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="currentColor">y(t)</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Parametric Equations</h3>
+            <p>Curves, gradients &amp; Cartesian form</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/further-differentiation.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">∂/∂x</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Further Differentiation</h3>
+            <p>Product, quotient, implicit &amp; trig/exp</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/further-integration.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="28" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="currentColor">∫</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Further Integration</h3>
+            <p>Parts, substitution, partial fractions &amp; DEs</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/numerical-methods.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">xₙ₊₁</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Numerical Methods</h3>
+            <p>Newton–Raphson, iteration &amp; trapezium rule</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/differential-equations.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">dy/dx</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Differential Equations</h3>
+            <p>First-order separable, integrating factor &amp; modelling</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/vectors-3d.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-style="italic" fill="currentColor">i j k</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Vectors (3D)</h3>
+            <p>Magnitude, distance, position vectors &amp; geometry</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+        </div>
+      </div>
+      <div class="module-panel" id="panel-stats">
+
+
+        <div class="card-grid">
+          <a href="topics/probability.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">P(A)</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Probability</h3>
+            <p>Trees, conditional, Venn &amp; independence</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/measures-location-spread.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">x̄, σ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Measures of Location &amp; Spread</h3>
+            <p>Mean, median, variance, SD &amp; quartiles</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/statistical-distributions.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">B(n,p)</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Statistical Distributions</h3>
+            <p>Binomial &amp; normal distributions</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/hypothesis-testing.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">H₀</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Hypothesis Testing</h3>
+            <p>One- &amp; two-tailed tests, Type I/II errors</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/correlation-regression.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">r</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Correlation &amp; Regression</h3>
+            <p>PMCC, least-squares lines &amp; interpretation</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/sampling-data.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">Σ</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Sampling &amp; Data</h3>
+            <p>Random, stratified, bias &amp; diagrams</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+        </div>
+      </div>
+      <div class="module-panel" id="panel-mech">
+        <div class="card-grid">
+          <a href="topics/kinematics.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="currentColor">v=u+at</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Kinematics</h3>
+            <p>SUVAT, velocity–time graphs &amp; variable acceleration</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/forces-newton.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">F=ma</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Forces &amp; Newton’s Laws</h3>
+            <p>Resultants, inclined planes &amp; equilibrium</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/moments.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">M=Fd</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Moments</h3>
+            <p>Rods, ladders, centres of mass &amp; tipping</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/projectiles.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="26" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="currentColor">↗</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Projectiles</h3>
+            <p>Range, trajectory, time of flight &amp; inclined planes</p>
+            <span class="card-count">12 questions →</span>
+          </a>
+          <a href="topics/friction.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="currentColor">μR</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Friction</h3>
+            <p>Static &amp; kinetic friction, limiting equilibrium</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+          <a href="topics/connected-particles.html" class="card card-live">
+            <div class="card-top">
+              <div class="card-glyph"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><text x="20" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="currentColor">T</text></svg></div>
+              <span class="live-badge">Live</span>
+            </div>
+            <h3>Connected Particles</h3>
+            <p>Pulleys, Atwood machines &amp; string systems</p>
+            <span class="card-count">10 questions →</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="papers" class="section">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-tag">03</span>
+        <div>
+          <h2>Papers &amp; Practice</h2>
+          <p>Past papers via PMT · lessons and topic practice on Calcurion.</p>
+        </div>
+      </header>
+      <div class="paper-grid">
+        <a href="lessons.html" class="paper">
+          <span class="paper-num" aria-hidden="true">∫</span>
+          <h3>Lessons</h3>
+          <p>Topic notes — add PDFs under lessons/</p>
+        </a>
+        <a href="https://www.physicsandmathstutor.com/a-level-maths-papers/" class="paper" target="_blank" rel="noopener noreferrer">
+          <span class="paper-num" aria-hidden="true">Π</span>
+          <h3>Past Papers</h3>
+          <p>A-level papers on Physics &amp; Maths Tutor →</p>
+        </a>
+        <a href="https://www.physicsandmathstutor.com/maths-revision/a-level-edexcel/papers/" class="paper" target="_blank" rel="noopener noreferrer">
+          <span class="paper-num" aria-hidden="true">Σ</span>
+          <h3>Practice Papers</h3>
+          <p>Edexcel practice papers on Physics &amp; Maths Tutor →</p>
+        </a>
+        <a href="topics/complex-numbers.html" class="paper"><span class="paper-num" aria-hidden="true">⇒</span><h3>Start now</h3><p>Complex Numbers is live</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="worksheets" class="section section-tint">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-tag">04</span>
+        <div>
+          <h2>Worksheets</h2>
+          <p>Printable topic worksheets with exam-style questions — download, practise offline, then check answers on the site.</p>
+        </div>
+      </header>
+      <div class="paper-grid">
+        <a href="worksheets.html" class="paper">
+          <span class="paper-num" aria-hidden="true">Π</span>
+          <h3>All Worksheets</h3>
+          <p>Browse &amp; download by module</p>
+        </a>
+        <a href="worksheets.html" class="paper">
+          <span class="paper-num" aria-hidden="true">Σ</span>
+          <h3>Pure &amp; Further</h3>
+          <p>Pure 1–2 · Core Pure · Further Pure</p>
+        </a>
+        <a href="worksheets.html" class="paper">
+          <span class="paper-num" aria-hidden="true">∇</span>
+          <h3>Mechanics &amp; Stats</h3>
+          <p>Kinematics, forces, probability &amp; more</p>
+        </a>
+        <a href="worksheets.html" class="paper paper-accent">
+          <span class="paper-num" aria-hidden="true">⇒</span>
+          <h3>Open worksheets</h3>
+          <p>Filter by module · Open or download PDF</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="books" class="section">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-tag">05</span>
+        <div>
+          <h2>Books</h2>
+          <p>Practice books and revision guides from Calcurion Publishing.</p>
+        </div>
+      </header>
+      <div class="book-grid">
+        <article class="book-card">
+          <div class="book-cover" aria-hidden="true">
+            <span class="book-cover-mark">∫</span>
+          </div>
+          <div class="book-body">
+            <h3>A-Level Pure Mathematics</h3>
+            <p class="book-meta">Practice &amp; worked solutions · Pure 1 &amp; 2</p>
+            <p class="book-desc">Topic-by-topic exam-style questions with full solutions. Ideal companion to the free site practice.</p>
+            <a href="#" class="btn btn-primary book-buy" target="_blank" rel="noopener noreferrer">Buy · link here</a>
+          </div>
+        </article>
+        <article class="book-card">
+          <div class="book-cover book-cover-alt" aria-hidden="true">
+            <span class="book-cover-mark">Σ</span>
+          </div>
+          <div class="book-body">
+            <h3>A-Level Statistics</h3>
+            <p class="book-meta">Practice &amp; worked solutions · Statistics</p>
+            <p class="book-desc">Probability, distributions, hypothesis testing and more — aligned with the Statistics topics on this site.</p>
+            <a href="#" class="btn btn-primary book-buy" target="_blank" rel="noopener noreferrer">Buy · link here</a>
+          </div>
+        </article>
+        <article class="book-card">
+          <div class="book-cover book-cover-gold" aria-hidden="true">
+            <span class="book-cover-mark">∇</span>
+          </div>
+          <div class="book-body">
+            <h3>Further Maths Core Pure</h3>
+            <p class="book-meta">Practice &amp; worked solutions · Core Pure 1</p>
+            <p class="book-desc">Complex numbers, matrices, series and proof — structured practice for Further Mathematics.</p>
+            <a href="#" class="btn btn-primary book-buy" target="_blank" rel="noopener noreferrer">Buy · link here</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-brand">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+              <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+            </svg>
+          </span>
+          <span>Calcurion</span>
+        </div>
+        <p class="footer-note">© 2026 Calcurion Publishing Ltd · For every student · <span class="visit-count" id="visitCount" title="Total site visits">— visits</span></p>
+        <div class="footer-links"><a href="#">Privacy</a><a href="#">Contact</a></div>
+      </div>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are independent providers of practice materials.
+        This site is <strong>not affiliated with, endorsed by, or connected to</strong> any examination board
+        (including but not limited to Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International).
+        Exam-board names are used only for descriptive purposes. Practice questions are original materials
+        written in an exam-style format and are not past papers or official board content.
+      </p>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

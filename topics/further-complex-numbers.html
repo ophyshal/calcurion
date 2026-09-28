@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Further Complex Numbers — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg></span><span class="logo-text">Calcurion</span></a>
+      <nav class="nav"><a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Core Pure 2</p>
+        <h1>Further Complex Numbers</h1>
+        <p class="q-intro">12 exam-style questions on exponential form, De Moivre’s theorem, \(n\)th roots and trigonometric identities. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats"><span class="diff-tag easy">4 Easy</span><span class="diff-tag medium">4 Medium</span><span class="diff-tag hard">4 Hard</span></div>
+      </div>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body">
+          <p>Express \( z = 2 + 2i \) in the form \( re^{i\theta} \), where \( r > 0 \) and \( -\pi < \theta \le \pi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( r = |z| = \sqrt{2^2 + 2^2} = \sqrt{8} = 2\sqrt{2} \).</p>
+          <p>\( \theta = \arg(z) = \tan^{-1}(1) = \pi/4 \) (first quadrant).</p>
+          <p>So \( z = 2\sqrt{2}\, e^{i\pi/4} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Given \( z = 3e^{i\pi/6} \) and \( w = 2e^{-i\pi/3} \), find \( zw \) in the form \( re^{i\theta} \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( zw = 3\cdot 2 \cdot e^{i(\pi/6 - \pi/3)} = 6e^{i(-\pi/6)} = 6e^{-i\pi/6} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Use De Moivre’s theorem to express \( \cos 3\theta \) in terms of \( \cos\theta \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( (\cos\theta + i\sin\theta)^3 = \cos 3\theta + i\sin 3\theta \).</p>
+          <p>Expand: \( \cos^3\theta + 3i\cos^2\theta\sin\theta - 3\cos\theta\sin^2\theta - i\sin^3\theta \).</p>
+          <p>Real part: \( \cos 3\theta = \cos^3\theta - 3\cos\theta\sin^2\theta = 4\cos^3\theta - 3\cos\theta \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="easy">
+        <div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body">
+          <p>Find the cube roots of \( 8 \) in the form \( a + bi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( 8 = 8e^{i0} = 8e^{i2k\pi} \). Roots: \( 2e^{i(2k\pi)/3} \) for \( k = 0,1,2 \).</p>
+          <p>\( k=0 \): \( 2 \).</p>
+          <p>\( k=1 \): \( 2e^{i2\pi/3} = 2(-\frac12 + i\frac{\sqrt{3}}{2}) = -1 + i\sqrt{3} \).</p>
+          <p>\( k=2 \): \( 2e^{i4\pi/3} = 2(-\frac12 - i\frac{\sqrt{3}}{2}) = -1 - i\sqrt{3} \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body">
+          <p>Express \( z = -1 + i\sqrt{3} \) in exponential form and hence find \( z^6 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( r = \sqrt{1+3} = 2 \), \( \arg = 2\pi/3 \) (second quadrant).</p>
+          <p>\( z = 2e^{i2\pi/3} \). Then \( z^6 = 2^6 e^{i4\pi} = 64e^{i0} = 64 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Use De Moivre’s theorem to find \( \sin 5\theta \) in terms of \( \sin\theta \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( (\cos\theta + i\sin\theta)^5 = \cos 5\theta + i\sin 5\theta \).</p>
+          <p>Imaginary part of expansion: \( \sin 5\theta = 5\cos^4\theta\sin\theta - 10\cos^2\theta\sin^3\theta + \sin^5\theta \).</p>
+          <p>In terms of \( \sin\theta \) only (using \( \cos^2 = 1-\sin^2 \)): \( \sin 5\theta = 16\sin^5\theta - 20\sin^3\theta + 5\sin\theta \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Find all solutions of \( z^4 = -16 \) in the form \( re^{i\theta} \) with \( r > 0 \) and \( -\pi < \theta \le \pi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( -16 = 16e^{i(\pi + 2k\pi)} \). Roots: \( 2e^{i(\pi + 2k\pi)/4} = 2e^{i(\pi/4 + k\pi/2)} \), \( k=0,1,2,3 \).</p>
+          <p>\( k=0 \): \( 2e^{i\pi/4} \)</p>
+          <p>\( k=1 \): \( 2e^{i3\pi/4} \)</p>
+          <p>\( k=2 \): \( 2e^{i5\pi/4} = 2e^{-i3\pi/4} \)</p>
+          <p>\( k=3 \): \( 2e^{i7\pi/4} = 2e^{-i\pi/4} \)</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="medium">
+        <div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body">
+          <p>Show that \( \cos 4\theta = 8\cos^4\theta - 8\cos^2\theta + 1 \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( \cos 4\theta = \operatorname{Re}((\cos\theta + i\sin\theta)^4) \).</p>
+          <p>\( (\cos\theta + i\sin\theta)^4 = \cos^4\theta + 4i\cos^3\sin - 6\cos^2\sin^2 - 4i\cos\sin^3 + \sin^4 \).</p>
+          <p>Real: \( \cos^4 - 6\cos^2\sin^2 + \sin^4 = \cos^4 - 6\cos^2(1-\cos^2) + (1-\cos^2)^2 \)</p>
+          <p>\( = \cos^4 - 6\cos^2 + 6\cos^4 + 1 - 2\cos^2 + \cos^4 = 8\cos^4 - 8\cos^2 + 1 \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Find the square roots of \( 3 + 4i \) in the form \( a + bi \), where \( a,b \in \mathbb{R} \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \( \sqrt{3+4i} = x + yi \). Then \( (x+yi)^2 = 3+4i \Rightarrow x^2 - y^2 = 3 \), \( 2xy = 4 \).</p>
+          <p>So \( xy = 2 \). Also \( x^2 + y^2 = |3+4i| = 5 \).</p>
+          <p>Adding: \( 2x^2 = 8 \Rightarrow x^2 = 4 \Rightarrow x = \pm 2 \).</p>
+          <p>If \( x=2 \), \( y=1 \); if \( x=-2 \), \( y=-1 \).</p>
+          <p>Roots: \( 2 + i \) and \( -2 - i \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>Use De Moivre’s theorem to sum the series \( \sum_{k=0}^{n} \binom{n}{k}\cos k\theta \).</p>
+          <p>(Hint: consider \( (1 + e^{i\theta})^n \).)</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( (1 + e^{i\theta})^n = \sum \binom{n}{k} e^{ik\theta} = \sum \binom{n}{k}(\cos k\theta + i\sin k\theta) \).</p>
+          <p>Real part is the required sum. Write \( 1 + e^{i\theta} = 1 + \cos\theta + i\sin\theta = 2\cos^2(\theta/2) + 2i\sin(\theta/2)\cos(\theta/2) \) (using half-angle identities).</p>
+          <p>\( = 2\cos(\theta/2)\, e^{i\theta/2} \) (when \( \cos(\theta/2) \ge 0 \)).</p>
+          <p>Thus \( (1+e^{i\theta})^n = 2^n \cos^n(\theta/2)\, e^{in\theta/2} \).</p>
+          <p>Real part: \( 2^n \cos^n(\theta/2)\cos(n\theta/2) \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q11</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body">
+          <p>Solve \( z^5 - 1 = 0 \) and hence factorise \( z^5 - 1 \) into linear and quadratic factors with real coefficients.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Roots: \( e^{i2k\pi/5} \) for \( k=0,1,2,3,4 \). One real root \( z=1 \).</p>
+          <p>Other roots come in conjugate pairs: \( e^{\pm i2\pi/5} \), \( e^{\pm i4\pi/5} \).</p>
+          <p>\( z^5 - 1 = (z-1)(z^2 - 2z\cos(2\pi/5) + 1)(z^2 - 2z\cos(4\pi/5) + 1) \).</p>
+        </div>
+      </article>
+
+      <article class="question" data-diff="hard">
+        <div class="q-meta"><span class="q-num">Q12</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body">
+          <p>The complex number \( z \) satisfies \( |z| = 1 \) and \( \arg(z - 1) = \dfrac{2\pi}{3} \). Find \( z \) in the form \( e^{i\theta} \) where \( -\pi < \theta \le \pi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \( z = e^{i\theta} \). Then \( z - 1 = 2i\sin(\theta/2)\, e^{i\theta/2} \).</p>
+          <p>For \( 0 < \theta < 2\pi \), \( \sin(\theta/2) > 0 \), so \( \arg(z-1) = \dfrac{\theta}{2} + \dfrac{\pi}{2} \) (taking the principal value in \( (-\pi,\pi] \)).</p>
+          <p>Set \( \dfrac{\theta}{2} + \dfrac{\pi}{2} = \dfrac{2\pi}{3} \) ⇒ \( \dfrac{\theta}{2} = \dfrac{\pi}{6} \) ⇒ \( \theta = \dfrac{\pi}{3} \).</p>
+          <p>Check: \( e^{i\pi/3} - 1 = -\dfrac{1}{2} + i\dfrac{\sqrt{3}}{2} \), \( \arg = \dfrac{2\pi}{3} \). ✓</p>
+          <p>Hence \( z = e^{i\pi/3} \).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="../index.html#further" class="btn btn-ghost">← All topics</a>
+        <a href="maclaurin-series.html" class="btn btn-primary">Maclaurin Series next →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

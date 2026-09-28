@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Measures of Location &amp; Spread — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg></span><span class="logo-text">Calcurion</span></a>
+      <nav class="nav"><a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Statistics</p>
+        <h1>Measures of Location &amp; Spread</h1>
+        <p class="q-intro">10 exam-style questions on mean, median, mode, variance, standard deviation and quartiles. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats"><span class="diff-tag easy">3 Easy</span><span class="diff-tag medium">4 Medium</span><span class="diff-tag hard">3 Hard</span></div>
+      </div>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body"><p>Find the mean, median and mode of the data set: 3, 5, 5, 7, 8, 9, 9, 9, 12.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Mean: \( \dfrac{67}{9}\approx7.44 \). Median: 8. Mode: 9.</p></div></article>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>The mean of 5 numbers is 12. Four of the numbers are 8, 10, 15 and 11. Find the fifth number.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Sum \( =5\times12=60 \). Fifth \( =60-(8+10+15+11)=60-44=16 \).</p></div></article>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>Calculate the range and interquartile range for: 2, 4, 5, 7, 9, 11, 12, 15, 18.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Range: \( 18-2=16 \). \( Q_1=5 \), \( Q_3=12 \), IQR \( =7 \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>The data 4, 6, 7, 9, 10, 12 have mean \( \bar{x} \). Find \( \sum(x-\bar{x})^2 \) and hence the variance and standard deviation (population formulae).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \bar{x}=8 \). Deviations: \( -4,-2,-1,1,2,4 \). Squared sum \( =16+4+1+1+4+16=42 \). Variance \( =\dfrac{42}{6}=7 \). SD \( =\sqrt{7} \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>A data set has \( n=20 \), \( \sum x=240 \), \( \sum x^2=3200 \). Find the mean and the standard deviation.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Mean \( =\dfrac{240}{20}=12 \). Variance \( =\dfrac{3200}{20}-12^2=160-144=16 \). SD \( =4 \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>The heights (cm) of 8 students are: 162, 158, 170, 165, 172, 160, 168, 175. Find the mean and sample standard deviation (divisor \( n-1 \)).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Mean \( =\dfrac{1330}{8}=166.25 \). \( \sum(x-\bar{x})^2\approx246.5 \). Sample variance \( \approx\dfrac{246.5}{7}\approx35.21 \). Sample SD \( \approx5.93 \) cm.</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>A frequency distribution for discrete data: \( x=1,2,3,4,5 \) with frequencies 4, 6, 8, 5, 2. Find the mean and the mode.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \sum f=25 \), \( \sum fx=1\cdot4+2\cdot6+3\cdot8+4\cdot5+5\cdot2=4+12+24+20+10=70 \). Mean \( =\dfrac{70}{25}=2.8 \). Mode \( =3 \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>For a set of data, \( \sum x=150 \), \( \sum x^2=2500 \), \( n=10 \). A new observation of 20 is added. Find the new mean and the new standard deviation (population).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Old mean \( =15 \). New mean \( =\dfrac{170}{11}\approx15.455 \). New \( \sum x^2=2500+400=2900 \). Variance \( =\dfrac{2900}{11}-\left(\dfrac{170}{11}\right)^2\approx263.636-238.843\approx24.793 \). SD \( \approx4.98 \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>The coded data \( y=\dfrac{x-50}{10} \) has mean \( \bar{y}=1.2 \) and SD \( s_y=0.8 \). Find the mean and standard deviation of \( x \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \bar{x}=10\bar{y}+50=12+50=62 \). \( s_x=10s_y=8 \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body"><p>A data set of 12 observations has mean 25 and variance 16. Two additional observations, both equal to 25, are added. Show that the mean is unchanged and find the new variance.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>New mean still 25. Old \( \sum(x-\bar{x})^2=12\times16=192 \). New sum of squares of deviations still 192 (extra terms 0). New variance \( =\dfrac{192}{14}\approx13.71 \).</p></div></article>
+
+      <div class="q-footer-nav">
+        <a href="probability.html" class="btn btn-ghost">← Probability</a>
+        <a href="statistical-distributions.html" class="btn btn-primary">Statistical Distributions →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complex Numbers — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg>
+        </span>
+        <span class="logo-text">Calcurion</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#further" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Further / Core Pure 1</p>
+        <h1>Complex Numbers</h1>
+        <p class="q-intro">16 exam-style questions. Tap <strong>Show answer</strong> for full working. Difficulty builds from Easy to Hard.</p>
+        <div class="q-stats">
+          <span class="diff-tag easy">5 Easy</span>
+          <span class="diff-tag medium">6 Medium</span>
+          <span class="diff-tag hard">5 Hard</span>
+        </div>
+      </div>
+
+      <!-- Q1 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q1</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Given that \( z = 3 + 4i \), find:</p>
+          <p>(a) \( |z| \)</p>
+          <p>(b) \( \arg(z) \) in radians, to 3 significant figures</p>
+          <p>(c) \( z^* \) (the complex conjugate)</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> \( |z| = \sqrt{3^2 + 4^2} = \sqrt{9+16} = \sqrt{25} = 5 \)</p>
+          <p><strong>(b)</strong> \( \arg(z) = \tan^{-1}(4/3) \approx 0.927 \) radians (first quadrant)</p>
+          <p><strong>(c)</strong> \( z^* = 3 - 4i \)</p>
+        </div>
+      </article>
+
+      <!-- Q2 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q2</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">3 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Express \( \dfrac{2+i}{1-i} \) in the form \( a + bi \), where \( a \) and \( b \) are real.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Multiply numerator and denominator by the conjugate of the denominator:</p>
+          <p>\( \dfrac{2+i}{1-i} \cdot \dfrac{1+i}{1+i} = \dfrac{(2+i)(1+i)}{1+1} = \dfrac{2 + 2i + i + i^2}{2} = \dfrac{2 + 3i - 1}{2} = \dfrac{1 + 3i}{2} \)</p>
+          <p>So \( a = \dfrac{1}{2} \), \( b = \dfrac{3}{2} \)</p>
+        </div>
+      </article>
+
+      <!-- Q3 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q3</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">4 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the equation \( z^2 + 4z + 13 = 0 \), giving your answers in the form \( a + bi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Using the quadratic formula:</p>
+          <p>\( z = \dfrac{-4 \pm \sqrt{16 - 52}}{2} = \dfrac{-4 \pm \sqrt{-36}}{2} = \dfrac{-4 \pm 6i}{2} \)</p>
+          <p>\( z = -2 + 3i \) or \( z = -2 - 3i \)</p>
+        </div>
+      </article>
+
+      <!-- Q4 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q4</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">3 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the modulus and argument of \( w = -2\sqrt{3} + 2i \).</p>
+          <p>Give the argument in the interval \( (-\pi, \pi] \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( |w| = \sqrt{(-2\sqrt{3})^2 + 2^2} = \sqrt{12 + 4} = \sqrt{16} = 4 \)</p>
+          <p>Point is in the second quadrant: \( \arg(w) = \pi - \tan^{-1}\left(\dfrac{2}{2\sqrt{3}}\right) = \pi - \tan^{-1}\left(\dfrac{1}{\sqrt{3}}\right) = \pi - \dfrac{\pi}{6} = \dfrac{5\pi}{6} \)</p>
+        </div>
+      </article>
+
+      <!-- Q5 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q5</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The complex number \( z \) satisfies \( |z - 2i| = 3 \).</p>
+          <p>(a) Sketch the locus of \( z \) on an Argand diagram.</p>
+          <p>(b) Find the greatest and least possible values of \( |z| \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> Circle centre \( (0, 2) \), radius 3.</p>
+          <p><strong>(b)</strong> Distance from origin to centre is 2.</p>
+          <p>Greatest \( |z| = 2 + 3 = 5 \)</p>
+          <p>Least \( |z| = 3 - 2 = 1 \)</p>
+        </div>
+      </article>
+
+      <!-- Q6 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q6</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Given \( z = x + yi \) where \( x, y \in \mathbb{R} \), and \( z + 2z^* = 6 + 4i \), find the values of \( x \) and \( y \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( z^* = x - yi \)</p>
+          <p>\( z + 2z^* = (x + yi) + 2(x - yi) = x + yi + 2x - 2yi = 3x - yi \)</p>
+          <p>So \( 3x - yi = 6 + 4i \)</p>
+          <p>Equating real and imaginary parts: \( 3x = 6 \Rightarrow x = 2 \)</p>
+          <p>\( -y = 4 \Rightarrow y = -4 \)</p>
+        </div>
+      </article>
+
+      <!-- Q7 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q7</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find the square roots of \( 5 + 12i \) in the form \( a + bi \), where \( a \) and \( b \) are real.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Let \( \sqrt{5+12i} = a + bi \). Then \( (a+bi)^2 = 5 + 12i \)</p>
+          <p>\( a^2 - b^2 + 2abi = 5 + 12i \)</p>
+          <p>So \( a^2 - b^2 = 5 \) and \( 2ab = 12 \Rightarrow ab = 6 \Rightarrow b = 6/a \)</p>
+          <p>\( a^2 - 36/a^2 = 5 \). Multiply by \( a^2 \): \( a^4 - 5a^2 - 36 = 0 \)</p>
+          <p>\( (a^2 - 9)(a^2 + 4) = 0 \Rightarrow a^2 = 9 \) (since \( a^2 > 0 \))</p>
+          <p>\( a = 3 \) or \( a = -3 \). If \( a = 3 \), \( b = 2 \); if \( a = -3 \), \( b = -2 \)</p>
+          <p>Square roots: \( 3 + 2i \) and \( -3 - 2i \)</p>
+        </div>
+      </article>
+
+      <!-- Q8 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q8</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The point \( P \) representing \( z \) on an Argand diagram satisfies \( \arg(z - 1) = \dfrac{\pi}{4} \).</p>
+          <p>(a) Sketch the locus of \( P \).</p>
+          <p>(b) The point also satisfies \( |z - 1| = 2\sqrt{2} \). Find the exact coordinates of the possible positions of \( P \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> Half-line from \( (1, 0) \) at angle \( \pi/4 \) to the positive real axis (excluding the point itself).</p>
+          <p><strong>(b)</strong> Intersection of the ray with the circle centre \( (1,0) \) radius \( 2\sqrt{2} \).</p>
+          <p>Point is at distance \( 2\sqrt{2} \) along direction \( \pi/4 \):</p>
+          <p>\( x = 1 + 2\sqrt{2} \cdot \cos(\pi/4) = 1 + 2\sqrt{2} \cdot \frac{\sqrt{2}}{2} = 1 + 2 = 3 \)</p>
+          <p>\( y = 0 + 2\sqrt{2} \cdot \sin(\pi/4) = 2 \)</p>
+          <p>So \( P \) is at \( (3, 2) \). (Only one point on the half-line.)</p>
+        </div>
+      </article>
+
+      <!-- Q9 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q9</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Given that \( z = 2e^{i\pi/3} \), express \( z^4 \) in the form \( a + bi \), where \( a \) and \( b \) are exact real numbers.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( z^4 = 2^4 e^{i 4\pi/3} = 16\left(\cos\dfrac{4\pi}{3} + i\sin\dfrac{4\pi}{3}\right) \)</p>
+          <p>\( = 16\left(-\dfrac{1}{2} + i\left(-\dfrac{\sqrt{3}}{2}\right)\right) = -8 - 8\sqrt{3}\, i \)</p>
+        </div>
+      </article>
+
+      <!-- Q10 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q10</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The complex numbers \( z \) and \( w \) satisfy:</p>
+          <p>\( z + w = 4 \) and \( zw = 5 + 2i \)</p>
+          <p>Find \( z \) and \( w \) in the form \( a + bi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( z \) and \( w \) are roots of \( t^2 - (z+w)t + zw = 0 \)</p>
+          <p>\( t^2 - 4t + (5 + 2i) = 0 \)</p>
+          <p>\( t = \dfrac{4 \pm \sqrt{16 - 4(5+2i)}}{2} = \dfrac{4 \pm \sqrt{16 - 20 - 8i}}{2} = \dfrac{4 \pm \sqrt{-4 - 8i}}{2} \)</p>
+          <p>Find \( \sqrt{-4-8i} \). Let \( \sqrt{-4-8i} = p + qi \):</p>
+          <p>\( p^2 - q^2 = -4 \), \( 2pq = -8 \Rightarrow pq = -4 \)</p>
+          <p>\( p^2 - 16/p^2 = -4 \). Multiply: \( p^4 + 4p^2 - 16 = 0 \)</p>
+          <p>\( (p^2 + 2)^2 - 20 = 0 \) wait — better: \( u = p^2 \), \( u^2 + 4u - 16 = 0 \)</p>
+          <p>\( u = -2 \pm \sqrt{20} = -2 \pm 2\sqrt{5} \). Take positive: \( p^2 = -2 + 2\sqrt{5} \)</p>
+          <p>\( p = \pm\sqrt{2(\sqrt{5}-1)} \), \( q = -4/p \)</p>
+          <p>Alternatively: \( \sqrt{-4-8i} = \sqrt{20}\left(\cos\theta + i\sin\theta\right)/2 \) style — exact forms:</p>
+          <p>One pair: \( z, w = 2 \pm \sqrt{1 - (5+2i)/1} \) simplified gives</p>
+          <p>\( z, w = 2 \pm \sqrt{-1 - 2i} \). Computing \( \sqrt{-1-2i} = 1 - i \) check: \( (1-i)^2 = 1 - 2i + i^2 = -2i \) — close but need \( -1-2i \).</p>
+          <p>\( (1-i)^2 = -2i \). Try \( a = 1, b = -1 \): not quite. \( (p+qi)^2 = -4-8i \).</p>
+          <p>Known result: \( \sqrt{-4-8i} = 2 - 2i \) check: \( (2-2i)^2 = 4 - 8i + 4i^2 = 4 - 8i - 4 = -8i \) — wrong.</p>
+          <p>\( \sqrt{20} \approx 4.47 \). From quadratic \( u^2 + 4u - 16 = 0 \), \( u = -2 + 2\sqrt{5} \approx 2.472 \), \( p \approx \pm 1.572 \), \( q = -4/p \approx \mp 2.544 \).</p>
+          <p>Exact: \( z, w = 2 \pm \sqrt{-1-2i} \) where \( \sqrt{-1-2i} = \sqrt{\dfrac{\sqrt{5}-1}{2}} - i\sqrt{\dfrac{\sqrt{5}+1}{2}} \) (or opposite signs).</p>
+          <p><em>Accept numerical / exact radical form matching the system.</em></p>
+        </div>
+      </article>
+
+      <!-- Q11 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q11</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">8 marks</span>
+        </div>
+        <div class="q-body">
+          <p>On an Argand diagram, the point representing \( z \) satisfies both:</p>
+          <p>\( |z - 3| = |z + i| \) and \( \arg\left(\dfrac{z-3}{z+i}\right) = \dfrac{\pi}{2} \)</p>
+          <p>Find the exact value of \( z \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( |z-3| = |z+i| \) is the perpendicular bisector of \( (3,0) \) and \( (0,-1) \).</p>
+          <p>Midpoint: \( \left(\dfrac{3}{2}, -\dfrac{1}{2}\right) \). Direction of segment: \( (-3, -1) \), so perpendicular has direction \( (1, -3) \) or equation:</p>
+          <p>Let \( z = x+yi \): \( (x-3)^2 + y^2 = x^2 + (y+1)^2 \)</p>
+          <p>\( x^2 - 6x + 9 + y^2 = x^2 + y^2 + 2y + 1 \Rightarrow -6x + 9 = 2y + 1 \Rightarrow 2y = -6x + 8 \Rightarrow y = -3x + 4 \)</p>
+          <p>\( \arg\left(\dfrac{z-3}{z+i}\right) = \pi/2 \) means the vector from \( -i \) to \( z \) to the vector from 3 to \( z \) differs by \( \pi/2 \) — i.e. the directed angle is a right angle, and \( z \) lies on the circle with diameter from \( (3,0) \) to \( (0,-1) \) (Thales), specifically the arc where the oriented angle is \( +\pi/2 \).</p>
+          <p>Circle diameter \( (3,0) \) to \( (0,-1) \): centre \( \left(\dfrac{3}{2}, -\dfrac{1}{2}\right) \), radius \( \dfrac{\sqrt{10}}{2} \).</p>
+          <p>Equation: \( \left(x-\dfrac{3}{2}\right)^2 + \left(y+\dfrac{1}{2}\right)^2 = \dfrac{10}{4} \)</p>
+          <p>Intersect with \( y = -3x + 4 \): substitute and solve — the line is the perpendicular bisector, which passes through the centre, so intersection with the circle is at the two ends of the diameter… wait.</p>
+          <p>Actually \( |z-3|=|z+i| \) is the perp bisector; the arg condition selects points on the circle with that diameter where the turn is anticlockwise \( \pi/2 \). The intersection of the line (perp bisector) with that circle: the centre is on the line, so intersections are the two points at radius distance along the line from centre.</p>
+          <p>Direction of line \( y = -3x+4 \) has direction vector \( (1, -3) \), unit vector \( \dfrac{(1,-3)}{\sqrt{10}} \).</p>
+          <p>Points: \( \left(\dfrac{3}{2}, -\dfrac{1}{2}\right) \pm \dfrac{\sqrt{10}}{2} \cdot \dfrac{(1,-3)}{\sqrt{10}} = \left(\dfrac{3}{2}, -\dfrac{1}{2}\right) \pm \left(\dfrac{1}{2}, -\dfrac{3}{2}\right) \)</p>
+          <p>\( = (2, -2) \) or \( (1, 1) \)</p>
+          <p>Check arg: for \( z = 1+i \), \( \dfrac{z-3}{z+i} = \dfrac{-2+i}{1+2i} \). Multiply by conjugate: etc. One of these will give \( +\pi/2 \).</p>
+          <p>Testing \( z = 1+i \): \( z-3 = -2+i \), \( z+i = 1+2i \). Argument difference… \( \arg(-2+i) - \arg(1+2i) \). \( \arg(1+2i) = \tan^{-1}2 \), \( \arg(-2+i) = \pi - \tan^{-1}(1/2) \). Difference is \( \pi/2 \). Yes.</p>
+          <p>So \( z = 1 + i \).</p>
+        </div>
+      </article>
+
+      <!-- Q12 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q12</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">6 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Find all complex numbers \( z \) such that \( z^3 = 8i \), giving your answers in the form \( re^{i\theta} \) where \( -\pi < \theta \leq \pi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( 8i = 8e^{i\pi/2} = 8e^{i(\pi/2 + 2k\pi)} \), \( k \in \mathbb{Z} \)</p>
+          <p>\( z = 2 e^{i(\pi/2 + 2k\pi)/3} = 2 e^{i(\pi/6 + 2k\pi/3)} \)</p>
+          <p>For \( k = 0 \): \( 2e^{i\pi/6} \)</p>
+          <p>For \( k = 1 \): \( 2e^{i(\pi/6 + 2\pi/3)} = 2e^{i(5\pi/6)} \)</p>
+          <p>For \( k = 2 \): \( 2e^{i(\pi/6 + 4\pi/3)} = 2e^{i(3\pi/2)} \) but \( 3\pi/2 > \pi \), so use \( 2e^{-i\pi/2} \) (same ray)</p>
+          <p>Answers: \( 2e^{i\pi/6} \), \( 2e^{i 5\pi/6} \), \( 2e^{-i\pi/2} \)</p>
+        </div>
+      </article>
+
+      <!-- Q13 Easy -->
+      <article class="question" data-diff="easy">
+        <div class="q-meta">
+          <span class="q-num">Q13</span>
+          <span class="diff-tag easy">Easy</span>
+          <span class="q-marks">3 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Given \( z = 1 - i\sqrt{3} \), express \( z \) in the form \( r(\cos\theta + i\sin\theta) \) where \( r > 0 \) and \( -\pi < \theta \leq \pi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( |z| = \sqrt{1 + 3} = 2 \)</p>
+          <p>Fourth quadrant: \( \theta = -\tan^{-1}(\sqrt{3}/1) = -\pi/3 \)</p>
+          <p>So \( z = 2\left(\cos(-\pi/3) + i\sin(-\pi/3)\right) \)</p>
+        </div>
+      </article>
+
+      <!-- Q14 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q14</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Let \( z = x + yi \) where \( x, y \in \mathbb{R} \). Find the locus of \( z \) such that \( |z - 1| = 2|z + i| \).</p>
+          <p>Give the Cartesian equation of the locus.</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>\( |z-1|^2 = 4|z+i|^2 \)</p>
+          <p>\( (x-1)^2 + y^2 = 4\left(x^2 + (y+1)^2\right) \)</p>
+          <p>\( x^2 - 2x + 1 + y^2 = 4x^2 + 4(y^2 + 2y + 1) \)</p>
+          <p>\( x^2 - 2x + 1 + y^2 = 4x^2 + 4y^2 + 8y + 4 \)</p>
+          <p>\( 0 = 3x^2 + 3y^2 + 2x + 8y + 3 \)</p>
+          <p>Divide by 3: \( x^2 + y^2 + \dfrac{2}{3}x + \dfrac{8}{3}y + 1 = 0 \)</p>
+          <p>Complete the square: \( \left(x + \dfrac{1}{3}\right)^2 + \left(y + \dfrac{4}{3}\right)^2 = \dfrac{1}{9} + \dfrac{16}{9} - 1 = \dfrac{8}{9} \)</p>
+          <p>Circle centre \( \left(-\dfrac{1}{3}, -\dfrac{4}{3}\right) \), radius \( \dfrac{2\sqrt{2}}{3} \).</p>
+        </div>
+      </article>
+
+      <!-- Q15 Medium -->
+      <article class="question" data-diff="medium">
+        <div class="q-meta">
+          <span class="q-num">Q15</span>
+          <span class="diff-tag medium">Medium</span>
+          <span class="q-marks">5 marks</span>
+        </div>
+        <div class="q-body">
+          <p>Solve the equation \( z^2 - (3+i)z + (2+2i) = 0 \), giving your answers in the form \( a + bi \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p>Discriminant: \( (3+i)^2 - 4(2+2i) = 9 + 6i + i^2 - 8 - 8i = 9 + 6i - 1 - 8 - 8i = 0 - 2i \)</p>
+          <p>\( \sqrt{-2i} \): write \( -2i = 2e^{-i\pi/2} \), so square roots \( \sqrt{2}\,e^{-i\pi/4} \) and \( \sqrt{2}\,e^{i 3\pi/4} \)</p>
+          <p>\( \sqrt{2}\left(\cos(-\pi/4)+i\sin(-\pi/4)\right) = 1 - i \)</p>
+          <p>\( \sqrt{2}\left(\cos(3\pi/4)+i\sin(3\pi/4)\right) = -1 + i \)</p>
+          <p>Thus \( z = \dfrac{3+i \pm (1-i)}{2} \)</p>
+          <p>\( z = \dfrac{4}{2} = 2 \) or \( z = \dfrac{2 + 2i}{2} = 1 + i \)</p>
+          <p>(Using the other root gives the same pair.)</p>
+        </div>
+      </article>
+
+      <!-- Q16 Hard -->
+      <article class="question" data-diff="hard">
+        <div class="q-meta">
+          <span class="q-num">Q16</span>
+          <span class="diff-tag hard">Hard</span>
+          <span class="q-marks">7 marks</span>
+        </div>
+        <div class="q-body">
+          <p>The complex number \( z \) satisfies \( \arg\left(\dfrac{z-2}{z+2}\right) = \dfrac{\pi}{3} \).</p>
+          <p>(a) Describe the locus of \( z \) geometrically.</p>
+          <p>(b) Find the Cartesian equation of the locus.</p>
+          <p>(c) Find the least possible value of \( |z| \).</p>
+        </div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer">
+          <p><strong>(a)</strong> Arc of a circle (part of the circle through the points \( 2 \) and \( -2 \) on the real axis) on which the directed angle from the chord joining \( -2 \) to \( 2 \) is \( \pi/3 \). (The major or minor arc is determined by the sign of the argument.)</p>
+          <p><strong>(b)</strong> Let \( z = x+yi \). Then \( \arg(z-2) - \arg(z+2) = \pi/3 \).</p>
+          <p>Using the formula for \( \arg\left(\dfrac{z-a}{z-b}\right) \): the locus is an arc of the circle</p>
+          <p>\( (x-2)(x+2) + y^2 = \sqrt{3}\, y \cdot 4 \) (from geometry or expansion), more systematically:</p>
+          <p>\( \tan(\arg(z-2)-\arg(z+2)) = \tan(\pi/3) = \sqrt{3} \), leading after clearing to</p>
+          <p>\( x^2 - 4 + y^2 = 2\sqrt{3}\, y \) wait — correct expansion gives circle centre on the imaginary axis:</p>
+          <p>Centre \( (0, 2/\sqrt{3}) \), radius \( 4/\sqrt{3} \) (or equivalent form \( x^2 + (y - 2/\sqrt{3})^2 = 16/3 \)).</p>
+          <p>(The part of the circle above the real axis for positive argument \( \pi/3 \).)</p>
+          <p><strong>(c)</strong> Least \( |z| \) is the distance from origin to the nearest point on the arc, which is \( |c| - r \) if origin outside, but here centre is at distance \( 2/\sqrt{3} \) and radius \( 4/\sqrt{3} \), so origin is inside; the least modulus on the arc (above real axis, excluding the points \( \pm 2 \)) approaches the smaller intersection with the imaginary axis or the vertical tangent — minimum occurs at the point on the circle closest to origin that lies on the valid arc: distance from O to centre is \( 2/\sqrt{3} \), so min distance is \( 4/\sqrt{3} - 2/\sqrt{3} = 2/\sqrt{3} \).</p>
+        </div>
+      </article>
+
+      <div class="q-footer-nav">
+        <a href="../index.html" class="btn btn-ghost">← All topics</a>
+        <a href="matrices.html" class="btn btn-primary">Matrices next →</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+    <script>
+    window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

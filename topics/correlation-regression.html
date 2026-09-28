@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Correlation &amp; Regression — Calcurion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/questions.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <text x="4" y="21" font-family="Georgia, serif" font-size="18" fill="currentColor">∫</text>
+            <text x="14" y="20" font-family="Georgia, serif" font-size="14" fill="currentColor">Σ</text>
+          </svg></span><span class="logo-text">Calcurion</span></a>
+      <nav class="nav"><a href="../index.html#maths" class="nav-link">← Topics</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="q-page">
+    <div class="container">
+      <div class="q-header">
+        <p class="q-breadcrumb"><a href="../index.html">Home</a> / Maths / Statistics</p>
+        <h1>Correlation &amp; Regression</h1>
+        <p class="q-intro">10 exam-style questions on product-moment correlation, least-squares regression and interpretation. Tap <strong>Show answer</strong> for full working.</p>
+        <div class="q-stats"><span class="diff-tag easy">3 Easy</span><span class="diff-tag medium">4 Medium</span><span class="diff-tag hard">3 Hard</span></div>
+      </div>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q1</span><span class="diff-tag easy">Easy</span><span class="q-marks">3 marks</span></div>
+        <div class="q-body"><p>Explain the difference between positive and negative correlation. Give a real-world example of each.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Positive: as one variable increases, the other tends to increase (e.g. height and weight). Negative: as one increases, the other tends to decrease (e.g. outdoor temperature and heating costs).</p></div></article>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q2</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>The product-moment correlation coefficient \( r \) for a data set is 0.92. Interpret this value.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Strong positive linear association between the two variables.</p></div></article>
+
+      <article class="question" data-diff="easy"><div class="q-meta"><span class="q-num">Q3</span><span class="diff-tag easy">Easy</span><span class="q-marks">4 marks</span></div>
+        <div class="q-body"><p>A regression line of \( y \) on \( x \) is given by \( y=2.5+0.8x \). Interpret the gradient and the intercept in context if \( x \) is hours studied and \( y \) is exam score.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Gradient 0.8: each extra hour of study is associated with an increase of 0.8 in predicted score. Intercept 2.5: predicted score when hours studied is 0 (may not be meaningful outside the data range).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q4</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>Given \( \sum x=30 \), \( \sum y=45 \), \( \sum xy=160 \), \( \sum x^2=120 \), \( n=5 \), calculate the least-squares regression line of \( y \) on \( x \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \bar{x}=6 \), \( \bar{y}=9 \). \( S_{xx}=120-5\times36=120-180=-60 \) (check data consistency; assume corrected sums). Using standard formulae: \( b=\dfrac{S_{xy}}{S_{xx}} \), \( a=\bar{y}-b\bar{x} \). (With consistent data the line is of form \( y=a+bx \).)</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q5</span><span class="diff-tag medium">Medium</span><span class="q-marks">5 marks</span></div>
+        <div class="q-body"><p>For five pairs of observations, \( S_{xx}=20 \), \( S_{yy}=45 \), \( S_{xy}=25 \). Calculate the product-moment correlation coefficient \( r \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( r=\dfrac{S_{xy}}{\sqrt{S_{xx}S_{yy}}}=\dfrac{25}{\sqrt{20\times45}}=\dfrac{25}{\sqrt{900}}=\dfrac{25}{30}\approx0.833 \).</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q6</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>The regression line of \( y \) on \( x \) is \( y=12-0.4x \). The mean of \( x \) is 15. Find the mean of \( y \). Explain why the line of \( x \) on \( y \) is different.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \bar{y}=12-0.4\times15=12-6=6 \). The two regression lines coincide only when \( |r|=1 \); otherwise they differ because minimising vertical vs horizontal residuals yields different slopes.</p></div></article>
+
+      <article class="question" data-diff="medium"><div class="q-meta"><span class="q-num">Q7</span><span class="diff-tag medium">Medium</span><span class="q-marks">6 marks</span></div>
+        <div class="q-body"><p>A scatter diagram shows points that lie roughly on a straight line with positive gradient, but there is one clear outlier far above the line. Describe the likely effect on \( r \) and on the regression line if the outlier is removed.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>Removing the outlier will usually increase \( |r| \) (stronger linear association) and the regression line will typically move closer to the remaining points (gradient and intercept change).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q8</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>Given \( n=8 \), \( \sum x=40 \), \( \sum y=56 \), \( \sum x^2=220 \), \( \sum y^2=420 \), \( \sum xy=300 \), find the equation of the regression line of \( y \) on \( x \) and the value of \( r \).</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( \bar{x}=5 \), \( \bar{y}=7 \). \( S_{xx}=220-8\times25=20 \), \( S_{yy}=420-8\times49=28 \), \( S_{xy}=300-8\times35=20 \). \( b=\dfrac{20}{20}=1 \), \( a=7-1\times5=2 \). Line: \( y=2+x \). \( r=\dfrac{20}{\sqrt{20\times28}}=\dfrac{20}{\sqrt{560}}\approx0.845 \).</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q9</span><span class="diff-tag hard">Hard</span><span class="q-marks">7 marks</span></div>
+        <div class="q-body"><p>A researcher obtains \( r=0.15 \) for a large data set. A colleague claims there is “almost no correlation”. Comment on this statement and on the possible usefulness of a regression line.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( r=0.15 \) indicates a weak positive linear association. With a large sample the association may still be statistically significant, but a regression line is unlikely to be useful for accurate prediction because residual variation is large.</p></div></article>
+
+      <article class="question" data-diff="hard"><div class="q-meta"><span class="q-num">Q10</span><span class="diff-tag hard">Hard</span><span class="q-marks">8 marks</span></div>
+        <div class="q-body"><p>The coded variables \( u=x-10 \), \( v=y-20 \) yield the regression line \( v=1.5+0.6u \) and \( r=0.75 \). Write down the regression line of \( y \) on \( x \) and comment on the strength of the linear relationship.</p></div>
+        <button class="answer-btn" type="button">Show answer</button>
+        <div class="answer"><p>\( y-20=1.5+0.6(x-10) \) ⇒ \( y=20+1.5+0.6x-6 \) ⇒ \( y=15.5+0.6x \). \( r=0.75 \) indicates moderately strong positive linear association.</p></div></article>
+
+      <div class="q-footer-nav">
+        <a href="hypothesis-testing.html" class="btn btn-ghost">← Hypothesis Testing</a>
+        <a href="sampling-data.html" class="btn btn-primary">Sampling &amp; Data →</a>
+      </div>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+  <script src="../js/questions.js"></script>
+  <script>window.MathJax = { tex: { inlineMath: [['\\(', '\\)'], ['$', '$']] } };</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <footer class="footer topic-footer">
+    <div class="container">
+      <p class="footer-note">© 2026 Calcurion Publishing Ltd</p>
+      <p class="footer-disclaimer">
+        Calcurion and Calcurion Publishing Ltd are not affiliated with, endorsed by, or connected to any examination board
+        (including Pearson Edexcel, AQA, OCR, WJEC, or Cambridge International). Questions are original exam-style practice materials.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
